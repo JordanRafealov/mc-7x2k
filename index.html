@@ -565,6 +565,84 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 @media(max-width:1100px){.ns-kpis{grid-template-columns:repeat(3,1fr)}.ns-revenue{grid-template-columns:1fr;text-align:center;gap:.6rem}.ns-pace-bar{flex-wrap:wrap}}
 @media(max-width:700px){.ns-kpis{grid-template-columns:repeat(2,1fr)}.ns-pace-bar{flex-direction:column;align-items:stretch}}
 
+/* CLIENT HEALTH SCORES */
+.health-badge{display:inline-flex;align-items:center;gap:3px;font-size:.5rem;font-weight:700;padding:2px 7px;border-radius:10px;text-transform:uppercase;letter-spacing:.03em}
+.health-badge.green{background:var(--green-light);color:var(--green)}
+.health-badge.amber{background:var(--amber-light);color:var(--amber)}
+.health-badge.red{background:var(--red-light);color:var(--red)}
+.health-badge-dot{width:5px;height:5px;border-radius:50%}
+.health-badge.green .health-badge-dot{background:var(--green)}
+.health-badge.amber .health-badge-dot{background:var(--amber)}
+.health-badge.red .health-badge-dot{background:var(--red)}
+.guarantee-pace{font-size:.52rem;font-weight:600;margin-top:2px}
+.guarantee-pace.on-track{color:var(--green)}
+.guarantee-pace.behind{color:var(--amber)}
+.guarantee-pace.critical{color:var(--red)}
+.delivery-flag{display:inline-flex;align-items:center;gap:3px;font-size:.46rem;font-weight:600;padding:2px 6px;border-radius:4px;margin-right:3px}
+.delivery-flag.active{background:var(--green-light);color:var(--green)}
+.delivery-flag.paused{background:var(--amber-light);color:var(--amber)}
+.delivery-flag.none{background:var(--red-light);color:var(--red)}
+
+/* PIPELINE VELOCITY */
+.pipeline-conversion{display:flex;align-items:center;gap:.2rem;margin-bottom:1rem;flex-wrap:wrap;justify-content:center}
+.pipeline-conv-stage{text-align:center;padding:.4rem .6rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);min-width:80px}
+.pipeline-conv-count{font-size:1rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
+.pipeline-conv-label{font-size:.5rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+.pipeline-conv-arrow{font-size:.52rem;font-weight:700;color:var(--text-muted);display:flex;flex-direction:column;align-items:center;gap:1px;padding:0 .15rem}
+.pipeline-conv-arrow span{font-family:'JetBrains Mono',monospace}
+.pipeline-velocity-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.5rem;margin-bottom:1rem}
+.pipeline-vel-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.5rem .6rem;text-align:center;box-shadow:var(--shadow-sm)}
+.pipeline-vel-val{font-size:1rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
+.pipeline-vel-label{font-size:.5rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+.pipeline-vel-sub{font-size:.46rem;color:var(--text-secondary);margin-top:1px}
+
+/* TEAM OPERATIONS TAB */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem;margin-bottom:1.25rem}
+.team-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;box-shadow:var(--shadow-sm);transition:transform .15s,box-shadow .15s;border-top:3px solid var(--team-color,var(--accent))}
+.team-card:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.team-card-top{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
+.team-card-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0}
+.team-card-info{flex:1}
+.team-card-name{font-size:.82rem;font-weight:700}
+.team-card-role{font-size:.58rem;color:var(--text-muted)}
+.team-card-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.35rem}
+.team-card-stat{text-align:center;padding:.3rem;background:var(--bg-warm);border-radius:var(--radius-sm)}
+.team-card-stat-val{font-size:.85rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
+.team-card-stat-label{font-size:.44rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+.team-card-capacity{height:4px;background:var(--bg-hover);border-radius:2px;margin-top:.5rem;overflow:hidden}
+.team-card-capacity-fill{height:100%;border-radius:2px;transition:width .6s}
+.team-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;margin-bottom:1rem}
+.team-summary-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem;text-align:center;box-shadow:var(--shadow-sm)}
+.team-summary-val{font-size:1.2rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
+.team-summary-label{font-size:.55rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;margin-top:3px}
+.team-summary-sub{font-size:.5rem;color:var(--text-secondary);margin-top:2px}
+.summary-label{font-size:.55rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.summary-value{font-size:1.1rem;font-weight:700;line-height:1}
+.team-stat-item{text-align:center;padding:.35rem;background:var(--bg-warm);border-radius:var(--radius-sm)}
+.team-stat-label{font-size:.44rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;display:block;margin-bottom:2px}
+.team-stat-value{font-size:.82rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
+
+/* YOUTUBE CHANNEL METRICS */
+.yt-channel-wrap{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;margin-bottom:1.25rem;box-shadow:var(--shadow-sm)}
+.yt-channel-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
+.yt-channel-avatar{width:42px;height:42px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700;color:#fff}
+.yt-channel-name{font-size:.85rem;font-weight:700}
+.yt-channel-handle{font-size:.6rem;color:var(--text-muted)}
+.yt-channel-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem}
+.yt-channel-stat{text-align:center;padding:.45rem;background:var(--bg-warm);border-radius:var(--radius-sm)}
+.yt-channel-stat-val{font-size:1rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
+.yt-channel-stat-label{font-size:.44rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+.yt-channel-stat-sub{font-size:.42rem;color:var(--text-secondary);margin-top:1px}
+.yt-conversion{display:flex;align-items:center;justify-content:center;gap:.3rem;padding:.5rem .7rem;background:var(--bg-sidebar);border-radius:8px;border:1px solid var(--border-light);margin-top:.6rem;font-size:.54rem;font-weight:500;color:var(--text-secondary);flex-wrap:wrap}
+.yt-conversion strong{font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--text)}
+
+/* INSTANTLY OVERVIEW */
+.instantly-overview{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;margin-bottom:1rem;box-shadow:var(--shadow-sm)}
+.instantly-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:.45rem}
+.instantly-stat{text-align:center;padding:.4rem;background:var(--bg-warm);border-radius:var(--radius-sm)}
+.instantly-stat-val{font-size:.9rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
+.instantly-stat-label{font-size:.44rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+
 /* ANIMATIONS */
 @keyframes fade-in{from{opacity:0}to{opacity:1}}
 @keyframes slide-up{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
@@ -837,6 +915,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
   <button class="tab-btn" data-tab="dd">📊 DD Pipeline</button>
   <button class="tab-btn" data-tab="clients">📋 Clients</button>
   <button class="tab-btn" data-tab="youtube">🎬 YouTube</button>
+  <button class="tab-btn" data-tab="team">👥 Team</button>
 </div>
 
 <div class="modal-overlay" id="modal-overlay">
@@ -896,6 +975,9 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 
 <!-- TAB 4: YOUTUBE CONTENT -->
 <div id="tab-youtube" class="tab-content"><div class="tab-scroll" id="youtube-content"></div></div>
+
+<!-- TAB 5: TEAM OPERATIONS -->
+<div id="tab-team" class="tab-content"><div class="tab-scroll" id="team-content"></div></div>
 
 <script>
 // ═══════════════════════════════════
@@ -1321,6 +1403,78 @@ let ddPipeline={
 };
 
 const CLICKUP_WS='9018484779';
+
+// Team data
+const teamMembers=[
+  {name:'Angela',initials:'AP',role:'Operations Manager',color:'#e05d2a',rate:'$3K/mo',channel:'#angela-management',channelId:'C0000ANGELA',clients:['Jamie','Phellos','ODF','Ocon','Ripple'],avgHours:7.2,activity:89,tasks:12,capacity:85},
+  {name:'Filip',initials:'FK',role:'Content & Lead Management',color:'#3b7dd8',rate:'$1.5K/mo',channel:'#filip-management',channelId:'C0000FILIP',clients:['Jamie','ODF','Ripple'],avgHours:6.8,activity:82,tasks:8,capacity:72},
+  {name:'Sophia',initials:'SM',role:'Inbox Manager',color:'#7c5cbf',rate:'$1K/mo',channel:'#sophia-management',channelId:'C0000SOPHIA',clients:['Jamie','Phellos','ODF','Ocon'],avgHours:5.1,activity:91,tasks:15,capacity:90},
+  {name:'Rodney',initials:'RV',role:'Video Editing',color:'#2d9f4e',rate:'Variable',channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:4.5,activity:78,tasks:4,capacity:55},
+];
+
+// YouTube channel data
+const ytChannel={
+  name:'Dopamine Digital',handle:'@DopamineDigital',subs:'2.1K',totalViews:'142K',
+  avgViewDuration:'4:32',ctr:'6.8%',avgViews:'2.4K',
+  last30:{views:28400,watchHours:1240,subs:180,impressions:418000},
+  topVideos:[
+    {title:'Ranking Every B2B Lead Gen Channel',views:'3.2K',ctr:'8.2%',avgDuration:'5:11',published:'Jan 28'},
+    {title:'How I Built a 13-Agent AI Army',views:'2.8K',ctr:'7.4%',avgDuration:'4:45',published:'Jan 21'},
+    {title:'The Cold Email Framework That Gets Replies',views:'2.1K',ctr:'6.1%',avgDuration:'3:58',published:'Jan 14'},
+  ],
+  ytToLead:{impressions:418000,clicks:28400,typeformViews:890,submissions:42,qualified:18,callsBooked:5}
+};
+
+// Client health score computation
+function computeClientHealth(c,campaigns){
+  const camp=campaigns[c.id]||{};
+  const dr=daysRemaining(c.contract.start,c.contract.days);
+  let score=0,factors=0;
+
+  // Contract factor (0-25): expired = 0, <30d = 10, <60d = 18, >60d = 25, ongoing = 25
+  if(dr===null){score+=25}
+  else if(dr<=0){score+=0}
+  else if(dr<30){score+=10}
+  else if(dr<60){score+=18}
+  else{score+=25}
+  factors++;
+
+  // Calls pace (0-25): if target, check pace
+  if(c.calls.target){
+    const booked=camp.callsBooked||0;
+    const elapsed=c.contract.days?(c.contract.days-(dr||0)):90;
+    const expectedPace=c.calls.target*(elapsed/c.contract.days);
+    const paceRatio=expectedPace>0?booked/expectedPace:0;
+    score+=paceRatio>=0.8?25:paceRatio>=0.5?15:paceRatio>=0.25?8:0;
+    factors++;
+  }
+
+  // Pipeline generation pace (0-25)
+  if(c.pipeline.target){
+    const gen=camp.pipelineGenerated||0;
+    const pct=gen/c.pipeline.target;
+    score+=pct>=0.5?25:pct>=0.3?18:pct>=0.15?10:0;
+    factors++;
+  }
+
+  // Active outreach (0-25): has campaigns running?
+  const hasInstantly=camp.instantly&&camp.instantly.totals&&camp.instantly.totals.sent>0;
+  const hasHeyreach=camp.heyreach&&camp.heyreach.totals&&camp.heyreach.totals.messaged>0;
+  const activeGuests=getActiveGuests(c);
+  if(hasInstantly||hasHeyreach||activeGuests>3){score+=25}
+  else if(activeGuests>0){score+=15}
+  else{score+=0}
+  factors++;
+
+  // Alerts penalty
+  score-=c.alerts.length*10;
+
+  const maxScore=factors*25;
+  const pct=maxScore>0?Math.round((score/maxScore)*100):0;
+  const level=pct>=70?'green':pct>=40?'amber':'red';
+  const label=pct>=70?'Healthy':pct>=40?'At Risk':'Critical';
+  return{score:Math.max(0,pct),level,label};
+}
 
 const trendingVideos=[
   {title:'I Replaced My SDR Team With Claude — Here\'s What Happened',channel:'Liam Ottley',subs:'210K',views:'53K',likes:'2.8K',published:'1 day ago',duration:'19:55',outlier:true,outlierLabel:'15x avg',videoId:'HiC1J8a9V1I',hook:'Proof-of-concept video showing live AI replacing human roles — triggers fear + curiosity',url:'https://youtube.com/watch?v=HiC1J8a9V1I'},
@@ -1822,18 +1976,67 @@ function renderDDPipeline(){
   const sc=getShowcaseData();
   const d=sc?sc.pipeline:ddPipeline;
   const totalLeads=d.stages.reduce((s,st)=>s+st.count,0);
+  // Pipeline conversion funnel
+  const funnelStages=['Joey Podcast','Jordan Podcast','YouTube Lead','Warm Lead','Strategy Call','Growth Plan'];
+  const funnelCounts=funnelStages.map(name=>{const s=d.stages.find(x=>x.name===name);return{name,count:s?s.count:0,color:s?s.color:'var(--gray)'}});
+  const conversionArrows=[];
+  for(let i=0;i<funnelCounts.length-1;i++){
+    const from=funnelCounts[i],to=funnelCounts[i+1];
+    const rate=from.count>0?Math.round((to.count/from.count)*100):0;
+    conversionArrows.push(rate);
+  }
+  const conversionHtml=funnelCounts.map((s,i)=>{
+    let arrow='';
+    if(i<conversionArrows.length){
+      const rate=conversionArrows[i];
+      const rColor=rate>=30?'var(--green)':rate>=15?'var(--amber)':'var(--red)';
+      arrow=`<div class="pipeline-conv-arrow"><span style="color:${rColor}">${rate}%</span>\u2192</div>`;
+    }
+    return`<div class="pipeline-conv-stage"><div class="pipeline-conv-count" style="color:${s.color}">${s.count}</div><div class="pipeline-conv-label">${s.name}</div></div>${arrow}`;
+  }).join('');
+
+  // Instantly overview (DD aggregate)
+  const inst=ddInstantlyOverview;
+  const instReplyRate=inst.sent>0?((inst.replies/inst.sent)*100).toFixed(1):0;
+  const instBounceRate=inst.sent>0?((inst.bounced/inst.sent)*100).toFixed(1):0;
+
+  // Velocity metrics
+  const stratCalls=d.stages.find(s=>s.name==='Strategy Call')?.count||0;
+  const growthPlans=d.stages.find(s=>s.name==='Growth Plan')?.count||0;
+  const hotLeadCount=stratCalls+growthPlans;
+  const forecastRevenue=hotLeadCount*15000;
+  const warmCount=d.stages.find(s=>s.name==='Warm Lead')?.count||0;
+
   el.innerHTML=`
     <div class="section-heading"><span class="section-dot" style="background:var(--accent)"></span>DD Sales Pipeline — ${totalLeads} leads <a href="${d.clickupUrl||'#'}" target="_blank" style="font-size:.6rem;color:var(--accent);font-weight:500;text-decoration:none;text-transform:none;letter-spacing:0">Open in ClickUp &rarr;</a></div>
     <div class="pipeline-stages">${d.stages.map(s=>`
       <div class="pipeline-stage"><div class="pipeline-stage-count" style="color:${s.color}">${s.count}</div><div class="pipeline-stage-name">${s.name}</div></div>`).join('')}
     </div>
-    <div class="metric-cards">
-      <div class="metric-card"><div class="metric-value">${totalLeads}</div><div class="metric-label">Total Pipeline</div></div>
-      <div class="metric-card"><div class="metric-value">${d.metrics.avgDeal}</div><div class="metric-label">Deal Size</div></div>
-      <div class="metric-card"><div class="metric-value">${d.metrics.ytLeadsThisMonth}</div><div class="metric-label">YT Leads</div></div>
-      <div class="metric-card"><div class="metric-value">${d.stages.find(s=>s.name==='Strategy Call')?.count||0}</div><div class="metric-label">Strategy Calls</div></div>
-      <div class="metric-card"><div class="metric-value">${d.stages.find(s=>s.name==='Growth Plan')?.count||0}</div><div class="metric-label">Growth Plans</div></div>
-      <div class="metric-card"><div class="metric-value">${d.stages.find(s=>s.name==='Warm Lead')?.count||0}</div><div class="metric-label">Warm Leads</div></div>
+
+    <div class="section-heading"><span class="section-dot" style="background:var(--purple)"></span>Conversion Funnel</div>
+    <div class="pipeline-conversion">${conversionHtml}</div>
+
+    <div class="pipeline-velocity-grid">
+      <div class="pipeline-vel-card"><div class="pipeline-vel-val" style="color:var(--accent)">${totalLeads}</div><div class="pipeline-vel-label">Total Pipeline</div></div>
+      <div class="pipeline-vel-card"><div class="pipeline-vel-val" style="color:var(--green)">${hotLeadCount}</div><div class="pipeline-vel-label">Hot Leads</div><div class="pipeline-vel-sub">Strategy + Growth Plan</div></div>
+      <div class="pipeline-vel-card"><div class="pipeline-vel-val" style="color:var(--blue)">$${Math.round(forecastRevenue/1000)}K</div><div class="pipeline-vel-label">Revenue Forecast</div><div class="pipeline-vel-sub">${hotLeadCount} deals @ $15K avg</div></div>
+      <div class="pipeline-vel-card"><div class="pipeline-vel-val">${d.metrics.avgDeal}</div><div class="pipeline-vel-label">Deal Size</div></div>
+      <div class="pipeline-vel-card"><div class="pipeline-vel-val" style="color:var(--amber)">${warmCount}</div><div class="pipeline-vel-label">Warm Leads</div><div class="pipeline-vel-sub">Need follow-up</div></div>
+      <div class="pipeline-vel-card"><div class="pipeline-vel-val">${d.metrics.ytLeadsThisMonth}</div><div class="pipeline-vel-label">YT Leads/Mo</div></div>
+    </div>
+
+    <div class="section-heading"><span class="section-dot" style="background:var(--blue)"></span>Instantly Email Performance (All Campaigns)</div>
+    <div class="instantly-overview">
+      <div class="instantly-stats">
+        <div class="instantly-stat"><div class="instantly-stat-val">${(inst.sent/1000).toFixed(1)}K</div><div class="instantly-stat-label">Emails Sent</div></div>
+        <div class="instantly-stat"><div class="instantly-stat-val">${(inst.replies/1000).toFixed(1)}K</div><div class="instantly-stat-label">Replies</div></div>
+        <div class="instantly-stat"><div class="instantly-stat-val" style="color:${instReplyRate>=3?'var(--green)':'var(--amber)'}">${instReplyRate}%</div><div class="instantly-stat-label">Reply Rate</div></div>
+        <div class="instantly-stat"><div class="instantly-stat-val" style="color:var(--green)">${inst.interested}</div><div class="instantly-stat-label">Interested</div></div>
+        <div class="instantly-stat"><div class="instantly-stat-val">${(inst.oppValue/1000000).toFixed(1)}M</div><div class="instantly-stat-label">Opp Value</div></div>
+        <div class="instantly-stat"><div class="instantly-stat-val" style="color:${instBounceRate<2?'var(--green)':'var(--red)'}">${instBounceRate}%</div><div class="instantly-stat-label">Bounce Rate</div></div>
+        <div class="instantly-stat"><div class="instantly-stat-val">${inst.meetingsBooked}</div><div class="instantly-stat-label">Meetings</div></div>
+        <div class="instantly-stat"><div class="instantly-stat-val">${inst.activeCampaigns}</div><div class="instantly-stat-label">Active Campaigns</div></div>
+      </div>
     </div>
     <div class="section-heading"><span class="section-dot" style="background:var(--accent)"></span>Pipeline Board</div>
     <div class="dd-kanban" id="dd-kanban"></div>
@@ -1922,12 +2125,23 @@ function renderClientPipeline(){
   const alertCount=_cd.reduce((s,c)=>s+c.alerts.length,0);
   const expiredCount=_cd.filter(c=>{const dr=daysRemaining(c.contract.start,c.contract.days);return dr!==null&&dr<=0}).length;
 
+  // Compute health scores for all clients
+  const healthScores={};
+  _cd.forEach(c=>{healthScores[c.id]=computeClientHealth(c,_cc)});
+  const healthyCt=Object.values(healthScores).filter(h=>h.level==='green').length;
+  const atRiskCt=Object.values(healthScores).filter(h=>h.level==='amber').length;
+  const criticalCt=Object.values(healthScores).filter(h=>h.level==='red').length;
+
   el.innerHTML=`
     <div class="client-summary">
       <div class="client-summary-card"><div class="client-summary-val">${_cd.length}</div><div class="client-summary-label">Active Clients</div></div>
       <div class="client-summary-card"><div class="client-summary-val">${totalGuests}</div><div class="client-summary-label">Total Pipeline</div><div class="client-summary-sub">All podcast + outbound leads</div></div>
       <div class="client-summary-card"><div class="client-summary-val" style="color:var(--green)">${activeGuests}</div><div class="client-summary-label">Active Guests</div><div class="client-summary-sub">Upcoming + post-podcast + pre-calls</div></div>
-      <div class="client-summary-card"><div class="client-summary-val" style="color:${alertCount>0?'var(--amber)':'var(--green)'}">${alertCount}</div><div class="client-summary-label">Alerts</div></div>
+      <div class="client-summary-card">
+        <div class="client-summary-val"><span style="color:var(--green)">${healthyCt}</span> <span style="font-size:.7rem;color:var(--text-muted)">/</span> <span style="color:var(--amber)">${atRiskCt}</span> <span style="font-size:.7rem;color:var(--text-muted)">/</span> <span style="color:var(--red)">${criticalCt}</span></div>
+        <div class="client-summary-label">Health Score</div>
+        <div class="client-summary-sub">Healthy / At Risk / Critical</div>
+      </div>
       <div class="client-summary-card"><div class="client-summary-val" style="color:${expiredCount>0?'var(--red)':'var(--green)'}">${expiredCount}</div><div class="client-summary-label">Expired Contracts</div><div class="client-summary-sub">${expiredCount>0?_cd.filter(c=>{const dr=daysRemaining(c.contract.start,c.contract.days);return dr!==null&&dr<=0}).map(c=>c.shortName).join(', '):''}</div></div>
     </div>
     <div class="client-tabs" id="client-tabs"></div>
@@ -1935,13 +2149,15 @@ function renderClientPipeline(){
 
   // Render sub-tabs
   const tabsEl=document.getElementById('client-tabs');
-  tabsEl.innerHTML=_cd.map(c=>`
-    <button class="client-tab${c.id===activeClientTab?' active':''}" data-client-id="${c.id}">
+  tabsEl.innerHTML=_cd.map(c=>{
+    const h=healthScores[c.id];
+    return`<button class="client-tab${c.id===activeClientTab?' active':''}" data-client-id="${c.id}">
       <span class="client-tab-avatar" style="background:${c.color}">${c.initials}</span>
       ${c.shortName}
+      <span class="health-badge ${h.level}"><span class="health-badge-dot"></span>${h.score}%</span>
       <span style="font-size:.62rem;color:var(--text-muted);font-weight:400">${getTotalGuests(c)}</span>
       ${c.alerts.length?'<span class="client-tab-alert"></span>':''}
-    </button>`).join('');
+    </button>`;}).join('');
 
   // Render all client views
   const viewsEl=document.getElementById('client-views');
@@ -1959,12 +2175,35 @@ function renderClientPipeline(){
     const allStages={...stages,...outbound};
     const totalPipeline=Object.values(allStages).reduce((s,v)=>s+v,0);
 
+    const h=healthScores[c.id];
+    const camp0=_cc[c.id]||{};
+    const hasInst0=camp0.instantly&&camp0.instantly.totals&&camp0.instantly.totals.sent>0;
+    const hasHR0=camp0.heyreach&&camp0.heyreach.totals&&camp0.heyreach.totals.messaged>0;
+    const activeG0=getActiveGuests(c);
+    // Guarantee pace calculation
+    let callsPace='',pipePace='';
+    if(c.calls.target&&dr!==null&&c.contract.days){
+      const elapsed=c.contract.days-(dr||0);const expectedNow=Math.round(c.calls.target*(elapsed/c.contract.days));
+      const booked0=camp0.callsBooked||0;
+      const ratio=expectedNow>0?booked0/expectedNow:0;
+      callsPace=ratio>=0.8?'on-track':ratio>=0.5?'behind':'critical';
+    }
+    if(c.pipeline.target&&camp0.pipelineGenerated){
+      const pctGen=camp0.pipelineGenerated/c.pipeline.target;
+      pipePace=pctGen>=0.4?'on-track':pctGen>=0.2?'behind':'critical';
+    }
+
     return`<div class="client-view${c.id===activeClientTab?' active':''}" id="cv-${c.id}">
       <div class="client-detail-header">
         <div class="client-detail-avatar" style="background:${c.color}">${c.initials}</div>
         <div class="client-detail-info">
-          <div class="client-detail-name">${c.name}</div>
+          <div class="client-detail-name">${c.name} <span class="health-badge ${h.level}"><span class="health-badge-dot"></span>${h.label} (${h.score}%)</span></div>
           <div class="client-detail-services">${c.services} | ${c.contact}</div>
+          <div style="display:flex;gap:.25rem;flex-wrap:wrap;margin-top:3px">
+            ${hasInst0?'<span class="delivery-flag active">Email Active</span>':'<span class="delivery-flag none">No Email</span>'}
+            ${hasHR0?'<span class="delivery-flag active">LinkedIn Active</span>':'<span class="delivery-flag none">No LinkedIn</span>'}
+            ${activeG0>3?'<span class="delivery-flag active">'+activeG0+' Active Guests</span>':activeG0>0?'<span class="delivery-flag paused">'+activeG0+' Active Guests</span>':'<span class="delivery-flag none">No Active Guests</span>'}
+          </div>
           <div style="font-size:.66rem;color:var(--text-muted);margin-top:2px">${c.business}</div>
           <div class="client-detail-links">
             <a class="client-detail-link" href="${cuSpace}" target="_blank">ClickUp Space</a>
@@ -1980,6 +2219,8 @@ function renderClientPipeline(){
           <div class="client-detail-days-label">${dr===null?'Ongoing':dr<=0?'Renewal needed':'remaining'}</div>
           ${c.pipeline.target?`<div class="client-detail-target">${c.pipeline.currency}${c.pipeline.target.toLocaleString()} target</div>`:''}
           ${c.calls.target?`<div class="client-detail-target">${c.calls.target} calls guaranteed</div>`:''}
+          ${callsPace?`<div class="guarantee-pace ${callsPace}">${callsPace==='on-track'?'Calls on track':'Calls '+callsPace}</div>`:''}
+          ${pipePace?`<div class="guarantee-pace ${pipePace}">${pipePace==='on-track'?'Pipeline on track':'Pipeline '+pipePace}</div>`:''}
         </div>
       </div>
 
@@ -2175,8 +2416,55 @@ function renderYouTube(){
   const yd=youtubeData;
   const outlierCount=trendingVideos.filter(v=>v.outlier).length;
 
+  // Channel performance
+  const yt=ytChannel;
+  const ytFunnel=yt.ytToLead;
+  const ytClickRate=ytFunnel.impressions>0?((ytFunnel.clicks/ytFunnel.impressions)*100).toFixed(1):0;
+  const ytSubRate=ytFunnel.clicks>0?((ytFunnel.typeformViews/ytFunnel.clicks)*100).toFixed(1):0;
+  const ytQualRate=ytFunnel.submissions>0?((ytFunnel.qualified/ytFunnel.submissions)*100).toFixed(0):0;
+
   const savedCount=ytSavedVideos.size;
   el.innerHTML=`
+    <div class="section-heading"><span class="section-dot" style="background:var(--red)"></span>Your Channel Performance</div>
+    <div class="yt-channel-wrap">
+      <div class="yt-channel-header">
+        <div class="yt-channel-avatar">DD</div>
+        <div>
+          <div class="yt-channel-name">${yt.name}</div>
+          <div class="yt-channel-handle">${yt.handle}</div>
+        </div>
+      </div>
+      <div class="yt-channel-stats">
+        <div class="yt-channel-stat"><div class="yt-channel-stat-val">${yt.subs}</div><div class="yt-channel-stat-label">Subscribers</div><div class="yt-channel-stat-sub">+${yt.last30.subs} this month</div></div>
+        <div class="yt-channel-stat"><div class="yt-channel-stat-val">${yt.totalViews}</div><div class="yt-channel-stat-label">Total Views</div><div class="yt-channel-stat-sub">${(yt.last30.views/1000).toFixed(1)}K this month</div></div>
+        <div class="yt-channel-stat"><div class="yt-channel-stat-val">${yt.avgViewDuration}</div><div class="yt-channel-stat-label">Avg Duration</div><div class="yt-channel-stat-sub">Watch time</div></div>
+        <div class="yt-channel-stat"><div class="yt-channel-stat-val" style="color:${parseFloat(yt.ctr)>=5?'var(--green)':'var(--amber)'}">${yt.ctr}</div><div class="yt-channel-stat-label">CTR</div><div class="yt-channel-stat-sub">Impressions click-through</div></div>
+        <div class="yt-channel-stat"><div class="yt-channel-stat-val">${yt.avgViews}</div><div class="yt-channel-stat-label">Avg Views</div><div class="yt-channel-stat-sub">Per video</div></div>
+      </div>
+      <div class="yt-conversion">
+        <strong>${(ytFunnel.impressions/1000).toFixed(0)}K</strong> impressions \u2192
+        <strong>${(ytFunnel.clicks/1000).toFixed(1)}K</strong> views (${ytClickRate}%) \u2192
+        <strong>${ytFunnel.typeformViews}</strong> TypeForm views \u2192
+        <strong>${ytFunnel.submissions}</strong> submissions \u2192
+        <strong>${ytFunnel.qualified}</strong> qualified (${ytQualRate}%) \u2192
+        <strong>${ytFunnel.callsBooked}</strong> calls booked
+      </div>
+    </div>
+
+    ${yt.topVideos.length?`
+    <div class="section-heading"><span class="section-dot" style="background:var(--green)"></span>Top Performing Videos</div>
+    <div class="metric-cards" style="margin-bottom:1.25rem">
+      ${yt.topVideos.map(v=>`<div class="metric-card">
+        <div style="font-size:.72rem;font-weight:600;line-height:1.3;margin-bottom:.3rem">${v.title}</div>
+        <div style="display:flex;gap:.6rem;font-size:.56rem;color:var(--text-muted)">
+          <span><strong style="color:var(--text);font-family:'JetBrains Mono',monospace">${v.views}</strong> views</span>
+          <span>CTR <strong style="color:${parseFloat(v.ctr)>=7?'var(--green)':'var(--amber)'}; font-family:'JetBrains Mono',monospace">${v.ctr}</strong></span>
+          <span>Avg <strong style="font-family:'JetBrains Mono',monospace">${v.avgDuration}</strong></span>
+          <span>${v.published}</span>
+        </div>
+      </div>`).join('')}
+    </div>`:''}
+
     <div class="section-heading"><span class="section-dot" style="background:var(--red)"></span>Trending in Your Niche — Last 7 Days <span style="font-size:.58rem;font-weight:500;color:var(--red);background:var(--red-light);padding:2px 8px;border-radius:10px;margin-left:.3rem">${outlierCount} outliers</span>
       <div class="yt-toolbar">
         ${savedCount?`<button class="yt-toolbar-btn${ytShowSaved?' active':''}" onclick="ytToggleSavedFilter()"><svg width="12" height="12" viewBox="0 0 24 24" fill="${ytShowSaved?'currentColor':'none'}" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Saved (${savedCount})</button>`:''}
@@ -2263,6 +2551,108 @@ function renderYouTube(){
         ${c.views?`<div class="modal-row"><span class="modal-label">Views</span><span class="modal-value">${c.views} views, ${c.likes} likes</span></div>`:''}`);
     });
   });
+}
+
+// ═══════════════════════════════════
+// TAB 5 — TEAM OPERATIONS
+// ═══════════════════════════════════
+
+function renderTeam(){
+  const el=document.getElementById('team-content');
+  const tm=teamMembers;
+  const totalCost=tm.reduce((s,m)=>{const n=parseFloat(m.rate.replace(/[^0-9.]/g,''));return s+(isNaN(n)?0:n)},0);
+  const avgActivity=Math.round(tm.reduce((s,m)=>s+m.activity,0)/tm.length);
+  const totalTasks=tm.reduce((s,m)=>s+m.tasks,0);
+  const avgCapacity=Math.round(tm.reduce((s,m)=>s+m.capacity,0)/tm.length);
+  const avgHours=(tm.reduce((s,m)=>s+m.avgHours,0)/tm.length).toFixed(1);
+
+  // Summary cards
+  const summaryHTML=`
+    <div class="team-summary">
+      <div class="team-summary-card">
+        <div class="summary-label">Team Cost</div>
+        <div class="summary-value" style="color:var(--accent);font-family:'JetBrains Mono',monospace">$${totalCost.toLocaleString()}/mo</div>
+      </div>
+      <div class="team-summary-card">
+        <div class="summary-label">Avg Activity</div>
+        <div class="summary-value" style="color:${avgActivity>=85?'var(--green)':avgActivity>=70?'var(--amber)':'var(--red)'};font-family:'JetBrains Mono',monospace">${avgActivity}%</div>
+      </div>
+      <div class="team-summary-card">
+        <div class="summary-label">Active Tasks</div>
+        <div class="summary-value" style="color:var(--blue);font-family:'JetBrains Mono',monospace">${totalTasks}</div>
+      </div>
+      <div class="team-summary-card">
+        <div class="summary-label">Avg Capacity</div>
+        <div class="summary-value" style="color:${avgCapacity>=80?'var(--green)':avgCapacity>=60?'var(--amber)':'var(--red)'};font-family:'JetBrains Mono',monospace">${avgCapacity}%</div>
+      </div>
+      <div class="team-summary-card">
+        <div class="summary-label">Avg Daily Hours</div>
+        <div class="summary-value" style="color:var(--purple);font-family:'JetBrains Mono',monospace">${avgHours}h</div>
+      </div>
+    </div>`;
+
+  // Team member cards
+  const cardsHTML=tm.map(m=>{
+    const actColor=m.activity>=85?'var(--green)':m.activity>=70?'var(--amber)':'var(--red)';
+    const capColor=m.capacity>=80?'var(--green)':m.capacity>=60?'var(--amber)':'var(--red)';
+    const capWidth=Math.min(m.capacity,100);
+    return `
+    <div class="team-card">
+      <div class="team-card-top">
+        <div class="team-card-avatar" style="background:${m.color}">${m.initials}</div>
+        <div>
+          <div style="font-weight:700;font-size:.8rem">${m.name}</div>
+          <div style="font-size:.6rem;color:var(--text-secondary)">${m.role}</div>
+        </div>
+        <div style="margin-left:auto;text-align:right">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;color:var(--text)">${m.rate}</div>
+          <div style="font-size:.5rem;color:var(--text-muted)">${m.channel}</div>
+        </div>
+      </div>
+
+      <div class="team-card-stats">
+        <div class="team-stat-item">
+          <span class="team-stat-label">Activity</span>
+          <span class="team-stat-value" style="color:${actColor}">${m.activity}%</span>
+        </div>
+        <div class="team-stat-item">
+          <span class="team-stat-label">Daily Avg</span>
+          <span class="team-stat-value">${m.avgHours}h</span>
+        </div>
+        <div class="team-stat-item">
+          <span class="team-stat-label">Tasks</span>
+          <span class="team-stat-value" style="color:var(--blue)">${m.tasks}</span>
+        </div>
+      </div>
+
+      <div class="team-card-capacity">
+        <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+          <span style="font-size:.55rem;color:var(--text-muted)">Capacity</span>
+          <span style="font-size:.55rem;font-weight:600;color:${capColor}">${m.capacity}%</span>
+        </div>
+        <div style="height:6px;background:var(--bg-hover);border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:${capWidth}%;background:${capColor};border-radius:3px;transition:width .6s ease"></div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:.5rem">
+        ${m.clients.map(c=>`<span style="font-size:.48rem;padding:2px 6px;background:var(--bg-sidebar);border:1px solid var(--border-light);border-radius:10px;color:var(--text-secondary)">${c}</span>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+
+  el.innerHTML=`
+    <div style="padding:1.5rem">
+      <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:1rem">
+        <span style="font-size:1.2rem">👥</span>
+        <h2 style="font-size:1rem;font-weight:700;letter-spacing:-.02em">Team Operations</h2>
+        <span style="font-size:.55rem;color:var(--text-muted);margin-left:auto">Hubstaff + ClickUp · ${tm.length} members</span>
+      </div>
+      ${summaryHTML}
+      <div class="team-grid">
+        ${cardsHTML}
+      </div>
+    </div>`;
 }
 
 // ═══════════════════════════════════
@@ -2651,6 +3041,8 @@ function toggleShowcase(){
   renderActivity();
   renderDDPipeline();
   renderClientPipeline();
+  renderYouTube();
+  renderTeam();
 }
 
 function getShowcaseData(){
@@ -2683,6 +3075,8 @@ function init(){
   renderClientPipeline();
   // Tab 4
   renderYouTube();
+  // Tab 5
+  renderTeam();
   // Clock
   updateClock();
   setInterval(updateClock,1000);
