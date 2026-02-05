@@ -665,6 +665,24 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 .pnl-bar-seg{display:flex;align-items:center;justify-content:center;font-size:.5rem;font-weight:600;color:#fff;transition:width .6s ease;overflow:hidden;white-space:nowrap;padding:0 6px}
 .rev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.6rem;margin-top:.5rem}
 
+/* FINANCES TAB */
+.fin-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem .85rem;box-shadow:var(--shadow-sm);text-align:center}
+.fin-card-label{font-size:.5rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-bottom:.25rem}
+.fin-card-value{font-size:1.25rem;font-weight:800;font-family:'JetBrains Mono',monospace;line-height:1.1}
+.fin-card-sub{font-size:.46rem;color:var(--text-muted);margin-top:.2rem}
+.fin-client-row{display:grid;grid-template-columns:140px 1fr 180px;align-items:center;gap:.6rem;padding:.35rem 0;border-bottom:1px solid var(--border-light)}
+.fin-client-name{font-size:.65rem;font-weight:600;display:flex;align-items:center;gap:.35rem;flex-wrap:wrap}
+.fin-client-bar-wrap{height:16px;background:var(--bg-hover);border-radius:4px;overflow:hidden}
+.fin-client-bar{height:100%;border-radius:4px;transition:width .6s ease;min-width:2px}
+.fin-client-meta{display:flex;flex-direction:column;align-items:flex-end}
+.fin-client-amount{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;color:var(--text)}
+.fin-client-detail{font-size:.46rem;color:var(--text-muted)}
+.fin-table{width:100%;border-collapse:collapse;font-size:.65rem}
+.fin-table th{text-align:left;font-size:.48rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);padding:.45rem .5rem;border-bottom:2px solid var(--border)}
+.fin-table td{padding:.45rem .5rem;border-bottom:1px solid var(--border-light);vertical-align:middle}
+.fin-table tfoot td{padding:.55rem .5rem}
+.fin-saas-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem .8rem;box-shadow:var(--shadow-sm)}
+
 /* YOUTUBE CHANNEL METRICS */
 .yt-channel-wrap{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;margin-bottom:1.25rem;box-shadow:var(--shadow-sm)}
 .yt-channel-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
@@ -843,6 +861,12 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
   .camp-table th,.camp-table td{padding:.3rem .35rem;font-size:.6rem}
   .camp-table th{font-size:.5rem}
   .client-view{padding:.55rem}
+  /* Finances */
+  .fin-card-value{font-size:1rem}
+  .fin-client-row{grid-template-columns:110px 1fr 140px;gap:.4rem}
+  .fin-client-amount{font-size:.6rem}
+  .fin-client-detail{font-size:.42rem}
+  .fin-table th,.fin-table td{padding:.35rem .35rem;font-size:.58rem}
   /* YouTube */
   .yt-metrics{grid-template-columns:repeat(2,1fr);gap:.4rem}
   .yt-trending-grid{grid-template-columns:1fr;gap:.45rem}
@@ -959,6 +983,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
   <button class="tab-btn" data-tab="clients">📋 Clients</button>
   <button class="tab-btn" data-tab="youtube">🎬 YouTube</button>
   <button class="tab-btn" data-tab="team">👥 Team</button>
+  <button class="tab-btn" data-tab="finances">💰 Finances</button>
 </div>
 
 <div class="modal-overlay" id="modal-overlay">
@@ -1021,6 +1046,9 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 
 <!-- TAB 5: TEAM OPERATIONS -->
 <div id="tab-team" class="tab-content"><div class="tab-scroll" id="team-content"></div></div>
+
+<!-- TAB 6: FINANCES -->
+<div id="tab-finances" class="tab-content"><div class="tab-scroll" id="finances-content"></div></div>
 
 <script>
 // ═══════════════════════════════════
@@ -1461,32 +1489,123 @@ const teamMembers=[
   {name:'Archit',initials:'AR',role:'YouTube Strategy',color:'#c78b1a',rate:'$1,910/mo',monthlyCost:1910,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:3.8,activity:85,tasks:3,capacity:70},
 ];
 
-// Tooling costs
-const toolingCosts=[
-  {name:'Instantly',cost:97,category:'Outreach',icon:'📧'},
-  {name:'HeyReach',cost:79,category:'Outreach',icon:'💼'},
-  {name:'Clay',cost:300,category:'Enrichment',icon:'🧱'},
-  {name:'LinkedIn Sales Nav',cost:100,category:'Prospecting',icon:'🔍'},
-  {name:'ClickUp',cost:12,category:'PM',icon:'✅'},
-  {name:'Slack',cost:0,category:'Comms',icon:'💬'},
-  {name:'Riverside',cost:24,category:'Podcasts',icon:'🎙️'},
-  {name:'MillionVerifier',cost:37,category:'Email',icon:'✉️'},
-  {name:'n8n (self-hosted)',cost:15,category:'Automation',icon:'⚡'},
-  {name:'Anthropic API',cost:120,category:'AI',icon:'🤖'},
-  {name:'Google Workspace',cost:14,category:'Core',icon:'🏢'},
-  {name:'Fathom',cost:32,category:'Calls',icon:'📞'},
-];
-
-// Revenue & P&L
-const businessMetrics={
-  monthlyRevenue:14620,
-  revenueBreakdown:[
-    {client:'Jamie',amount:3810,tooling:[{name:'Instantly',cost:24},{name:'HeyReach',cost:20},{name:'LinkedIn SN',cost:100},{name:'Clay credits',cost:75},{name:'MillionVerifier',cost:9}],teamHours:{angela:8,filip:6,sophia:4}},
-    {client:'Phellos',amount:3810,tooling:[{name:'Instantly',cost:24},{name:'HeyReach',cost:20},{name:'Clay credits',cost:75},{name:'MillionVerifier',cost:9}],teamHours:{angela:7,sophia:4}},
-    {client:'Media Place',amount:3500,tooling:[{name:'Instantly',cost:24},{name:'HeyReach',cost:20},{name:'Clay credits',cost:75},{name:'MillionVerifier',cost:9}],teamHours:{angela:7,filip:4}},
-    {client:'Ripple',amount:3500,tooling:[{name:'Instantly',cost:24},{name:'HeyReach',cost:20},{name:'Clay credits',cost:75},{name:'MillionVerifier',cost:9}],teamHours:{angela:6,filip:4}},
+// ─── FINANCIAL DATA (from verified bank records — Feb 5, 2026) ───
+const financialData={
+  // Annual summaries
+  annual2025:{totalRevenue:309106,clientRevenue:283587,otherIncome:25519,staffCosts:67206,saasCosts:27604,grossProfit:214296,margin:69.3},
+  ytd2026:{totalRevenue:6308,clientRevenue:3810,otherIncome:2498,staffCosts:7592,saasCosts:6228},
+  // Current monthly burn
+  monthly:{staffBurn:7361,saasBurn:2448,totalBurn:9809,mrr:12457,margin:2648},
+  // All-time client revenue (sorted by total collected)
+  clientRevenue:[
+    {name:'Vidello',total:75446,months:7,payments:5,status:'churned',period:'2024–Apr 2025',color:'var(--gray)'},
+    {name:'Media Place',total:42180,months:11,payments:12,status:'active',period:'Feb–Dec 2025',color:'var(--green)'},
+    {name:'TechYeti',total:35990,months:7,payments:7,status:'churned',period:'Apr–Oct 2025',color:'var(--gray)'},
+    {name:'HelloCustom',total:29709,months:4,payments:4,status:'churned',period:'Feb–May 2025',color:'var(--gray)'},
+    {name:'Ripple',total:28781,months:8,payments:8,status:'active',period:'May–Dec 2025',color:'var(--green)'},
+    {name:'Goldphish',total:22100,months:11,payments:11,status:'churned',period:'Feb–Dec 2025',color:'var(--gray)'},
+    {name:'Ocon',total:15120,months:1,payments:1,status:'one-time',period:'Oct 2025',color:'var(--blue)'},
+    {name:'Jamie',total:15400,months:3,payments:3,status:'active',period:'Nov 2025–',color:'var(--green)'},
+    {name:'Banzai',total:14600,months:1,payments:3,status:'churned',period:'Jul 2025',color:'var(--gray)'},
+    {name:'ODF',total:12000,months:1,payments:1,status:'active',period:'Oct 2025–',color:'var(--green)'},
+    {name:'Phellos',total:11430,months:4,payments:3,status:'active',period:'Oct 2025–',color:'var(--green)'},
+    {name:'Quercetin',total:5000,months:1,payments:1,status:'one-time',period:'Jun 2025',color:'var(--blue)'},
+    {name:'Callida',total:3810,months:1,payments:1,status:'churned',period:'Jul 2025',color:'var(--gray)'},
   ],
-  jordanDraw:5000,
+  // Client LTV with LTGP (lifetime gross profit)
+  clientLTV:[
+    {name:'Vidello',revenue:75446,months:7,ltgp:63154,margin:83.7,status:'churned'},
+    {name:'Media Place',revenue:42180,months:11,ltgp:22864,margin:54.2,status:'active'},
+    {name:'TechYeti',revenue:35990,months:7,ltgp:23698,margin:65.8,status:'churned'},
+    {name:'HelloCustom',revenue:33709,months:6,ltgp:23173,margin:68.7,status:'churned'},
+    {name:'Ripple',revenue:28781,months:8,ltgp:14733,margin:51.2,status:'active'},
+    {name:'Goldphish',revenue:22100,months:11,ltgp:2784,margin:12.6,status:'churned'},
+    {name:'Ocon',revenue:15120,months:1,ltgp:13364,margin:88.4,status:'one-time'},
+    {name:'Jamie',revenue:15400,months:3,ltgp:10132,margin:65.8,status:'active'},
+    {name:'Banzai',revenue:14600,months:1,ltgp:12844,margin:88.0,status:'churned'},
+    {name:'ODF',revenue:12000,months:1,ltgp:10244,margin:85.4,status:'active'},
+    {name:'Phellos',revenue:11430,months:4,ltgp:4406,margin:38.6,status:'active'},
+    {name:'Quercetin',revenue:5000,months:1,ltgp:3244,margin:64.9,status:'one-time'},
+    {name:'Callida',revenue:3810,months:1,ltgp:2054,margin:53.9,status:'churned'},
+  ],
+  // Active pipeline
+  pipeline:[
+    {client:'Jamie',rate:3810,currency:'£3,000 GBP',type:'180-day contract',start:'Nov 2025',collected:15400},
+    {client:'Phellos',rate:3810,currency:'£3,000 GBP',type:'180-day contract',start:'Oct 2025',collected:11430,contractTotal:22860,remaining:11430},
+    {client:'Ripple',rate:3500,currency:'£2,500–3,000 GBP',type:'Monthly retainer',start:'May 2025',collected:28781},
+    {client:'ODF',rate:0,currency:'$12,000 setup',type:'Project',start:'Oct 2025',collected:12000},
+  ],
+  // SaaS costs by category (monthly estimates from 2025 annual / 12)
+  saasCategories:[
+    {category:'Outreach & Email',monthly:531,color:'var(--accent)',items:[
+      {name:'Instantly',cost:435,note:'5 accounts + client inboxes'},
+      {name:'Expandi',cost:71,note:'LinkedIn automation'},
+      {name:'MillionVerifier',cost:25},
+    ]},
+    {category:'Core Platforms',monthly:435,color:'var(--blue)',items:[
+      {name:'Google Workspace',cost:372,note:'Team + client accounts'},
+      {name:'ClickUp',cost:23},
+      {name:'Slack',cost:40},
+    ]},
+    {category:'AI Tools',monthly:308,color:'var(--purple)',items:[
+      {name:'Perplexity',cost:122},
+      {name:'OpenAI/ChatGPT',cost:99},
+      {name:'Poppy AI',cost:47},
+      {name:'Anthropic/Claude',cost:40},
+    ]},
+    {category:'Data & Enrichment',monthly:215,color:'var(--green)',items:[
+      {name:'Clay Labs',cost:145},
+      {name:'Apollo',cost:35},
+      {name:'Scraping tools',cost:27},
+      {name:'Crunchbase',cost:8},
+    ]},
+    {category:'Sales & CRM',monthly:172,color:'var(--amber)',items:[
+      {name:'LinkedIn Sales Nav',cost:99},
+      {name:'Hubstaff',cost:73},
+    ]},
+    {category:'Content & Meetings',monthly:200,color:'#e05d9a',items:[
+      {name:'Riverside',cost:52},
+      {name:'Notion',cost:56},
+      {name:'Fathom',cost:32},
+      {name:'Calendly',cost:16},
+      {name:'Typeform',cost:21},
+      {name:'Other creative',cost:23},
+    ]},
+    {category:'Infrastructure',monthly:73,color:'var(--text-muted)',items:[
+      {name:'Domains & hosting',cost:58},
+      {name:'n8n (self-hosted)',cost:15},
+    ]},
+  ],
+  // Staff breakdown
+  staffCosts:[
+    {name:'Angela',role:'Operations Manager',monthly:2674,annual2025:19228,allTime:21902,pct:47.3},
+    {name:'Filip',role:'Content & Leads',monthly:532,annual2025:8339,allTime:8871,pct:20.5},
+    {name:'Archit',role:'YouTube Strategy',monthly:1910,annual2025:5322,allTime:7232,pct:13.1},
+    {name:'Sophia',role:'Inbox Manager',monthly:1168,annual2025:2913,allTime:4081,pct:7.2},
+    {name:'Rodney',role:'Video Editing',monthly:1077,annual2025:898,allTime:1975,pct:2.2},
+  ],
+  // Other income
+  otherIncome2025:[
+    {source:'SKOOL Community',amount:20035},
+    {source:'Payoneer',amount:5000},
+    {source:'Stripe',amount:484},
+  ],
+  // Hormozi / health metrics
+  health:{
+    totalClients:13,active:5,churned:6,oneTime:2,
+    churnRate:55,avgMonthsBeforeChurn:5.5,
+    avgLTV:24274,avgLTGP:15899,avgMargin:65.5,
+    top3Concentration:44,clientVsPassive:'92/8',
+    avgRevenuePerMonth:25759,
+    costPerClientMonth:1756,
+  },
+  // Learning & coaching (separate from SaaS)
+  coaching2025:{total:36863,items:[
+    {name:'Growth Partner',cost:22286},
+    {name:'Acquisition.com',cost:12436},
+    {name:'Skool Platform',cost:1771},
+    {name:'Other',cost:370},
+  ]},
 };
 
 // YouTube channel data (from YouTube API — Feb 6, 2026)
@@ -2759,66 +2878,232 @@ function renderTeam(){
       <div class="team-grid">
         ${cardsHTML}
       </div>
-
-      <div class="section-heading" style="margin-top:2rem"><span class="section-dot" style="background:var(--blue)"></span>Tooling & Subscriptions — $${toolingCosts.reduce((s,t)=>s+t.cost,0)}/mo</div>
-      <div class="tooling-grid">
-        ${toolingCosts.map(t=>`<div class="tool-item"><span class="tool-item-icon">${t.icon}</span><span class="tool-item-name">${t.name}</span><span class="tool-item-cat">${t.category}</span><span class="tool-item-cost">$${t.cost}</span></div>`).join('')}
-      </div>
-
-      <div class="section-heading"><span class="section-dot" style="background:var(--green)"></span>Profit & Loss</div>
-      ${(()=>{
-        const rev=businessMetrics.monthlyRevenue;
-        const teamCost=totalCost;
-        const toolCost=toolingCosts.reduce((s,t)=>s+t.cost,0);
-        const draw=businessMetrics.jordanDraw;
-        const totalExp=teamCost+toolCost+draw;
-        const profit=rev-totalExp;
-        const margin=rev>0?Math.round((profit/rev)*100):0;
-        const profitColor=profit>0?'var(--green)':'var(--red)';
-        const teamPct=rev>0?Math.round((teamCost/rev)*100):0;
-        const toolPct=rev>0?Math.round((toolCost/rev)*100):0;
-        const drawPct=rev>0?Math.round((draw/rev)*100):0;
-        const profitPct=rev>0?Math.max(Math.round((profit/rev)*100),0):0;
-        return`<div class="pnl-wrap">
-          <div class="pnl-bar-wrap">
-            <div class="pnl-bar-seg" style="width:${teamPct}%;background:var(--accent)">Team ${teamPct}%</div>
-            <div class="pnl-bar-seg" style="width:${toolPct}%;background:var(--blue)">Tools ${toolPct}%</div>
-            <div class="pnl-bar-seg" style="width:${drawPct}%;background:var(--purple)">Draw ${drawPct}%</div>
-            <div class="pnl-bar-seg" style="width:${profitPct}%;background:var(--green)">Profit ${profitPct}%</div>
-          </div>
-          <div class="pnl-row"><span class="pnl-label">💰 Monthly Revenue</span><span class="pnl-amount" style="color:var(--green)">$${rev.toLocaleString()}</span></div>
-          <div class="pnl-row"><span class="pnl-label">👥 Team Cost</span><span class="pnl-amount" style="color:var(--red)">-$${teamCost.toLocaleString()}</span></div>
-          <div class="pnl-row"><span class="pnl-label">⚡ Tooling</span><span class="pnl-amount" style="color:var(--red)">-$${toolCost.toLocaleString()}</span></div>
-          <div class="pnl-row"><span class="pnl-label">🧑 Jordan's Draw</span><span class="pnl-amount" style="color:var(--red)">-$${draw.toLocaleString()}</span></div>
-          <div class="pnl-row total"><span class="pnl-label">Net Profit</span><span class="pnl-amount" style="color:${profitColor}">$${profit.toLocaleString()} <span style="font-size:.6rem;font-weight:500">(${margin}% margin)</span></span></div>
-        </div>
-
-        <div class="section-heading" style="margin-top:.75rem"><span class="section-dot" style="background:var(--amber)"></span>Client Profitability</div>
-        <div style="display:flex;flex-direction:column;gap:.5rem">
-          ${businessMetrics.revenueBreakdown.map(c=>{
-            const cToolCost=c.tooling?c.tooling.reduce((s,t)=>s+t.cost,0):0;
-            const cProfit=c.amount-cToolCost;
-            const cMargin=c.amount>0?Math.round((cProfit/c.amount)*100):0;
-            return`<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.7rem .85rem;box-shadow:var(--shadow-sm)">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
-                <span style="font-size:.72rem;font-weight:700">${c.client}</span>
-                <div style="display:flex;gap:.6rem;align-items:center">
-                  <span style="font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--red)">-$${cToolCost} tools</span>
-                  <span style="font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;color:var(--green)">$${c.amount.toLocaleString()}</span>
-                </div>
-              </div>
-              <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.35rem">
-                ${(c.tooling||[]).map(t=>`<span style="font-size:.42rem;padding:2px 6px;background:var(--bg-sidebar);border:1px solid var(--border-light);border-radius:8px;color:var(--text-muted)">${t.name} $${t.cost}</span>`).join('')}
-              </div>
-              <div style="display:flex;align-items:center;gap:.4rem">
-                <div style="flex:1;height:5px;background:var(--bg-hover);border-radius:3px;overflow:hidden"><div style="height:100%;width:${cMargin}%;background:var(--green);border-radius:3px"></div></div>
-                <span style="font-size:.5rem;font-weight:600;color:var(--green);font-family:'JetBrains Mono',monospace">${cMargin}% margin</span>
-              </div>
-            </div>`;
-          }).join('')}
-        </div>`;
-      })()}
     </div>`;
+}
+
+// ═══════════════════════════════════
+// TAB 6 — FINANCES
+// ═══════════════════════════════════
+
+function renderFinances(){
+  const el=document.getElementById('finances-content');
+  const fd=financialData;
+  const m=fd.monthly;
+  const a25=fd.annual2025;
+  const ytd=fd.ytd2026;
+  const maxClientRev=fd.clientRevenue[0].total;
+  const totalSaaS=fd.saasCategories.reduce((s,c)=>s+c.monthly,0);
+  const totalStaff=fd.staffCosts.reduce((s,c)=>s+c.monthly,0);
+  const marginColor=m.margin>0?'var(--green)':'var(--red)';
+  const statusBadge=(s)=>s==='active'?'<span style="display:inline-block;padding:2px 8px;font-size:.48rem;font-weight:700;border-radius:10px;background:var(--green-light);color:var(--green)">ACTIVE</span>':s==='churned'?'<span style="display:inline-block;padding:2px 8px;font-size:.48rem;font-weight:700;border-radius:10px;background:var(--gray-light);color:var(--gray)">CHURNED</span>':'<span style="display:inline-block;padding:2px 8px;font-size:.48rem;font-weight:700;border-radius:10px;background:var(--blue-light);color:var(--blue)">PROJECT</span>';
+
+  // ── Summary Cards ──
+  const summaryCards=`
+  <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:.65rem;margin-bottom:1.5rem">
+    <div class="fin-card">
+      <div class="fin-card-label">2025 Revenue</div>
+      <div class="fin-card-value" style="color:var(--green)">$${(a25.totalRevenue/1000).toFixed(0)}K</div>
+      <div class="fin-card-sub">${fd.clientRevenue.length} clients · 59 payments</div>
+    </div>
+    <div class="fin-card">
+      <div class="fin-card-label">2026 YTD</div>
+      <div class="fin-card-value" style="color:var(--blue)">$${(ytd.totalRevenue/1000).toFixed(1)}K</div>
+      <div class="fin-card-sub">Jan 1 – Feb 3</div>
+    </div>
+    <div class="fin-card">
+      <div class="fin-card-label">Monthly Burn</div>
+      <div class="fin-card-value" style="color:var(--red)">$${(m.totalBurn/1000).toFixed(1)}K</div>
+      <div class="fin-card-sub">Staff $${(m.staffBurn/1000).toFixed(1)}K + SaaS $${(m.saasBurn/1000).toFixed(1)}K</div>
+    </div>
+    <div class="fin-card">
+      <div class="fin-card-label">Est. MRR</div>
+      <div class="fin-card-value" style="color:var(--accent)">$${(m.mrr/1000).toFixed(1)}K</div>
+      <div class="fin-card-sub">Active recurring</div>
+    </div>
+    <div class="fin-card">
+      <div class="fin-card-label">Monthly Margin</div>
+      <div class="fin-card-value" style="color:${marginColor}">$${(m.margin/1000).toFixed(1)}K</div>
+      <div class="fin-card-sub">${m.mrr>0?Math.round(m.margin/m.mrr*100):0}% of MRR</div>
+    </div>
+    <div class="fin-card">
+      <div class="fin-card-label">Avg Client LTV</div>
+      <div class="fin-card-value" style="color:var(--purple)">$${(fd.health.avgLTV/1000).toFixed(1)}K</div>
+      <div class="fin-card-sub">${fd.health.avgMargin}% avg margin</div>
+    </div>
+  </div>`;
+
+  // ── P&L Statement ──
+  const staffPct=m.mrr>0?Math.round(m.staffBurn/m.mrr*100):0;
+  const saasPct=m.mrr>0?Math.round(m.saasBurn/m.mrr*100):0;
+  const marginPctBar=m.mrr>0?Math.max(Math.round(m.margin/m.mrr*100),0):0;
+  const pnlHTML=`
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem">
+    <div>
+      <div class="section-heading"><span class="section-dot" style="background:var(--green)"></span>Monthly P&L</div>
+      <div class="pnl-wrap">
+        <div class="pnl-bar-wrap">
+          <div class="pnl-bar-seg" style="width:${staffPct}%;background:var(--accent)">Staff ${staffPct}%</div>
+          <div class="pnl-bar-seg" style="width:${saasPct}%;background:var(--blue)">SaaS ${saasPct}%</div>
+          <div class="pnl-bar-seg" style="width:${marginPctBar}%;background:var(--green)">Margin ${marginPctBar}%</div>
+        </div>
+        <div class="pnl-row"><span class="pnl-label">Est. MRR</span><span class="pnl-amount" style="color:var(--green)">$${m.mrr.toLocaleString()}</span></div>
+        <div class="pnl-row"><span class="pnl-label">Staff</span><span class="pnl-amount" style="color:var(--red)">-$${m.staffBurn.toLocaleString()}</span></div>
+        <div class="pnl-row"><span class="pnl-label">SaaS & Tools</span><span class="pnl-amount" style="color:var(--red)">-$${m.saasBurn.toLocaleString()}</span></div>
+        <div class="pnl-row total"><span class="pnl-label">Net Margin</span><span class="pnl-amount" style="color:${marginColor}">$${m.margin.toLocaleString()}/mo</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-heading"><span class="section-dot" style="background:var(--blue)"></span>2025 Annual Summary</div>
+      <div class="pnl-wrap">
+        <div class="pnl-row"><span class="pnl-label">Client Revenue</span><span class="pnl-amount" style="color:var(--green)">$${a25.clientRevenue.toLocaleString()}</span></div>
+        <div class="pnl-row"><span class="pnl-label">Other Income (SKOOL/Stripe)</span><span class="pnl-amount" style="color:var(--green)">$${a25.otherIncome.toLocaleString()}</span></div>
+        <div class="pnl-row"><span class="pnl-label">Staff & Contractors</span><span class="pnl-amount" style="color:var(--red)">-$${a25.staffCosts.toLocaleString()}</span></div>
+        <div class="pnl-row"><span class="pnl-label">Software & SaaS</span><span class="pnl-amount" style="color:var(--red)">-$${a25.saasCosts.toLocaleString()}</span></div>
+        <div class="pnl-row total"><span class="pnl-label">Gross Profit</span><span class="pnl-amount" style="color:var(--green)">$${a25.grossProfit.toLocaleString()} <span style="font-size:.6rem;font-weight:500">(${a25.margin}%)</span></span></div>
+      </div>
+    </div>
+  </div>`;
+
+  // ── Revenue by Client (horizontal bar chart) ──
+  const clientBarsHTML=fd.clientRevenue.map(c=>{
+    const barW=Math.round(c.total/maxClientRev*100);
+    const avgMo=c.months>0?Math.round(c.total/c.months):c.total;
+    return`<div class="fin-client-row">
+      <div class="fin-client-name">${c.name} ${statusBadge(c.status)}</div>
+      <div class="fin-client-bar-wrap">
+        <div class="fin-client-bar" style="width:${barW}%;background:${c.color}"></div>
+      </div>
+      <div class="fin-client-meta">
+        <span class="fin-client-amount">$${c.total.toLocaleString()}</span>
+        <span class="fin-client-detail">${c.months}mo · $${avgMo.toLocaleString()}/mo · ${c.period}</span>
+      </div>
+    </div>`;
+  }).join('');
+
+  // ── Client LTV Table ──
+  const ltvRows=fd.clientLTV.map(c=>{
+    const mColor=c.margin>=70?'var(--green)':c.margin>=50?'var(--amber)':'var(--red)';
+    const barW=Math.min(c.margin,100);
+    return`<tr>
+      <td style="font-weight:600;font-size:.68rem">${c.name}</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.65rem">$${c.revenue.toLocaleString()}</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--green)">$${c.ltgp.toLocaleString()}</td>
+      <td style="text-align:center;font-size:.65rem">${c.months}</td>
+      <td>
+        <div style="display:flex;align-items:center;gap:.3rem">
+          <div style="flex:1;height:4px;background:var(--bg-hover);border-radius:2px;overflow:hidden;min-width:40px"><div style="height:100%;width:${barW}%;background:${mColor};border-radius:2px"></div></div>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.55rem;font-weight:600;color:${mColor};min-width:32px">${c.margin}%</span>
+        </div>
+      </td>
+      <td style="text-align:center">${statusBadge(c.status)}</td>
+    </tr>`;
+  }).join('');
+
+  // ── SaaS Breakdown ──
+  const saasHTML=fd.saasCategories.map(cat=>`
+    <div class="fin-saas-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">
+        <span style="font-size:.65rem;font-weight:700;color:${cat.color}">${cat.category}</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:700">$${cat.monthly}/mo</span>
+      </div>
+      <div style="height:4px;background:var(--bg-hover);border-radius:2px;overflow:hidden;margin-bottom:.45rem">
+        <div style="height:100%;width:${Math.round(cat.monthly/totalSaaS*100)}%;background:${cat.color};border-radius:2px"></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:.25rem">
+        ${cat.items.map(i=>`<span style="font-size:.46rem;padding:2px 7px;background:var(--bg-sidebar);border:1px solid var(--border-light);border-radius:8px;color:var(--text-secondary)">${i.name} <b>$${i.cost}</b>${i.note?' · '+i.note:''}</span>`).join('')}
+      </div>
+    </div>`).join('');
+
+  // ── Staff Costs ──
+  const staffHTML=fd.staffCosts.map(s=>{
+    const barW=totalStaff>0?Math.round(s.monthly/totalStaff*100):0;
+    return`<div style="display:flex;align-items:center;gap:.6rem;padding:.45rem 0;border-bottom:1px solid var(--border-light)">
+      <div style="min-width:70px"><span style="font-size:.68rem;font-weight:600">${s.name}</span><br><span style="font-size:.48rem;color:var(--text-muted)">${s.role}</span></div>
+      <div style="flex:1;height:6px;background:var(--bg-hover);border-radius:3px;overflow:hidden"><div style="height:100%;width:${barW}%;background:var(--accent);border-radius:3px"></div></div>
+      <div style="text-align:right;min-width:80px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:700">$${s.monthly.toLocaleString()}/mo</span><br>
+        <span style="font-size:.46rem;color:var(--text-muted)">$${s.allTime.toLocaleString()} all-time</span>
+      </div>
+    </div>`;
+  }).join('');
+
+  // ── Pipeline / Active Contracts ──
+  const pipelineHTML=fd.pipeline.map(p=>`
+    <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.7rem .85rem;box-shadow:var(--shadow-sm)">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.3rem">
+        <span style="font-size:.72rem;font-weight:700">${p.client}</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;color:var(--green)">${p.rate>0?'$'+p.rate.toLocaleString()+'/mo':p.currency}</span>
+      </div>
+      <div style="display:flex;gap:.4rem;flex-wrap:wrap;align-items:center">
+        <span style="font-size:.5rem;padding:2px 8px;background:var(--accent-light);border-radius:8px;color:var(--accent);font-weight:600">${p.type}</span>
+        <span style="font-size:.5rem;color:var(--text-muted)">${p.currency} · Since ${p.start}</span>
+        <span style="font-size:.5rem;color:var(--text-muted);margin-left:auto">Collected: $${p.collected.toLocaleString()}</span>
+        ${p.remaining?'<span style="font-size:.5rem;padding:2px 8px;background:var(--amber-light);border-radius:8px;color:var(--amber);font-weight:600">$'+p.remaining.toLocaleString()+' outstanding</span>':''}
+      </div>
+    </div>`).join('');
+
+  // ── Health / Hormozi Metrics ──
+  const h=fd.health;
+  const healthHTML=`
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem">
+    <div class="fin-card"><div class="fin-card-label">Total Clients</div><div class="fin-card-value" style="color:var(--blue)">${h.totalClients}</div><div class="fin-card-sub">${h.active} active · ${h.churned} churned · ${h.oneTime} project</div></div>
+    <div class="fin-card"><div class="fin-card-label">Churn Rate</div><div class="fin-card-value" style="color:${h.churnRate>40?'var(--red)':'var(--amber)'}">${h.churnRate}%</div><div class="fin-card-sub">Avg ${h.avgMonthsBeforeChurn} months before churn</div></div>
+    <div class="fin-card"><div class="fin-card-label">Avg LTGP</div><div class="fin-card-value" style="color:var(--green)">$${(h.avgLTGP/1000).toFixed(1)}K</div><div class="fin-card-sub">${h.avgMargin}% avg gross margin</div></div>
+    <div class="fin-card"><div class="fin-card-label">Revenue Split</div><div class="fin-card-value" style="color:var(--accent)">${h.clientVsPassive}</div><div class="fin-card-sub">Client vs passive · Top 3 = ${h.top3Concentration}%</div></div>
+  </div>`;
+
+  // ── Assemble ──
+  el.innerHTML=`
+  <div style="padding:1.5rem">
+    <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:1.25rem">
+      <span style="font-size:1.2rem">💰</span>
+      <h2 style="font-size:1rem;font-weight:700;letter-spacing:-.02em">Financial Overview</h2>
+      <span style="font-size:.55rem;color:var(--text-muted);margin-left:auto">From verified bank records · Updated Feb 5, 2026</span>
+    </div>
+
+    ${summaryCards}
+    ${pnlHTML}
+
+    <div class="section-heading"><span class="section-dot" style="background:var(--accent)"></span>Revenue by Client — All Time</div>
+    <div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.5rem">
+      ${clientBarsHTML}
+    </div>
+
+    <div class="section-heading"><span class="section-dot" style="background:var(--purple)"></span>Client Lifetime Gross Profit</div>
+    <div style="overflow-x:auto;margin-bottom:1.5rem">
+      <table class="fin-table">
+        <thead><tr>
+          <th>Client</th><th>Lifetime Rev</th><th>LTGP</th><th>Months</th><th>Margin</th><th>Status</th>
+        </tr></thead>
+        <tbody>${ltvRows}</tbody>
+        <tfoot><tr style="font-weight:700;border-top:2px solid var(--border)">
+          <td>Average</td>
+          <td style="font-family:'JetBrains Mono',monospace;font-size:.65rem">$${fd.health.avgLTV.toLocaleString()}</td>
+          <td style="font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--green)">$${fd.health.avgLTGP.toLocaleString()}</td>
+          <td style="text-align:center">${(fd.clientLTV.reduce((s,c)=>s+c.months,0)/fd.clientLTV.length).toFixed(1)}</td>
+          <td><span style="font-family:'JetBrains Mono',monospace;font-size:.6rem;font-weight:700;color:var(--green)">${fd.health.avgMargin}%</span></td>
+          <td></td>
+        </tr></tfoot>
+      </table>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem">
+      <div>
+        <div class="section-heading"><span class="section-dot" style="background:var(--blue)"></span>SaaS & Tooling — $${totalSaaS.toLocaleString()}/mo</div>
+        <div style="display:flex;flex-direction:column;gap:.55rem">${saasHTML}</div>
+      </div>
+      <div>
+        <div class="section-heading"><span class="section-dot" style="background:var(--accent)"></span>Staff Costs — $${totalStaff.toLocaleString()}/mo</div>
+        <div class="pnl-wrap">${staffHTML}</div>
+
+        <div class="section-heading" style="margin-top:1rem"><span class="section-dot" style="background:var(--amber)"></span>Active Contracts</div>
+        <div style="display:flex;flex-direction:column;gap:.45rem">${pipelineHTML}</div>
+      </div>
+    </div>
+
+    <div class="section-heading"><span class="section-dot" style="background:var(--red)"></span>Business Health — Hormozi Framework</div>
+    ${healthHTML}
+  </div>`;
 }
 
 // ═══════════════════════════════════
@@ -3209,6 +3494,7 @@ function toggleShowcase(){
   renderClientPipeline();
   renderYouTube();
   renderTeam();
+  renderFinances();
 }
 
 function getShowcaseData(){
@@ -3243,6 +3529,8 @@ function init(){
   renderYouTube();
   // Tab 5
   renderTeam();
+  // Tab 6
+  renderFinances();
   // Clock
   updateClock();
   setInterval(updateClock,1000);
