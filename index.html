@@ -625,20 +625,21 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 .team-stat-label{font-size:.44rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;display:block;margin-bottom:2px}
 .team-stat-value{font-size:.82rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
 /* TOOLING & P&L */
-.tooling-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.4rem;margin-bottom:1rem}
-.tool-item{display:flex;align-items:center;gap:.4rem;padding:.4rem .55rem;background:var(--bg);border:1px solid var(--border-light);border-radius:var(--radius-sm);font-size:.62rem}
-.tool-item-icon{font-size:.75rem;flex-shrink:0}
-.tool-item-name{flex:1;font-weight:500;color:var(--text)}
-.tool-item-cost{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.6rem;color:var(--text-secondary)}
-.tool-item-cat{font-size:.42rem;color:var(--text-muted);padding:1px 5px;background:var(--bg-sidebar);border-radius:8px}
-.pnl-wrap{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem;box-shadow:var(--shadow-sm);margin-bottom:1rem}
-.pnl-row{display:flex;justify-content:space-between;align-items:center;padding:.35rem 0;font-size:.7rem}
+.tooling-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem;margin-bottom:1.5rem}
+.tool-item{display:flex;align-items:center;gap:.5rem;padding:.6rem .75rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);font-size:.65rem;box-shadow:var(--shadow-sm)}
+.tool-item-icon{font-size:.85rem;flex-shrink:0}
+.tool-item-name{flex:1;font-weight:600;color:var(--text)}
+.tool-item-cost{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.68rem;color:var(--text)}
+.tool-item-cat{font-size:.46rem;color:var(--text-muted);padding:2px 7px;background:var(--bg-sidebar);border-radius:8px;white-space:nowrap}
+.pnl-wrap{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;box-shadow:var(--shadow-sm);margin-bottom:1.25rem}
+.pnl-row{display:flex;justify-content:space-between;align-items:center;padding:.55rem 0;font-size:.75rem}
 .pnl-row+.pnl-row{border-top:1px solid var(--border-light)}
-.pnl-row.total{border-top:2px solid var(--border);padding-top:.5rem;margin-top:.2rem;font-weight:700;font-size:.8rem}
-.pnl-label{color:var(--text-secondary);display:flex;align-items:center;gap:.3rem}
+.pnl-row.total{border-top:2px solid var(--border);padding-top:.65rem;margin-top:.3rem;font-weight:700;font-size:.85rem}
+.pnl-label{color:var(--text-secondary);display:flex;align-items:center;gap:.35rem}
 .pnl-amount{font-family:'JetBrains Mono',monospace;font-weight:600}
-.pnl-bar-wrap{height:28px;background:var(--bg-warm);border-radius:var(--radius);overflow:hidden;display:flex;margin-bottom:.5rem;border:1px solid var(--border-light)}
-.pnl-bar-seg{display:flex;align-items:center;justify-content:center;font-size:.45rem;font-weight:600;color:#fff;transition:width .6s ease;overflow:hidden;white-space:nowrap;padding:0 4px}
+.pnl-bar-wrap{height:36px;background:var(--bg-warm);border-radius:var(--radius);overflow:hidden;display:flex;margin-bottom:.75rem;border:1px solid var(--border-light)}
+.pnl-bar-seg{display:flex;align-items:center;justify-content:center;font-size:.5rem;font-weight:600;color:#fff;transition:width .6s ease;overflow:hidden;white-space:nowrap;padding:0 6px}
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.6rem;margin-top:.5rem}
 
 /* YOUTUBE CHANNEL METRICS */
 .yt-channel-wrap{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;margin-bottom:1.25rem;box-shadow:var(--shadow-sm)}
@@ -2706,7 +2707,7 @@ function renderTeam(){
         ${cardsHTML}
       </div>
 
-      <div class="section-heading" style="margin-top:1.25rem"><span class="section-dot" style="background:var(--blue)"></span>Tooling & Subscriptions</div>
+      <div class="section-heading" style="margin-top:2rem"><span class="section-dot" style="background:var(--blue)"></span>Tooling & Subscriptions — $${toolingCosts.reduce((s,t)=>s+t.cost,0)}/mo</div>
       <div class="tooling-grid">
         ${toolingCosts.map(t=>`<div class="tool-item"><span class="tool-item-icon">${t.icon}</span><span class="tool-item-name">${t.name}</span><span class="tool-item-cat">${t.category}</span><span class="tool-item-cost">$${t.cost}</span></div>`).join('')}
       </div>
@@ -2739,8 +2740,9 @@ function renderTeam(){
           <div class="pnl-row total"><span class="pnl-label">Net Profit</span><span class="pnl-amount" style="color:${profitColor}">$${profit.toLocaleString()} <span style="font-size:.6rem;font-weight:500">(${margin}% margin)</span></span></div>
         </div>
 
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.5rem">
-          ${businessMetrics.revenueBreakdown.map(c=>`<div style="background:var(--bg);border:1px solid var(--border-light);border-radius:var(--radius-sm);padding:.5rem .6rem;display:flex;justify-content:space-between;align-items:center"><span style="font-size:.62rem;font-weight:500">${c.client}</span><span style="font-family:'JetBrains Mono',monospace;font-size:.65rem;font-weight:600;color:var(--green)">$${c.amount.toLocaleString()}</span></div>`).join('')}
+        <div class="section-heading" style="margin-top:.75rem"><span class="section-dot" style="background:var(--amber)"></span>Revenue by Client</div>
+        <div class="rev-grid">
+          ${businessMetrics.revenueBreakdown.map(c=>`<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem .85rem;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-sm)"><span style="font-size:.7rem;font-weight:600">${c.client}</span><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;font-weight:700;color:var(--green)">$${c.amount.toLocaleString()}</span></div>`).join('')}
         </div>`;
       })()}
     </div>`;
