@@ -502,6 +502,30 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 .hd-lead-value{font-size:.52rem;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--text-secondary);flex-shrink:0;margin-right:.15rem}
 .hd-tag-priority{font-size:.42rem;font-weight:700;padding:1px 5px;border-radius:3px;background:var(--accent-light);color:var(--accent);margin-left:4px;vertical-align:middle;text-transform:uppercase;letter-spacing:.03em}
 .hd-divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--border) 20%,var(--border) 80%,transparent 100%);margin:1.25rem 0 1rem}
+/* HOME BOTTOM LAYOUT — content left, live feed right */
+.hd-bottom{display:grid;grid-template-columns:1fr 300px;gap:1rem;margin-bottom:1.25rem}
+@media(max-width:1100px){.hd-bottom{grid-template-columns:1fr 260px}}
+@media(max-width:700px){.hd-bottom{grid-template-columns:1fr}}
+.hd-feed{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:0;display:flex;flex-direction:column;max-height:600px;box-shadow:var(--shadow-sm)}
+.hd-feed-header{padding:.6rem .75rem;border-bottom:1px solid var(--border-light);display:flex;align-items:center;gap:.4rem;flex-shrink:0}
+.hd-feed-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:livePulse 2s ease-in-out infinite}
+.hd-feed-title{font-size:.65rem;font-weight:700;letter-spacing:-.01em}
+.hd-feed-count{font-size:.5rem;color:var(--text-muted);margin-left:auto;font-family:'JetBrains Mono',monospace}
+.hd-feed-list{flex:1;overflow-y:auto;padding:.4rem 0}
+.hd-feed-item{display:flex;gap:.5rem;padding:.45rem .75rem;border-bottom:1px solid var(--border-light);font-size:.58rem;align-items:flex-start;transition:background .15s}
+.hd-feed-item:last-child{border-bottom:none}
+.hd-feed-item:hover{background:var(--bg-hover)}
+.hd-feed-time{font-size:.46rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace;flex-shrink:0;min-width:38px;padding-top:1px}
+.hd-feed-icon{font-size:.7rem;flex-shrink:0}
+.hd-feed-body{flex:1;min-width:0}
+.hd-feed-agent{font-weight:600;font-size:.55rem}
+.hd-feed-text{color:var(--text-secondary);line-height:1.35;margin-top:1px}
+/* YouTube stats row on home */
+.hd-yt-row{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin-bottom:1rem}
+.hd-yt-stat{text-align:center;padding:.5rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.hd-yt-stat-val{font-size:.95rem;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--red);line-height:1}
+.hd-yt-stat-label{font-size:.46rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;margin-top:3px}
+@media(max-width:700px){.hd-yt-row{grid-template-columns:repeat(3,1fr)}}
 .hd-date-banner{font-size:.6rem;color:var(--text-muted);font-weight:500;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
 .hd-date-banner strong{color:var(--text);font-weight:700;font-size:.7rem}
 .hd-three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.75rem;margin-bottom:1.25rem}
@@ -1781,6 +1805,15 @@ function renderHome(){
 
     ${alerts.length?`<div class="hd-alerts">${alerts.join('')}</div>`:''}
 
+    <div class="hd-section-label" style="display:flex;align-items:center;gap:.4rem">\u25B6\uFE0F YouTube Channel <span style="font-size:.52rem;font-weight:500;color:var(--text-muted)">${ytChannel.handle} \u00B7 Last 30 days</span></div>
+    <div class="hd-yt-row">
+      <div class="hd-yt-stat"><div class="hd-yt-stat-val">${ytChannel.subs}</div><div class="hd-yt-stat-label">Subscribers</div></div>
+      <div class="hd-yt-stat"><div class="hd-yt-stat-val">${(ytChannel.last30.views/1000).toFixed(1)}K</div><div class="hd-yt-stat-label">Views (30d)</div></div>
+      <div class="hd-yt-stat"><div class="hd-yt-stat-val">${ytChannel.avgViewDuration}</div><div class="hd-yt-stat-label">Avg Duration</div></div>
+      <div class="hd-yt-stat"><div class="hd-yt-stat-val">${ytChannel.ctr}</div><div class="hd-yt-stat-label">CTR</div></div>
+      <div class="hd-yt-stat"><div class="hd-yt-stat-val">${ytChannel.avgViews}</div><div class="hd-yt-stat-label">Avg Views</div></div>
+    </div>
+
     <div class="hd-pipeline">
       <div class="hd-pipeline-header">
         <div class="hd-pipeline-title">Dopamine Digital Sales Pipeline</div>
@@ -1793,40 +1826,60 @@ function renderHome(){
     <div class="hd-section-label">Client Health</div>
     <div class="hd-clients">${clientCards}</div>
 
-    <div class="hd-cols">
-      <div class="hd-section">
-        <div class="hd-section-title" style="--dot-color:var(--accent)">Dopamine Digital Hot Leads <span style="font-size:.48rem;font-weight:600;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:8px;margin-left:4px">${hotLeads.length}</span></div>
-        ${leadRows||'<div style="font-size:.62rem;color:var(--text-muted);padding:.5rem 0">No hot leads in pipeline</div>'}
-      </div>
-      <div class="hd-section">
-        <div class="hd-section-title" style="--dot-color:var(--purple)">AI Agent Fleet <span style="font-size:.48rem;font-weight:600;color:var(--green);background:var(--green-light);padding:1px 6px;border-radius:8px;margin-left:4px">${liveAgents.length} live</span></div>
-        <div class="hd-agents">${agentChips}</div>
-      </div>
-    </div>
+    <div class="hd-bottom">
+      <div>
+        <div class="hd-cols" style="margin-bottom:.75rem">
+          <div class="hd-section">
+            <div class="hd-section-title" style="--dot-color:var(--accent)">Hot Leads <span style="font-size:.48rem;font-weight:600;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:8px;margin-left:4px">${hotLeads.length}</span></div>
+            ${leadRows||'<div style="font-size:.62rem;color:var(--text-muted);padding:.5rem 0">No hot leads in pipeline</div>'}
+          </div>
+          <div class="hd-section">
+            <div class="hd-section-title" style="--dot-color:var(--purple)">AI Agent Fleet <span style="font-size:.48rem;font-weight:600;color:var(--green);background:var(--green-light);padding:1px 6px;border-radius:8px;margin-left:4px">${liveAgents.length} live</span></div>
+            <div class="hd-agents">${agentChips}</div>
+          </div>
+        </div>
 
-    <div class="hd-divider"></div>
+        <div class="hd-cols" style="grid-template-columns:1fr 1fr 1fr;margin-bottom:.75rem">
+          <div class="hd-section">
+            <div class="hd-section-title" style="--dot-color:var(--green)">System Health</div>
+            <div class="hd-health-row">${healthChips}</div>
+          </div>
+          <div class="hd-section">
+            <div class="hd-section-title" style="--dot-color:var(--amber)">Content Pipeline</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
+              <div style="text-align:center;padding:.4rem;background:var(--blue-light);border-radius:6px"><div style="font-size:1rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--blue)">${youtubeData.metrics.ideas}</div><div style="font-size:.46rem;color:var(--text-muted);font-weight:600;text-transform:uppercase">Ideas</div></div>
+              <div style="text-align:center;padding:.4rem;background:var(--green-light);border-radius:6px"><div style="font-size:1rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--green)">${youtubeData.metrics.inProduction}</div><div style="font-size:.46rem;color:var(--text-muted);font-weight:600;text-transform:uppercase">Approved</div></div>
+              <div style="text-align:center;padding:.4rem;background:var(--amber-light);border-radius:6px"><div style="font-size:1rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--amber)">1</div><div style="font-size:.46rem;color:var(--text-muted);font-weight:600;text-transform:uppercase">Recording</div></div>
+              <div style="text-align:center;padding:.4rem;background:var(--accent-light);border-radius:6px"><div style="font-size:1rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--accent)">${youtubeData.metrics.posted}</div><div style="font-size:.46rem;color:var(--text-muted);font-weight:600;text-transform:uppercase">Posted</div></div>
+            </div>
+          </div>
+          <div class="hd-section">
+            <div class="hd-section-title" style="--dot-color:var(--accent)">Quick Links</div>
+            <div style="display:flex;flex-wrap:wrap;gap:4px">${quickLinks}</div>
+          </div>
+        </div>
+      </div>
 
-    <div class="hd-three-col">
-      <div class="hd-section">
-        <div class="hd-section-title" style="--dot-color:var(--blue)">Recent Activity</div>
-        <div class="hd-activity-compact">${activityRows}</div>
-      </div>
-      <div class="hd-section">
-        <div class="hd-section-title" style="--dot-color:var(--green)">System Health</div>
-        <div class="hd-health-row">${healthChips}</div>
-      </div>
-      <div class="hd-section">
-        <div class="hd-section-title" style="--dot-color:var(--amber)">Content Pipeline</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
-          <div style="text-align:center;padding:.4rem;background:var(--blue-light);border-radius:6px"><div style="font-size:1rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--blue)">${youtubeData.metrics.ideas}</div><div style="font-size:.46rem;color:var(--text-muted);font-weight:600;text-transform:uppercase">Ideas</div></div>
-          <div style="text-align:center;padding:.4rem;background:var(--green-light);border-radius:6px"><div style="font-size:1rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--green)">${youtubeData.metrics.inProduction}</div><div style="font-size:.46rem;color:var(--text-muted);font-weight:600;text-transform:uppercase">Approved</div></div>
-          <div style="text-align:center;padding:.4rem;background:var(--amber-light);border-radius:6px"><div style="font-size:1rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--amber)">1</div><div style="font-size:.46rem;color:var(--text-muted);font-weight:600;text-transform:uppercase">Recording</div></div>
-          <div style="text-align:center;padding:.4rem;background:var(--accent-light);border-radius:6px"><div style="font-size:1rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--accent)">${youtubeData.metrics.posted}</div><div style="font-size:.46rem;color:var(--text-muted);font-weight:600;text-transform:uppercase">Posted</div></div>
+      <div class="hd-feed">
+        <div class="hd-feed-header">
+          <span class="hd-feed-dot"></span>
+          <span class="hd-feed-title">Live Feed</span>
+          <span class="hd-feed-count">${_activity.length} events</span>
+        </div>
+        <div class="hd-feed-list">
+          ${_activity.slice(0,20).map(a=>{const ag=getAgent(a.agent);return`
+            <div class="hd-feed-item">
+              <span class="hd-feed-time">${a.time}</span>
+              <span class="hd-feed-icon">${ag.emoji}</span>
+              <div class="hd-feed-body">
+                <div class="hd-feed-agent" style="color:${ag.color}">${ag.name}</div>
+                <div class="hd-feed-text">${a.action} "${a.task}"</div>
+              </div>
+            </div>`;}).join('')}
+          ${alerts.map(a=>`<div class="hd-feed-item"><span class="hd-feed-time">now</span><span class="hd-feed-icon">\u26A0\uFE0F</span><div class="hd-feed-body"><div class="hd-feed-agent" style="color:var(--red)">Alert</div><div class="hd-feed-text">${a.replace(/<[^>]*>/g,'').trim()}</div></div></div>`).join('')}
         </div>
       </div>
     </div>
-
-    <div class="hd-links">${quickLinks}</div>
   `;
 }
 
