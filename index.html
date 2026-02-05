@@ -1779,7 +1779,7 @@ function renderHome(){
       </div>
       <div class="ns-insight">Funnel: ${funnelText}<span class="ns-insight-sep">|</span>Sources: ${srcParts}<span class="ns-insight-sep">|</span>~${nsPerMonth} closes/mo \u2192 ${fmtK(ns.goalMRR)} in ${ns.monthsToGoal}mo</div>
     </div>
-    <div class="hd-date-banner"><strong>${dateBanner}</strong> \u00B7 Bangkok (UTC+7)</div>
+    <div class="hd-date-banner"><strong>${dateBanner}</strong> \u00B7 Bangkok (UTC+7)${expiredClients.length?` <span style="margin-left:.5rem;display:inline-flex;gap:.3rem">${expiredClients.map(c=>`<span style="font-size:.5rem;font-weight:600;padding:2px 8px;border-radius:10px;background:var(--red-light);color:var(--red)">\u26A0 ${c.shortName} expired</span>`).join('')}</span>`:''}</div>
     <div class="hd-hero">
       <div class="hd-hero-card accent">
         <div class="hd-hero-num" style="color:var(--accent)">${d.metrics.pipelineValue}</div>
@@ -1802,8 +1802,6 @@ function renderHome(){
         <div class="hd-hero-sub"><span style="width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block;animation:livePulse 2s ease-in-out infinite"></span> ${liveAgents.map(a=>a.name).join(', ')}</div>
       </div>
     </div>
-
-    ${alerts.length?`<div class="hd-alerts">${alerts.join('')}</div>`:''}
 
     <div class="hd-section-label" style="display:flex;align-items:center;gap:.4rem">\u25B6\uFE0F YouTube Channel <span style="font-size:.52rem;font-weight:500;color:var(--text-muted)">${ytChannel.handle} \u00B7 Last 30 days</span></div>
     <div class="hd-yt-row">
