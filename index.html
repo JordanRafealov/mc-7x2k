@@ -1598,7 +1598,20 @@ const financialData={
     top3Concentration:44,clientVsPassive:'92/8',
     avgRevenuePerMonth:25759,
     costPerClientMonth:1756,
+    // CAC: est acquisition costs ($24.3K) / 13 clients
+    cac:1871,
+    ltgpCacRatio:8.5,
+    paybackDays:16,
+    avgRevenuePerClientMonth:5252,
+    monthlyGPPerClient:3496,
   },
+  // Active client profitability (monthly GP = revenue/months - cost allocation)
+  activeClientProfit:[
+    {name:'Jamie',monthlyRev:5133,monthlyCost:1756,monthlyGP:3377,margin:65.8,ltgp:10132,months:3,trend:'up',note:'Highest margin active client'},
+    {name:'Ripple',monthlyRev:3598,monthlyCost:1756,monthlyGP:1842,margin:51.2,ltgp:14733,months:8,trend:'stable',note:'Longest-running active client'},
+    {name:'Phellos',monthlyRev:2858,monthlyCost:1756,monthlyGP:1102,margin:38.6,ltgp:4406,months:4,trend:'stable',note:'£9K outstanding on contract'},
+    {name:'ODF',monthlyRev:12000,monthlyCost:1756,monthlyGP:10244,margin:85.4,ltgp:10244,months:1,trend:'new',note:'One-time project payment'},
+  ],
   // Learning & coaching (separate from SaaS)
   coaching2025:{total:36863,items:[
     {name:'Growth Partner',cost:22286},
@@ -2937,10 +2950,10 @@ function renderFinances(){
   const saasPct=m.mrr>0?Math.round(m.saasBurn/m.mrr*100):0;
   const marginPctBar=m.mrr>0?Math.max(Math.round(m.margin/m.mrr*100),0):0;
   const pnlHTML=`
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem">
-    <div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem;align-items:start">
+    <div style="display:flex;flex-direction:column">
       <div class="section-heading"><span class="section-dot" style="background:var(--green)"></span>Monthly P&L</div>
-      <div class="pnl-wrap">
+      <div class="pnl-wrap" style="flex:1;margin-bottom:0">
         <div class="pnl-bar-wrap">
           <div class="pnl-bar-seg" style="width:${staffPct}%;background:var(--accent)">Staff ${staffPct}%</div>
           <div class="pnl-bar-seg" style="width:${saasPct}%;background:var(--blue)">SaaS ${saasPct}%</div>
@@ -2952,9 +2965,12 @@ function renderFinances(){
         <div class="pnl-row total"><span class="pnl-label">Net Margin</span><span class="pnl-amount" style="color:${marginColor}">$${m.margin.toLocaleString()}/mo</span></div>
       </div>
     </div>
-    <div>
+    <div style="display:flex;flex-direction:column">
       <div class="section-heading"><span class="section-dot" style="background:var(--blue)"></span>2025 Annual Summary</div>
-      <div class="pnl-wrap">
+      <div class="pnl-wrap" style="flex:1;margin-bottom:0">
+        <div class="pnl-bar-wrap">
+          ${(()=>{const sp=Math.round(a25.staffCosts/a25.totalRevenue*100);const tp=Math.round(a25.saasCosts/a25.totalRevenue*100);const pp=Math.round(a25.grossProfit/a25.totalRevenue*100);return`<div class="pnl-bar-seg" style="width:${sp}%;background:var(--accent)">Staff ${sp}%</div><div class="pnl-bar-seg" style="width:${tp}%;background:var(--blue)">SaaS ${tp}%</div><div class="pnl-bar-seg" style="width:${pp}%;background:var(--green)">Profit ${pp}%</div>`;})()}
+        </div>
         <div class="pnl-row"><span class="pnl-label">Client Revenue</span><span class="pnl-amount" style="color:var(--green)">$${a25.clientRevenue.toLocaleString()}</span></div>
         <div class="pnl-row"><span class="pnl-label">Other Income (SKOOL/Stripe)</span><span class="pnl-amount" style="color:var(--green)">$${a25.otherIncome.toLocaleString()}</span></div>
         <div class="pnl-row"><span class="pnl-label">Staff & Contractors</span><span class="pnl-amount" style="color:var(--red)">-$${a25.staffCosts.toLocaleString()}</span></div>
@@ -3042,15 +3058,76 @@ function renderFinances(){
       </div>
     </div>`).join('');
 
-  // ── Health / Hormozi Metrics ──
+  // ── Hormozi Metrics (LTGP / CAC / Profitability) ──
   const h=fd.health;
-  const healthHTML=`
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem">
-    <div class="fin-card"><div class="fin-card-label">Total Clients</div><div class="fin-card-value" style="color:var(--blue)">${h.totalClients}</div><div class="fin-card-sub">${h.active} active · ${h.churned} churned · ${h.oneTime} project</div></div>
-    <div class="fin-card"><div class="fin-card-label">Churn Rate</div><div class="fin-card-value" style="color:${h.churnRate>40?'var(--red)':'var(--amber)'}">${h.churnRate}%</div><div class="fin-card-sub">Avg ${h.avgMonthsBeforeChurn} months before churn</div></div>
-    <div class="fin-card"><div class="fin-card-label">Avg LTGP</div><div class="fin-card-value" style="color:var(--green)">$${(h.avgLTGP/1000).toFixed(1)}K</div><div class="fin-card-sub">${h.avgMargin}% avg gross margin</div></div>
-    <div class="fin-card"><div class="fin-card-label">Revenue Split</div><div class="fin-card-value" style="color:var(--accent)">${h.clientVsPassive}</div><div class="fin-card-sub">Client vs passive · Top 3 = ${h.top3Concentration}%</div></div>
+  const cacColor=h.ltgpCacRatio>=5?'var(--green)':h.ltgpCacRatio>=3?'var(--amber)':'var(--red)';
+  const hormoziHTML=`
+  <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:.65rem;margin-bottom:1.25rem">
+    <div class="fin-card" style="border-top:3px solid var(--green)">
+      <div class="fin-card-label">Avg LTGP</div>
+      <div class="fin-card-value" style="color:var(--green)">$${(h.avgLTGP/1000).toFixed(1)}K</div>
+      <div class="fin-card-sub">Lifetime Gross Profit per client</div>
+    </div>
+    <div class="fin-card" style="border-top:3px solid var(--accent)">
+      <div class="fin-card-label">Est. CAC</div>
+      <div class="fin-card-value" style="color:var(--accent)">$${(h.cac/1000).toFixed(1)}K</div>
+      <div class="fin-card-sub">Customer Acquisition Cost</div>
+    </div>
+    <div class="fin-card" style="border-top:3px solid ${cacColor}">
+      <div class="fin-card-label">LTGP : CAC</div>
+      <div class="fin-card-value" style="color:${cacColor}">${h.ltgpCacRatio}:1</div>
+      <div class="fin-card-sub">${h.ltgpCacRatio>=5?'Excellent':'Needs work'} (target 3:1+)</div>
+    </div>
+    <div class="fin-card" style="border-top:3px solid var(--blue)">
+      <div class="fin-card-label">Payback</div>
+      <div class="fin-card-value" style="color:var(--blue)">${h.paybackDays}d</div>
+      <div class="fin-card-sub">Days to recoup CAC</div>
+    </div>
+    <div class="fin-card" style="border-top:3px solid var(--red)">
+      <div class="fin-card-label">Churn Rate</div>
+      <div class="fin-card-value" style="color:${h.churnRate>40?'var(--red)':'var(--amber)'}">${h.churnRate}%</div>
+      <div class="fin-card-sub">${h.avgMonthsBeforeChurn}mo avg tenure</div>
+    </div>
+    <div class="fin-card" style="border-top:3px solid var(--purple)">
+      <div class="fin-card-label">Cost / Client-Mo</div>
+      <div class="fin-card-value" style="color:var(--purple)">$${(h.costPerClientMonth/1000).toFixed(1)}K</div>
+      <div class="fin-card-sub">All-in delivery cost</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;margin-bottom:.5rem">
+    <div class="fin-card"><div class="fin-card-label">Total Clients</div><div class="fin-card-value" style="color:var(--blue);font-size:1rem">${h.totalClients}</div><div class="fin-card-sub">${h.active} active · ${h.churned} churned · ${h.oneTime} project</div></div>
+    <div class="fin-card"><div class="fin-card-label">Avg Rev / Client-Month</div><div class="fin-card-value" style="color:var(--green);font-size:1rem">$${h.avgRevenuePerClientMonth.toLocaleString()}</div><div class="fin-card-sub">$${h.monthlyGPPerClient.toLocaleString()}/mo GP after costs</div></div>
+    <div class="fin-card"><div class="fin-card-label">Revenue Concentration</div><div class="fin-card-value" style="color:var(--amber);font-size:1rem">${h.top3Concentration}%</div><div class="fin-card-sub">Top 3 clients · ${h.clientVsPassive} client vs passive</div></div>
   </div>`;
+
+  // ── Client Profitability Ranking (active clients) ──
+  const maxGP=Math.max(...fd.activeClientProfit.map(c=>c.monthlyGP));
+  const profitRankHTML=fd.activeClientProfit.map((c,i)=>{
+    const barW=Math.round(c.monthlyGP/maxGP*100);
+    const mColor=c.margin>=60?'var(--green)':c.margin>=45?'var(--amber)':'var(--red)';
+    const rank=i+1;
+    const medal=rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':'';
+    const trendIcon=c.trend==='up'?'📈':c.trend==='new'?'🆕':'➡️';
+    return`<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem .9rem;box-shadow:var(--shadow-sm);${rank===1?'border-left:3px solid var(--green)':''}">
+      <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.45rem">
+        <span style="font-size:.9rem">${medal}</span>
+        <span style="font-size:.78rem;font-weight:700">${c.name}</span>
+        <span style="font-size:.52rem;color:var(--text-muted)">${trendIcon} ${c.note}</span>
+        <div style="margin-left:auto;display:flex;align-items:baseline;gap:.6rem">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--text-muted)">$${c.monthlyRev.toLocaleString()}/mo rev</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--red)">-$${c.monthlyCost.toLocaleString()} cost</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.78rem;font-weight:800;color:var(--green)">$${c.monthlyGP.toLocaleString()}/mo</span>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:.5rem">
+        <div style="flex:1;height:8px;background:var(--bg-hover);border-radius:4px;overflow:hidden">
+          <div style="height:100%;width:${barW}%;background:${mColor};border-radius:4px;transition:width .6s ease"></div>
+        </div>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:.58rem;font-weight:700;color:${mColor};min-width:45px">${c.margin}%</span>
+        <span style="font-size:.48rem;color:var(--text-muted)">LTGP $${c.ltgp.toLocaleString()} · ${c.months}mo</span>
+      </div>
+    </div>`;
+  }).join('');
 
   // ── Assemble ──
   el.innerHTML=`
@@ -3101,8 +3178,13 @@ function renderFinances(){
       </div>
     </div>
 
-    <div class="section-heading"><span class="section-dot" style="background:var(--red)"></span>Business Health — Hormozi Framework</div>
-    ${healthHTML}
+    <div class="section-heading"><span class="section-dot" style="background:var(--accent)"></span>Hormozi Framework — LTGP / CAC / Unit Economics</div>
+    ${hormoziHTML}
+
+    <div class="section-heading"><span class="section-dot" style="background:var(--green)"></span>Client Profitability Ranking — Active Clients</div>
+    <div style="display:flex;flex-direction:column;gap:.45rem;margin-bottom:1.5rem">
+      ${profitRankHTML}
+    </div>
   </div>`;
 }
 
