@@ -624,19 +624,19 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 .pipeline-vel-sub{font-size:.46rem;color:var(--text-secondary);margin-top:1px}
 
 /* TEAM OPERATIONS TAB */
-.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem;margin-bottom:1.25rem}
-.team-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;box-shadow:var(--shadow-sm);transition:transform .15s,box-shadow .15s;border-top:3px solid var(--team-color,var(--accent))}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.85rem;margin-bottom:1.25rem}
+.team-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;box-shadow:var(--shadow-sm);transition:transform .15s,box-shadow .15s;border-top:3px solid var(--accent);overflow:visible}
 .team-card:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.08)}
 .team-card-top{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
 .team-card-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;flex-shrink:0}
 .team-card-info{flex:1}
 .team-card-name{font-size:.82rem;font-weight:700}
 .team-card-role{font-size:.58rem;color:var(--text-muted)}
-.team-card-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.35rem}
+.team-card-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.45rem;margin-bottom:.1rem}
 .team-card-stat{text-align:center;padding:.3rem;background:var(--bg-warm);border-radius:var(--radius-sm)}
 .team-card-stat-val{font-size:.85rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
 .team-card-stat-label{font-size:.44rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
-.team-card-capacity{margin-top:.5rem}
+.team-card-capacity{margin-top:.6rem;padding-top:.5rem;border-top:1px solid var(--border-light)}
 .team-card-capacity-fill{height:100%;border-radius:2px;transition:width .6s}
 .team-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;margin-bottom:1rem}
 .team-summary-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem;text-align:center;box-shadow:var(--shadow-sm)}
@@ -1454,11 +1454,11 @@ const CLICKUP_WS='9018484779';
 
 // Team data
 const teamMembers=[
-  {name:'Angela',initials:'AP',role:'Operations Manager',color:'#e05d2a',rate:'$3K/mo',monthlyCost:3000,channel:'#angela-management',channelId:'C0000ANGELA',clients:['Jamie','Phellos','ODF','Ocon','Ripple'],avgHours:7.2,activity:89,tasks:12,capacity:85},
-  {name:'Filip',initials:'FK',role:'Content & Lead Management',color:'#3b7dd8',rate:'$1.5K/mo',monthlyCost:1500,channel:'#filip-management',channelId:'C0000FILIP',clients:['Jamie','ODF','Ripple'],avgHours:6.8,activity:82,tasks:8,capacity:72},
-  {name:'Sophia',initials:'SM',role:'Inbox Manager',color:'#7c5cbf',rate:'$1K/mo',monthlyCost:1000,channel:'#sophia-management',channelId:'C0000SOPHIA',clients:['Jamie','Phellos','ODF','Ocon'],avgHours:5.1,activity:91,tasks:15,capacity:90},
-  {name:'Rodney',initials:'RV',role:'Video Editing',color:'#2d9f4e',rate:'Variable',monthlyCost:0,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:4.5,activity:78,tasks:4,capacity:55},
-  {name:'Archit',initials:'AR',role:'Video Editing',color:'#c78b1a',rate:'$150/vid × 3/wk',monthlyCost:1800,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:3.8,activity:85,tasks:3,capacity:70},
+  {name:'Angela',initials:'AP',role:'Operations Manager',color:'#e05d2a',rate:'$2,674/mo',monthlyCost:2674,channel:'#angela-management',channelId:'C0000ANGELA',clients:['Jamie','Phellos','ODF','Ocon','Ripple'],avgHours:7.2,activity:89,tasks:12,capacity:85},
+  {name:'Filip',initials:'FK',role:'Content & Lead Management',color:'#3b7dd8',rate:'$532/mo',monthlyCost:532,channel:'#filip-management',channelId:'C0000FILIP',clients:['Jamie','ODF','Ripple'],avgHours:6.8,activity:82,tasks:8,capacity:72},
+  {name:'Sophia',initials:'SM',role:'Inbox Manager',color:'#7c5cbf',rate:'$1,168/mo',monthlyCost:1168,channel:'#sophia-management',channelId:'C0000SOPHIA',clients:['Jamie','Phellos','ODF','Ocon'],avgHours:5.1,activity:91,tasks:15,capacity:90},
+  {name:'Rodney',initials:'RV',role:'Video Editing',color:'#2d9f4e',rate:'$1,077/mo',monthlyCost:1077,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:4.5,activity:78,tasks:4,capacity:55},
+  {name:'Archit',initials:'AR',role:'YouTube Strategy',color:'#c78b1a',rate:'$1,910/mo',monthlyCost:1910,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:3.8,activity:85,tasks:3,capacity:70},
 ];
 
 // Tooling costs
@@ -1479,13 +1479,12 @@ const toolingCosts=[
 
 // Revenue & P&L
 const businessMetrics={
-  monthlyRevenue:18000,
+  monthlyRevenue:14620,
   revenueBreakdown:[
-    {client:'Jamie',amount:4000},
-    {client:'Phellos',amount:3500},
-    {client:'ODF',amount:3500},
-    {client:'Ocon',amount:3500},
-    {client:'Ripple',amount:3500},
+    {client:'Jamie',amount:3810,tooling:[{name:'Instantly',cost:24},{name:'HeyReach',cost:20},{name:'LinkedIn SN',cost:100},{name:'Clay credits',cost:75},{name:'MillionVerifier',cost:9}],teamHours:{angela:8,filip:6,sophia:4}},
+    {client:'Phellos',amount:3810,tooling:[{name:'Instantly',cost:24},{name:'HeyReach',cost:20},{name:'Clay credits',cost:75},{name:'MillionVerifier',cost:9}],teamHours:{angela:7,sophia:4}},
+    {client:'Media Place',amount:3500,tooling:[{name:'Instantly',cost:24},{name:'HeyReach',cost:20},{name:'Clay credits',cost:75},{name:'MillionVerifier',cost:9}],teamHours:{angela:7,filip:4}},
+    {client:'Ripple',amount:3500,tooling:[{name:'Instantly',cost:24},{name:'HeyReach',cost:20},{name:'Clay credits',cost:75},{name:'MillionVerifier',cost:9}],teamHours:{angela:6,filip:4}},
   ],
   jordanDraw:5000,
 };
@@ -2794,9 +2793,29 @@ function renderTeam(){
           <div class="pnl-row total"><span class="pnl-label">Net Profit</span><span class="pnl-amount" style="color:${profitColor}">$${profit.toLocaleString()} <span style="font-size:.6rem;font-weight:500">(${margin}% margin)</span></span></div>
         </div>
 
-        <div class="section-heading" style="margin-top:.75rem"><span class="section-dot" style="background:var(--amber)"></span>Revenue by Client</div>
-        <div class="rev-grid">
-          ${businessMetrics.revenueBreakdown.map(c=>`<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem .85rem;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-sm)"><span style="font-size:.7rem;font-weight:600">${c.client}</span><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;font-weight:700;color:var(--green)">$${c.amount.toLocaleString()}</span></div>`).join('')}
+        <div class="section-heading" style="margin-top:.75rem"><span class="section-dot" style="background:var(--amber)"></span>Client Profitability</div>
+        <div style="display:flex;flex-direction:column;gap:.5rem">
+          ${businessMetrics.revenueBreakdown.map(c=>{
+            const cToolCost=c.tooling?c.tooling.reduce((s,t)=>s+t.cost,0):0;
+            const cProfit=c.amount-cToolCost;
+            const cMargin=c.amount>0?Math.round((cProfit/c.amount)*100):0;
+            return`<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.7rem .85rem;box-shadow:var(--shadow-sm)">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
+                <span style="font-size:.72rem;font-weight:700">${c.client}</span>
+                <div style="display:flex;gap:.6rem;align-items:center">
+                  <span style="font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--red)">-$${cToolCost} tools</span>
+                  <span style="font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;color:var(--green)">$${c.amount.toLocaleString()}</span>
+                </div>
+              </div>
+              <div style="display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.35rem">
+                ${(c.tooling||[]).map(t=>`<span style="font-size:.42rem;padding:2px 6px;background:var(--bg-sidebar);border:1px solid var(--border-light);border-radius:8px;color:var(--text-muted)">${t.name} $${t.cost}</span>`).join('')}
+              </div>
+              <div style="display:flex;align-items:center;gap:.4rem">
+                <div style="flex:1;height:5px;background:var(--bg-hover);border-radius:3px;overflow:hidden"><div style="height:100%;width:${cMargin}%;background:var(--green);border-radius:3px"></div></div>
+                <span style="font-size:.5rem;font-weight:600;color:var(--green);font-family:'JetBrains Mono',monospace">${cMargin}% margin</span>
+              </div>
+            </div>`;
+          }).join('')}
         </div>`;
       })()}
     </div>`;
