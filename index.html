@@ -609,7 +609,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 .team-card-stat{text-align:center;padding:.3rem;background:var(--bg-warm);border-radius:var(--radius-sm)}
 .team-card-stat-val{font-size:.85rem;font-weight:700;font-family:'JetBrains Mono',monospace;line-height:1}
 .team-card-stat-label{font-size:.44rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
-.team-card-capacity{height:4px;background:var(--bg-hover);border-radius:2px;margin-top:.5rem;overflow:hidden}
+.team-card-capacity{margin-top:.5rem}
 .team-card-capacity-fill{height:100%;border-radius:2px;transition:width .6s}
 .team-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;margin-bottom:1rem}
 .team-summary-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem;text-align:center;box-shadow:var(--shadow-sm)}
@@ -1406,10 +1406,11 @@ const CLICKUP_WS='9018484779';
 
 // Team data
 const teamMembers=[
-  {name:'Angela',initials:'AP',role:'Operations Manager',color:'#e05d2a',rate:'$3K/mo',channel:'#angela-management',channelId:'C0000ANGELA',clients:['Jamie','Phellos','ODF','Ocon','Ripple'],avgHours:7.2,activity:89,tasks:12,capacity:85},
-  {name:'Filip',initials:'FK',role:'Content & Lead Management',color:'#3b7dd8',rate:'$1.5K/mo',channel:'#filip-management',channelId:'C0000FILIP',clients:['Jamie','ODF','Ripple'],avgHours:6.8,activity:82,tasks:8,capacity:72},
-  {name:'Sophia',initials:'SM',role:'Inbox Manager',color:'#7c5cbf',rate:'$1K/mo',channel:'#sophia-management',channelId:'C0000SOPHIA',clients:['Jamie','Phellos','ODF','Ocon'],avgHours:5.1,activity:91,tasks:15,capacity:90},
-  {name:'Rodney',initials:'RV',role:'Video Editing',color:'#2d9f4e',rate:'Variable',channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:4.5,activity:78,tasks:4,capacity:55},
+  {name:'Angela',initials:'AP',role:'Operations Manager',color:'#e05d2a',rate:'$3K/mo',monthlyCost:3000,channel:'#angela-management',channelId:'C0000ANGELA',clients:['Jamie','Phellos','ODF','Ocon','Ripple'],avgHours:7.2,activity:89,tasks:12,capacity:85},
+  {name:'Filip',initials:'FK',role:'Content & Lead Management',color:'#3b7dd8',rate:'$1.5K/mo',monthlyCost:1500,channel:'#filip-management',channelId:'C0000FILIP',clients:['Jamie','ODF','Ripple'],avgHours:6.8,activity:82,tasks:8,capacity:72},
+  {name:'Sophia',initials:'SM',role:'Inbox Manager',color:'#7c5cbf',rate:'$1K/mo',monthlyCost:1000,channel:'#sophia-management',channelId:'C0000SOPHIA',clients:['Jamie','Phellos','ODF','Ocon'],avgHours:5.1,activity:91,tasks:15,capacity:90},
+  {name:'Rodney',initials:'RV',role:'Video Editing',color:'#2d9f4e',rate:'Variable',monthlyCost:0,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:4.5,activity:78,tasks:4,capacity:55},
+  {name:'Archit',initials:'AR',role:'Video Editing',color:'#c78b1a',rate:'$150/vid × 3/wk',monthlyCost:1800,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:3.8,activity:85,tasks:3,capacity:70},
 ];
 
 // YouTube channel data
@@ -2560,7 +2561,7 @@ function renderYouTube(){
 function renderTeam(){
   const el=document.getElementById('team-content');
   const tm=teamMembers;
-  const totalCost=tm.reduce((s,m)=>{const n=parseFloat(m.rate.replace(/[^0-9.]/g,''));return s+(isNaN(n)?0:n)},0);
+  const totalCost=tm.reduce((s,m)=>s+(m.monthlyCost||0),0);
   const avgActivity=Math.round(tm.reduce((s,m)=>s+m.activity,0)/tm.length);
   const totalTasks=tm.reduce((s,m)=>s+m.tasks,0);
   const avgCapacity=Math.round(tm.reduce((s,m)=>s+m.capacity,0)/tm.length);
@@ -2597,7 +2598,7 @@ function renderTeam(){
     const capColor=m.capacity>=80?'var(--green)':m.capacity>=60?'var(--amber)':'var(--red)';
     const capWidth=Math.min(m.capacity,100);
     return `
-    <div class="team-card">
+    <div class="team-card" style="border-top-color:${m.color}">
       <div class="team-card-top">
         <div class="team-card-avatar" style="background:${m.color}">${m.initials}</div>
         <div>
