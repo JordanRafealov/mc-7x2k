@@ -1482,17 +1482,57 @@ const CLICKUP_WS='9018484779';
 
 // Team data
 const teamMembers=[
-  {name:'Angela',initials:'AP',role:'Operations Manager',color:'#e05d2a',rate:'$2,674/mo',monthlyCost:2674,channel:'#angela-management',channelId:'C0000ANGELA',clients:['Jamie','Phellos','ODF','Ocon','Ripple'],avgHours:7.2,activity:89,tasks:12,capacity:85},
-  {name:'Filip',initials:'FK',role:'Content & Lead Management',color:'#3b7dd8',rate:'$532/mo',monthlyCost:532,channel:'#filip-management',channelId:'C0000FILIP',clients:['Jamie','ODF','Ripple'],avgHours:6.8,activity:82,tasks:8,capacity:72},
-  {name:'Sophia',initials:'SM',role:'Inbox Manager',color:'#7c5cbf',rate:'$1,168/mo',monthlyCost:1168,channel:'#sophia-management',channelId:'C0000SOPHIA',clients:['Jamie','Phellos','ODF','Ocon'],avgHours:5.1,activity:91,tasks:15,capacity:90},
-  {name:'Rodney',initials:'RV',role:'Video Editing',color:'#2d9f4e',rate:'$1,077/mo',monthlyCost:1077,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:4.5,activity:78,tasks:4,capacity:55},
-  {name:'Archit',initials:'AR',role:'YouTube Strategy',color:'#c78b1a',rate:'$1,910/mo',monthlyCost:1910,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:3.8,activity:85,tasks:3,capacity:70},
+  {name:'Angela',initials:'AP',role:'Operations Manager',color:'#e05d2a',rate:'$2,674/mo',monthlyCost:2674,channel:'#angela-management',channelId:'C0000ANGELA',clients:['Jamie','Phellos','ODF','Ocon','Ripple'],avgHours:10.7,activity:74,tasks:11,capacity:100,totalHoursWeek:42.9,daysTracked:4},
+  {name:'Filip',initials:'FK',role:'Content & Lead Management',color:'#3b7dd8',rate:'$532/mo',monthlyCost:532,channel:'#filip-management',channelId:'C0000FILIP',clients:['Jamie','ODF','Ripple'],avgHours:8.4,activity:59,tasks:4,capacity:100,totalHoursWeek:33.7,daysTracked:4},
+  {name:'Sophia',initials:'SM',role:'Inbox Manager',color:'#7c5cbf',rate:'$1,168/mo',monthlyCost:1168,channel:'#sophia-management',channelId:'C0000SOPHIA',clients:['Jamie','Phellos','ODF','Ocon'],avgHours:6.0,activity:74,tasks:2,capacity:75,totalHoursWeek:24.0,daysTracked:4},
+  {name:'Rodney',initials:'RV',role:'Video Editing',color:'#2d9f4e',rate:'$1,077/mo',monthlyCost:1077,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:6.2,activity:64,tasks:9,capacity:78,totalHoursWeek:24.7,daysTracked:4},
+  {name:'Archit',initials:'AR',role:'YouTube Strategy',color:'#c78b1a',rate:'$1,910/mo',monthlyCost:1910,channel:'#rodney-management',channelId:'C0000RODNEY',clients:['YouTube'],avgHours:3.8,activity:85,tasks:3,capacity:70,totalHoursWeek:0,daysTracked:0},
 ];
+
+// Team insights — sourced from Hubstaff, ClickUp, Slack (Feb 2–6, 2026)
+const teamInsights={
+  weekOf:'Feb 2–8, 2026',
+  source:'Hubstaff daily_activities + ClickUp tasks + Slack #team-logs',
+  dailyHours:{
+    Angela:[10.6,11.0,10.5,10.8],
+    Filip:[8.5,8.1,9.6,7.5],
+    Sophia:[6.0,6.0,6.0,6.0],
+    Rodney:[7.2,5.8,5.9,6.7],
+  },
+  dailyActivity:{
+    Angela:[72,78,73,72],
+    Filip:[56,71,58,51],
+    Sophia:[75,73,74,73],
+    Rodney:[60,61,69,65],
+  },
+  completedTasks:{
+    Angela:{count:11,items:['Debug KPIs dashboard','Record Ocon videos','Edit ODF Clip','Automate team KPIs','Update campaign settings','Instantly agent debugging','Create recap docs','Lead gen reports','Scheduler config','ClickUp cleanup','Team status updates']},
+    Filip:{count:4,items:['Lead campaigns Ocon/ODF','Podcast prep materials','Job description task','Content distribution']},
+    Sophia:{count:2,items:['Prepare 2 podcast episodes','Inbox management']},
+    Rodney:{count:9,items:['15 shorts from 3 long-form videos','5 podcast episode edits','Thumbnail batch','Export formats fix']},
+  },
+  totalTasks:{Angela:77,Filip:68,Sophia:51,Rodney:45},
+  alerts:[
+    {type:'error',member:'Angela',text:'Instantly Reply Agent ODF — recurring debugging across multiple days',icon:'🔴'},
+    {type:'error',member:null,text:'Card declined on Instantly upgrade — billing needs attention',icon:'🔴'},
+    {type:'warning',member:null,text:'Claude API limits blocking automation testing',icon:'🟡'},
+    {type:'warning',member:'Rodney',text:'Riverside/Zencastr import issues — affecting workflow',icon:'🟡'},
+    {type:'warning',member:'Sophia',text:'Angela flagged: "are you back from your break? I\'m still waiting for your call"',icon:'🟡'},
+    {type:'info',member:null,text:'Leads requesting published podcast links before booking — no episodes live yet',icon:'🔵'},
+  ],
+  gaps:[
+    {member:'Sophia',issue:'Only 2 tasks completed vs 51 total — lowest completion rate (3.9%)',severity:'high',suggestion:'Review workload and priorities in next 1:1'},
+    {member:'Sophia',issue:'Exactly 6.0h every single day — possible timer cap or auto-stop',severity:'medium',suggestion:'Check Hubstaff timer settings'},
+    {member:'Filip',issue:'Activity 59% — lowest on team, inconsistent tracking patterns',severity:'medium',suggestion:'Review screen time vs tracked time'},
+    {member:null,issue:'No published podcast links — leads asking for episodes before booking calls',severity:'high',suggestion:'Prioritize getting first episodes published'},
+    {member:'Angela',issue:'10.7h/day avg — potential burnout risk, working 34% over standard',severity:'medium',suggestion:'Review task load and delegation opportunities'},
+  ],
+};
 
 // ─── FINANCIAL DATA (from verified bank records — Feb 5, 2026) ───
 const financialData={
   // Annual summaries
-  annual2025:{totalRevenue:305706,clientRevenue:280187,otherIncome:25519,staffCosts:67206,saasCosts:27604,grossProfit:210896,margin:69.0},
+  annual2025:{totalRevenue:300706,clientRevenue:275187,otherIncome:25519,staffCosts:67206,saasCosts:27604,grossProfit:205896,margin:68.5},
   ytd2026:{totalRevenue:6308,clientRevenue:3810,otherIncome:2498,staffCosts:7592,saasCosts:6228},
   // Current monthly burn
   monthly:{staffBurn:7361,saasBurn:2448,totalBurn:9809,mrr:12457,margin:2648},
@@ -1509,7 +1549,7 @@ const financialData={
     {name:'Banzai',total:14600,months:1,payments:3,status:'churned',period:'Jul 2025',color:'var(--gray)'},
     {name:'ODF',total:12000,months:3,payments:1,status:'active',period:'Oct 2025–Jan 2026',color:'var(--green)'},
     {name:'Phellos',total:11430,months:4,payments:3,status:'active',period:'Oct 2025–',color:'var(--green)'},
-    {name:'Quercetin',total:5000,months:1,payments:1,status:'one-time',period:'Jun 2025',color:'var(--blue)'},
+
     {name:'Callida',total:3810,months:1,payments:1,status:'churned',period:'Jul 2025',color:'var(--gray)'},
   ],
   // Client LTV with LTGP (lifetime gross profit)
@@ -1525,7 +1565,7 @@ const financialData={
     {name:'Banzai',revenue:14600,months:1,ltgp:12844,margin:88.0,status:'churned'},
     {name:'ODF',revenue:12000,months:3,ltgp:6732,margin:56.1,status:'active'},
     {name:'Phellos',revenue:11430,months:4,ltgp:4406,margin:38.6,status:'active'},
-    {name:'Quercetin',revenue:5000,months:1,ltgp:3244,margin:64.9,status:'one-time'},
+
     {name:'Callida',revenue:3810,months:1,ltgp:2054,margin:53.9,status:'churned'},
   ],
   // Active pipeline
@@ -1592,17 +1632,17 @@ const financialData={
   ],
   // Hormozi / health metrics
   health:{
-    totalClients:13,active:4,churned:7,oneTime:2,
-    churnRate:54,avgMonthsBeforeChurn:5.2,
-    avgLTV:23705,avgLTGP:14963,avgMargin:56.8,
-    top3Concentration:44,clientVsPassive:'91/9',
-    avgRevenuePerMonth:25476,
+    totalClients:12,active:4,churned:7,oneTime:1,
+    churnRate:58,avgMonthsBeforeChurn:5.5,
+    avgLTV:25597,avgLTGP:15939,avgMargin:56.1,
+    top3Concentration:50,clientVsPassive:'92/8',
+    avgRevenuePerMonth:25059,
     costPerClientMonth:1756,
     cac:1871,
-    ltgpCacRatio:8.0,
-    paybackDays:20,
-    avgRevenuePerClientMonth:4599,
-    monthlyGPPerClient:2843,
+    ltgpCacRatio:8.5,
+    paybackDays:19,
+    avgRevenuePerClientMonth:4654,
+    monthlyGPPerClient:2898,
   },
   // Active client profitability (monthly GP = revenue/months - cost allocation)
   activeClientProfit:[
@@ -2825,11 +2865,15 @@ function renderYouTube(){
 function renderTeam(){
   const el=document.getElementById('team-content');
   const tm=teamMembers;
+  const ti=teamInsights;
   const totalCost=tm.reduce((s,m)=>s+(m.monthlyCost||0),0);
-  const avgActivity=Math.round(tm.reduce((s,m)=>s+m.activity,0)/tm.length);
-  const totalTasks=tm.reduce((s,m)=>s+m.tasks,0);
-  const avgCapacity=Math.round(tm.reduce((s,m)=>s+m.capacity,0)/tm.length);
-  const avgHours=(tm.reduce((s,m)=>s+m.avgHours,0)/tm.length).toFixed(1);
+  const trackedMembers=tm.filter(m=>m.daysTracked>0);
+  const avgActivity=Math.round(trackedMembers.reduce((s,m)=>s+m.activity,0)/trackedMembers.length);
+  const totalTasksDone=trackedMembers.reduce((s,m)=>s+m.tasks,0);
+  const totalTasksAll=Object.values(ti.totalTasks).reduce((s,v)=>s+v,0);
+  const avgHours=(trackedMembers.reduce((s,m)=>s+m.avgHours,0)/trackedMembers.length).toFixed(1);
+  const totalHoursWeek=trackedMembers.reduce((s,m)=>s+(m.totalHoursWeek||0),0).toFixed(1);
+  const costPerHour=totalHoursWeek>0?(totalCost/(totalHoursWeek*4.33)).toFixed(2):'—';
 
   // Summary cards
   const summaryHTML=`
@@ -2840,27 +2884,35 @@ function renderTeam(){
       </div>
       <div class="team-summary-card">
         <div class="summary-label">Avg Activity</div>
-        <div class="summary-value" style="color:${avgActivity>=85?'var(--green)':avgActivity>=70?'var(--amber)':'var(--red)'};font-family:'JetBrains Mono',monospace">${avgActivity}%</div>
+        <div class="summary-value" style="color:${avgActivity>=75?'var(--green)':avgActivity>=60?'var(--amber)':'var(--red)'};font-family:'JetBrains Mono',monospace">${avgActivity}%</div>
       </div>
       <div class="team-summary-card">
-        <div class="summary-label">Active Tasks</div>
-        <div class="summary-value" style="color:var(--blue);font-family:'JetBrains Mono',monospace">${totalTasks}</div>
-      </div>
-      <div class="team-summary-card">
-        <div class="summary-label">Avg Capacity</div>
-        <div class="summary-value" style="color:${avgCapacity>=80?'var(--green)':avgCapacity>=60?'var(--amber)':'var(--red)'};font-family:'JetBrains Mono',monospace">${avgCapacity}%</div>
+        <div class="summary-label">Tasks Done / Total</div>
+        <div class="summary-value" style="color:var(--blue);font-family:'JetBrains Mono',monospace">${totalTasksDone} <span style="font-size:.65rem;color:var(--text-muted)">/ ${totalTasksAll}</span></div>
       </div>
       <div class="team-summary-card">
         <div class="summary-label">Avg Daily Hours</div>
         <div class="summary-value" style="color:var(--purple);font-family:'JetBrains Mono',monospace">${avgHours}h</div>
       </div>
+      <div class="team-summary-card">
+        <div class="summary-label">Week Total</div>
+        <div class="summary-value" style="color:var(--green);font-family:'JetBrains Mono',monospace">${totalHoursWeek}h</div>
+        <div style="font-size:.46rem;color:var(--text-muted);margin-top:2px">4 days tracked</div>
+      </div>
     </div>`;
 
-  // Team member cards
+  // Team member cards (enhanced)
+  const dayLabels=['Mon','Tue','Wed','Thu'];
   const cardsHTML=tm.map(m=>{
-    const actColor=m.activity>=85?'var(--green)':m.activity>=70?'var(--amber)':'var(--red)';
-    const capColor=m.capacity>=80?'var(--green)':m.capacity>=60?'var(--amber)':'var(--red)';
-    const capWidth=Math.min(m.capacity,100);
+    const actColor=m.activity>=75?'var(--green)':m.activity>=60?'var(--amber)':'var(--red)';
+    const hoursColor=m.avgHours>=9?'var(--amber)':m.avgHours>=7?'var(--green)':'var(--text)';
+    const dailyH=ti.dailyHours[m.name]||[];
+    const dailyA=ti.dailyActivity[m.name]||[];
+    const ct=ti.completedTasks[m.name]||{count:0,items:[]};
+    const tt=ti.totalTasks[m.name]||0;
+    const completionRate=tt>0?Math.round(ct.count/tt*100):0;
+    const compColor=completionRate>=15?'var(--green)':completionRate>=8?'var(--amber)':'var(--red)';
+    const maxH=Math.max(...(dailyH.length?dailyH:[8]));
     return `
     <div class="team-card" style="border-top-color:${m.color}">
       <div class="team-card-top">
@@ -2881,22 +2933,40 @@ function renderTeam(){
           <span class="team-stat-value" style="color:${actColor}">${m.activity}%</span>
         </div>
         <div class="team-stat-item">
-          <span class="team-stat-label">Daily Avg</span>
-          <span class="team-stat-value">${m.avgHours}h</span>
+          <span class="team-stat-label">Avg Hours</span>
+          <span class="team-stat-value" style="color:${hoursColor}">${m.avgHours}h</span>
         </div>
         <div class="team-stat-item">
-          <span class="team-stat-label">Tasks</span>
-          <span class="team-stat-value" style="color:var(--blue)">${m.tasks}</span>
+          <span class="team-stat-label">Tasks Done</span>
+          <span class="team-stat-value" style="color:var(--blue)">${ct.count}</span>
         </div>
       </div>
 
-      <div class="team-card-capacity">
+      ${dailyH.length?`<div style="margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--border-light)">
         <div style="display:flex;justify-content:space-between;margin-bottom:4px">
-          <span style="font-size:.55rem;color:var(--text-muted)">Capacity</span>
-          <span style="font-size:.55rem;font-weight:600;color:${capColor}">${m.capacity}%</span>
+          <span style="font-size:.46rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.03em">Daily Hours This Week</span>
+          <span style="font-size:.46rem;font-weight:600;color:var(--text-secondary)">${m.totalHoursWeek}h total</span>
         </div>
-        <div style="height:6px;background:var(--bg-hover);border-radius:3px;overflow:hidden">
-          <div style="height:100%;width:${capWidth}%;background:${capColor};border-radius:3px;transition:width .6s ease"></div>
+        <div style="display:flex;gap:3px;align-items:end;height:32px">
+          ${dailyH.map((h,i)=>{
+            const barH=maxH>0?Math.round(h/maxH*100):0;
+            const aColor=dailyA[i]>=75?'var(--green)':dailyA[i]>=60?'var(--amber)':'var(--red)';
+            return`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:1px">
+              <span style="font-size:.4rem;font-weight:600;color:var(--text-secondary)">${h}h</span>
+              <div style="width:100%;height:${barH}%;min-height:2px;background:${m.color};border-radius:2px;opacity:.8"></div>
+              <span style="font-size:.38rem;color:var(--text-muted)">${dayLabels[i]}</span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>`:'<div style="margin-top:.5rem;padding:.4rem;text-align:center;font-size:.5rem;color:var(--text-muted);background:var(--bg-warm);border-radius:var(--radius-sm)">No Hubstaff data this week</div>'}
+
+      <div style="margin-top:.5rem;padding-top:.4rem;border-top:1px solid var(--border-light)">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px">
+          <span style="font-size:.46rem;color:var(--text-muted)">Task Completion</span>
+          <span style="font-size:.46rem;font-weight:600;color:${compColor}">${ct.count}/${tt} (${completionRate}%)</span>
+        </div>
+        <div style="height:5px;background:var(--bg-hover);border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:${Math.min(completionRate,100)}%;background:${compColor};border-radius:3px;transition:width .6s ease"></div>
         </div>
       </div>
 
@@ -2906,16 +2976,141 @@ function renderTeam(){
     </div>`;
   }).join('');
 
+  // Weekly performance comparison table
+  const perfRows=tm.filter(m=>m.daysTracked>0).map(m=>{
+    const ct=ti.completedTasks[m.name]||{count:0};
+    const tt=ti.totalTasks[m.name]||0;
+    const taskRate=tt>0?(ct.count/tt*100).toFixed(1):0;
+    const costPerTask=ct.count>0?Math.round(m.monthlyCost/4/Math.max(ct.count,1)):0;
+    const costPerHr=m.totalHoursWeek>0?(m.monthlyCost/(m.totalHoursWeek*4.33)).toFixed(2):'—';
+    const actColor=m.activity>=75?'var(--green)':m.activity>=60?'var(--amber)':'var(--red)';
+    const taskColor=taskRate>=15?'var(--green)':taskRate>=8?'var(--amber)':'var(--red)';
+    return`<tr>
+      <td style="font-weight:600;font-size:.65rem"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${m.color};margin-right:.3rem"></span>${m.name}</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.62rem">${m.totalHoursWeek}h</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.62rem">${m.avgHours}h</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.62rem;color:${actColor}">${m.activity}%</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.62rem">${ct.count} <span style="color:var(--text-muted)">/ ${tt}</span></td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.62rem;color:${taskColor}">${taskRate}%</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.62rem">$${costPerTask}</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.62rem">$${costPerHr}</td>
+    </tr>`;
+  }).join('');
+
+  const perfTable=`
+    <div style="overflow-x:auto;margin-bottom:1.5rem">
+      <table class="fin-table" style="width:100%">
+        <thead><tr>
+          <th>Member</th><th>Week Hours</th><th>Avg/Day</th><th>Activity</th><th>Tasks Done</th><th>Completion</th><th>Cost/Task</th><th>Cost/Hour</th>
+        </tr></thead>
+        <tbody>${perfRows}</tbody>
+      </table>
+    </div>`;
+
+  // Activity heatmap
+  const heatmapHTML=`
+    <div style="margin-bottom:1.5rem">
+      <table style="width:100%;border-collapse:collapse">
+        <thead><tr>
+          <th style="text-align:left;font-size:.5rem;color:var(--text-muted);padding:4px 8px;font-weight:600">MEMBER</th>
+          ${dayLabels.map(d=>`<th style="text-align:center;font-size:.5rem;color:var(--text-muted);padding:4px;font-weight:600">${d}</th>`).join('')}
+          <th style="text-align:center;font-size:.5rem;color:var(--text-muted);padding:4px 8px;font-weight:600">AVG</th>
+        </tr></thead>
+        <tbody>
+          ${tm.filter(m=>ti.dailyActivity[m.name]).map(m=>{
+            const da=ti.dailyActivity[m.name];
+            const avg=Math.round(da.reduce((s,v)=>s+v,0)/da.length);
+            return`<tr>
+              <td style="font-size:.58rem;font-weight:600;padding:4px 8px"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${m.color};margin-right:.25rem"></span>${m.name}</td>
+              ${da.map(a=>{
+                const bg=a>=75?'rgba(45,159,78,.18)':a>=60?'rgba(199,139,26,.18)':'rgba(209,67,67,.18)';
+                const tc=a>=75?'var(--green)':a>=60?'var(--amber)':'var(--red)';
+                return`<td style="text-align:center;padding:4px;background:${bg};font-family:'JetBrains Mono',monospace;font-size:.58rem;font-weight:600;color:${tc};border-radius:3px">${a}%</td>`;
+              }).join('')}
+              <td style="text-align:center;padding:4px;font-family:'JetBrains Mono',monospace;font-size:.58rem;font-weight:700;color:${avg>=75?'var(--green)':avg>=60?'var(--amber)':'var(--red)'}">${avg}%</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>`;
+
+  // Completed tasks breakdown
+  const taskBreakdownHTML=tm.filter(m=>ti.completedTasks[m.name]&&ti.completedTasks[m.name].count>0).map(m=>{
+    const ct=ti.completedTasks[m.name];
+    return`<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem .8rem;box-shadow:var(--shadow-sm);border-left:3px solid ${m.color}">
+      <div style="display:flex;align-items:center;gap:.4rem;margin-bottom:.4rem">
+        <span style="font-size:.7rem;font-weight:700">${m.name}</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:.6rem;font-weight:600;color:var(--green);margin-left:auto">${ct.count} completed</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:4px">
+        ${ct.items.map(t=>`<span style="font-size:.46rem;padding:2px 7px;background:var(--bg-warm);border:1px solid var(--border-light);border-radius:8px;color:var(--text-secondary)">${t}</span>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+
+  // Gap analysis
+  const gapHTML=ti.gaps.map(g=>{
+    const sColor=g.severity==='high'?'var(--red)':g.severity==='medium'?'var(--amber)':'var(--blue)';
+    const sIcon=g.severity==='high'?'🔴':g.severity==='medium'?'🟡':'🔵';
+    const sBg=g.severity==='high'?'rgba(209,67,67,.08)':g.severity==='medium'?'rgba(199,139,26,.08)':'rgba(59,125,216,.08)';
+    return`<div style="background:${sBg};border:1px solid var(--border-light);border-radius:var(--radius);padding:.55rem .7rem;border-left:3px solid ${sColor}">
+      <div style="display:flex;align-items:start;gap:.4rem">
+        <span style="font-size:.65rem;flex-shrink:0">${sIcon}</span>
+        <div>
+          <div style="font-size:.62rem;font-weight:600;color:var(--text)">${g.member?g.member+': ':''}${g.issue}</div>
+          <div style="font-size:.5rem;color:var(--text-muted);margin-top:2px">${g.suggestion}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Alerts & issues from Slack
+  const alertsHTML=ti.alerts.map(a=>{
+    const aBg=a.type==='error'?'rgba(209,67,67,.08)':a.type==='warning'?'rgba(199,139,26,.08)':'rgba(59,125,216,.08)';
+    const aBorder=a.type==='error'?'var(--red)':a.type==='warning'?'var(--amber)':'var(--blue)';
+    return`<div style="display:flex;align-items:start;gap:.4rem;padding:.45rem .6rem;background:${aBg};border-radius:var(--radius-sm);border-left:2px solid ${aBorder}">
+      <span style="font-size:.6rem;flex-shrink:0">${a.icon}</span>
+      <div style="font-size:.56rem;color:var(--text)">${a.member?'<b>'+a.member+'</b>: ':''}${a.text}</div>
+    </div>`;
+  }).join('');
+
   el.innerHTML=`
     <div style="padding:1.5rem">
       <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:1rem">
         <span style="font-size:1.2rem">👥</span>
         <h2 style="font-size:1rem;font-weight:700;letter-spacing:-.02em">Team Operations</h2>
-        <span style="font-size:.55rem;color:var(--text-muted);margin-left:auto">Hubstaff + ClickUp · ${tm.length} members</span>
+        <span style="font-size:.55rem;color:var(--text-muted);margin-left:auto">Hubstaff + ClickUp + Slack · ${ti.weekOf} · ${tm.length} members</span>
       </div>
       ${summaryHTML}
+
       <div class="team-grid">
         ${cardsHTML}
+      </div>
+
+      <div class="section-heading"><span class="section-dot" style="background:var(--blue)"></span>Weekly Performance Comparison</div>
+      ${perfTable}
+
+      <div class="section-heading"><span class="section-dot" style="background:var(--purple)"></span>Activity Heatmap — Daily Breakdown</div>
+      ${heatmapHTML}
+
+      <div class="section-heading"><span class="section-dot" style="background:var(--green)"></span>Tasks Completed This Week</div>
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem">
+        ${taskBreakdownHTML}
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem">
+        <div>
+          <div class="section-heading"><span class="section-dot" style="background:var(--red)"></span>Gap Analysis</div>
+          <div style="display:flex;flex-direction:column;gap:.4rem">
+            ${gapHTML}
+          </div>
+        </div>
+        <div>
+          <div class="section-heading"><span class="section-dot" style="background:var(--amber)"></span>Issues & Alerts <span style="font-size:.5rem;color:var(--text-muted);font-weight:400">(from Slack)</span></div>
+          <div style="display:flex;flex-direction:column;gap:.4rem">
+            ${alertsHTML}
+          </div>
+        </div>
       </div>
     </div>`;
 }
@@ -2977,7 +3172,7 @@ function renderFinances(){
   const saasPct=m.mrr>0?Math.round(m.saasBurn/m.mrr*100):0;
   const marginPctBar=m.mrr>0?Math.max(Math.round(m.margin/m.mrr*100),0):0;
   const pnlHTML=`
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem;align-items:start">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem">
     <div style="display:flex;flex-direction:column">
       <div class="section-heading"><span class="section-dot" style="background:var(--green)"></span>Monthly P&L</div>
       <div class="pnl-wrap" style="flex:1;margin-bottom:0">
@@ -3156,6 +3351,54 @@ function renderFinances(){
     </div>`;
   }).join('');
 
+  // ── Per-Client Profit Cards ──
+  const cpm=fd.health.costPerClientMonth;
+  const estCAC=fd.health.cac;
+  const clientProfitCards=fd.clientRevenue.map(c=>{
+    const delivery=c.months*cpm;
+    const totalCostC=delivery+estCAC;
+    const netProfit=c.total-totalCostC;
+    const profitMargin=c.total>0?Math.round(netProfit/c.total*100):0;
+    const profitColor=netProfit>0?(profitMargin>=50?'var(--green)':profitMargin>=25?'var(--amber)':'var(--red)'):'var(--red)';
+    const statusColor=c.status==='active'?'var(--green)':c.status==='churned'?'var(--text-muted)':'var(--blue)';
+    const statusLabel=c.status==='active'?'ACTIVE':c.status==='churned'?'CHURNED':'PROJECT';
+    return`<div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.75rem .85rem;box-shadow:var(--shadow-sm);border-top:3px solid ${c.color};display:flex;flex-direction:column">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">
+        <span style="font-size:.72rem;font-weight:700">${c.name}</span>
+        <span style="font-size:.42rem;font-weight:700;padding:2px 8px;border-radius:10px;background:${c.status==='active'?'var(--green-light)':c.status==='churned'?'var(--gray-light)':'var(--blue-light)'};color:${statusColor}">${statusLabel}</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:.5rem">
+        <div style="display:flex;justify-content:space-between;font-size:.58rem">
+          <span style="color:var(--text-secondary)">Revenue (${c.months}mo)</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--green)">+$${c.total.toLocaleString()}</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:.58rem">
+          <span style="color:var(--text-secondary)">Delivery Cost</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--red)">-$${delivery.toLocaleString()}</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:.58rem">
+          <span style="color:var(--text-secondary)">Est. CAC</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--red)">-$${estCAC.toLocaleString()}</span>
+        </div>
+        <div style="height:1px;background:var(--border-light);margin:2px 0"></div>
+        <div style="display:flex;justify-content:space-between;font-size:.62rem;font-weight:700">
+          <span>Net Profit</span>
+          <span style="font-family:'JetBrains Mono',monospace;color:${profitColor}">${netProfit>=0?'+':''}$${netProfit.toLocaleString()}</span>
+        </div>
+      </div>
+      <div style="margin-top:auto">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px">
+          <span style="font-size:.44rem;color:var(--text-muted)">Margin</span>
+          <span style="font-size:.44rem;font-weight:600;color:${profitColor}">${profitMargin}%</span>
+        </div>
+        <div style="height:4px;background:var(--bg-hover);border-radius:2px;overflow:hidden">
+          <div style="height:100%;width:${Math.max(Math.min(profitMargin,100),0)}%;background:${profitColor};border-radius:2px"></div>
+        </div>
+        <div style="font-size:.42rem;color:var(--text-muted);margin-top:3px">${c.period}${c.months>0?' · $'+(c.total/c.months).toLocaleString(undefined,{maximumFractionDigits:0})+'/mo':''}</div>
+      </div>
+    </div>`;
+  }).join('');
+
   // ── Assemble ──
   el.innerHTML=`
   <div style="padding:1.5rem">
@@ -3167,6 +3410,12 @@ function renderFinances(){
 
     ${summaryCards}
     ${pnlHTML}
+
+    <div class="section-heading"><span class="section-dot" style="background:var(--green)"></span>Client Profitability — Revenue vs Cost</div>
+    <div style="font-size:.48rem;color:var(--text-muted);margin:-0.6rem 0 .6rem 1rem">Delivery = months × $${cpm.toLocaleString()}/mo avg cost · CAC = $${estCAC.toLocaleString()} est. acquisition</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.65rem;margin-bottom:1.5rem">
+      ${clientProfitCards}
+    </div>
 
     <div class="section-heading"><span class="section-dot" style="background:var(--accent)"></span>Revenue by Client — All Time</div>
     <div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:1.5rem">
