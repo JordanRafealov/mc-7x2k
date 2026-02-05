@@ -1492,22 +1492,22 @@ const teamMembers=[
 // ─── FINANCIAL DATA (from verified bank records — Feb 5, 2026) ───
 const financialData={
   // Annual summaries
-  annual2025:{totalRevenue:309106,clientRevenue:283587,otherIncome:25519,staffCosts:67206,saasCosts:27604,grossProfit:214296,margin:69.3},
+  annual2025:{totalRevenue:305706,clientRevenue:280187,otherIncome:25519,staffCosts:67206,saasCosts:27604,grossProfit:210896,margin:69.0},
   ytd2026:{totalRevenue:6308,clientRevenue:3810,otherIncome:2498,staffCosts:7592,saasCosts:6228},
   // Current monthly burn
   monthly:{staffBurn:7361,saasBurn:2448,totalBurn:9809,mrr:12457,margin:2648},
   // All-time client revenue (sorted by total collected)
   clientRevenue:[
     {name:'Vidello',total:75446,months:7,payments:5,status:'churned',period:'2024–Apr 2025',color:'var(--gray)'},
-    {name:'Media Place',total:42180,months:11,payments:12,status:'active',period:'Feb–Dec 2025',color:'var(--green)'},
+    {name:'Media Place',total:42180,months:11,payments:12,status:'churned',period:'Feb–Dec 2025',color:'var(--gray)'},
     {name:'TechYeti',total:35990,months:7,payments:7,status:'churned',period:'Apr–Oct 2025',color:'var(--gray)'},
     {name:'HelloCustom',total:29709,months:4,payments:4,status:'churned',period:'Feb–May 2025',color:'var(--gray)'},
     {name:'Ripple',total:28781,months:8,payments:8,status:'active',period:'May–Dec 2025',color:'var(--green)'},
     {name:'Goldphish',total:22100,months:11,payments:11,status:'churned',period:'Feb–Dec 2025',color:'var(--gray)'},
     {name:'Ocon',total:15120,months:1,payments:1,status:'one-time',period:'Oct 2025',color:'var(--blue)'},
-    {name:'Jamie',total:15400,months:3,payments:3,status:'active',period:'Nov 2025–',color:'var(--green)'},
+    {name:'Jamie',total:12000,months:6,payments:3,status:'active',period:'Nov 2025–',color:'var(--green)'},
     {name:'Banzai',total:14600,months:1,payments:3,status:'churned',period:'Jul 2025',color:'var(--gray)'},
-    {name:'ODF',total:12000,months:1,payments:1,status:'active',period:'Oct 2025–',color:'var(--green)'},
+    {name:'ODF',total:12000,months:3,payments:1,status:'active',period:'Oct 2025–Jan 2026',color:'var(--green)'},
     {name:'Phellos',total:11430,months:4,payments:3,status:'active',period:'Oct 2025–',color:'var(--green)'},
     {name:'Quercetin',total:5000,months:1,payments:1,status:'one-time',period:'Jun 2025',color:'var(--blue)'},
     {name:'Callida',total:3810,months:1,payments:1,status:'churned',period:'Jul 2025',color:'var(--gray)'},
@@ -1515,25 +1515,25 @@ const financialData={
   // Client LTV with LTGP (lifetime gross profit)
   clientLTV:[
     {name:'Vidello',revenue:75446,months:7,ltgp:63154,margin:83.7,status:'churned'},
-    {name:'Media Place',revenue:42180,months:11,ltgp:22864,margin:54.2,status:'active'},
+    {name:'Media Place',revenue:42180,months:11,ltgp:22864,margin:54.2,status:'churned'},
     {name:'TechYeti',revenue:35990,months:7,ltgp:23698,margin:65.8,status:'churned'},
     {name:'HelloCustom',revenue:33709,months:6,ltgp:23173,margin:68.7,status:'churned'},
     {name:'Ripple',revenue:28781,months:8,ltgp:14733,margin:51.2,status:'active'},
     {name:'Goldphish',revenue:22100,months:11,ltgp:2784,margin:12.6,status:'churned'},
     {name:'Ocon',revenue:15120,months:1,ltgp:13364,margin:88.4,status:'one-time'},
-    {name:'Jamie',revenue:15400,months:3,ltgp:10132,margin:65.8,status:'active'},
+    {name:'Jamie',revenue:12000,months:6,ltgp:1464,margin:12.2,status:'active'},
     {name:'Banzai',revenue:14600,months:1,ltgp:12844,margin:88.0,status:'churned'},
-    {name:'ODF',revenue:12000,months:1,ltgp:10244,margin:85.4,status:'active'},
+    {name:'ODF',revenue:12000,months:3,ltgp:6732,margin:56.1,status:'active'},
     {name:'Phellos',revenue:11430,months:4,ltgp:4406,margin:38.6,status:'active'},
     {name:'Quercetin',revenue:5000,months:1,ltgp:3244,margin:64.9,status:'one-time'},
     {name:'Callida',revenue:3810,months:1,ltgp:2054,margin:53.9,status:'churned'},
   ],
   // Active pipeline
   pipeline:[
-    {client:'Jamie',rate:3810,currency:'£3,000 GBP',type:'180-day contract',start:'Nov 2025',collected:15400},
+    {client:'Jamie',rate:2000,currency:'£3,000 GBP',type:'180-day contract',start:'Nov 2025',collected:12000},
     {client:'Phellos',rate:3810,currency:'£3,000 GBP',type:'180-day contract',start:'Oct 2025',collected:11430,contractTotal:22860,remaining:11430},
     {client:'Ripple',rate:3500,currency:'£2,500–3,000 GBP',type:'Monthly retainer',start:'May 2025',collected:28781},
-    {client:'ODF',rate:0,currency:'$12,000 setup',type:'Project',start:'Oct 2025',collected:12000},
+    {client:'ODF',rate:4000,currency:'$4,000/mo',type:'90-day contract',start:'Oct 2025',collected:12000},
   ],
   // SaaS costs by category (monthly estimates from 2025 annual / 12)
   saasCategories:[
@@ -1592,25 +1592,24 @@ const financialData={
   ],
   // Hormozi / health metrics
   health:{
-    totalClients:13,active:5,churned:6,oneTime:2,
-    churnRate:55,avgMonthsBeforeChurn:5.5,
-    avgLTV:24274,avgLTGP:15899,avgMargin:65.5,
-    top3Concentration:44,clientVsPassive:'92/8',
-    avgRevenuePerMonth:25759,
+    totalClients:13,active:4,churned:7,oneTime:2,
+    churnRate:54,avgMonthsBeforeChurn:5.2,
+    avgLTV:23705,avgLTGP:14963,avgMargin:56.8,
+    top3Concentration:44,clientVsPassive:'91/9',
+    avgRevenuePerMonth:25476,
     costPerClientMonth:1756,
-    // CAC: est acquisition costs ($24.3K) / 13 clients
     cac:1871,
-    ltgpCacRatio:8.5,
-    paybackDays:16,
-    avgRevenuePerClientMonth:5252,
-    monthlyGPPerClient:3496,
+    ltgpCacRatio:8.0,
+    paybackDays:20,
+    avgRevenuePerClientMonth:4599,
+    monthlyGPPerClient:2843,
   },
   // Active client profitability (monthly GP = revenue/months - cost allocation)
   activeClientProfit:[
-    {name:'Jamie',monthlyRev:5133,monthlyCost:1756,monthlyGP:3377,margin:65.8,ltgp:10132,months:3,trend:'up',note:'Highest margin active client'},
+    {name:'ODF',monthlyRev:4000,monthlyCost:1756,monthlyGP:2244,margin:56.1,ltgp:6732,months:3,trend:'new',note:'90-day contract · $12K project'},
     {name:'Ripple',monthlyRev:3598,monthlyCost:1756,monthlyGP:1842,margin:51.2,ltgp:14733,months:8,trend:'stable',note:'Longest-running active client'},
     {name:'Phellos',monthlyRev:2858,monthlyCost:1756,monthlyGP:1102,margin:38.6,ltgp:4406,months:4,trend:'stable',note:'£9K outstanding on contract'},
-    {name:'ODF',monthlyRev:12000,monthlyCost:1756,monthlyGP:10244,margin:85.4,ltgp:10244,months:1,trend:'new',note:'One-time project payment'},
+    {name:'Jamie',monthlyRev:2000,monthlyCost:1756,monthlyGP:244,margin:12.2,ltgp:1464,months:6,trend:'down',note:'180-day contract · lowest margin'},
   ],
   // Learning & coaching (separate from SaaS)
   coaching2025:{total:36863,items:[
@@ -1620,6 +1619,33 @@ const financialData={
     {name:'Other',cost:370},
   ]},
 };
+
+// Showcase mode: inflated financial data for demo
+function makeShowcaseFinances(){
+  const fn=['TechVault Inc','Nexus Growth','SkyBridge AI','Amplitude Labs','CloudPeak SaaS','Harbor Systems','Meridian Data','Forge Analytics','Prism Ventures','Atlas Digital','Beacon Health','Zenith Corp','Ironclad Sec'];
+  const pn=['Amplitude Labs','Beacon Health','CloudPeak SaaS','Forge Analytics'];
+  const r=financialData;const s=2.8;
+  const cr=r.clientRevenue.map((c,i)=>({...c,name:fn[i]||c.name,total:Math.round(c.total*s)}));
+  const cl=r.clientLTV.map((c,i)=>{const rev=Math.round(c.revenue*s);const ltgp=rev-c.months*1756;return{...c,name:fn[i]||c.name,revenue:rev,ltgp,margin:parseFloat((ltgp/rev*100).toFixed(1))};});
+  return {
+    annual2025:{totalRevenue:856000,clientRevenue:798000,otherIncome:58000,staffCosts:94100,saasCosts:33100,grossProfit:728800,margin:85.1},
+    ytd2026:{totalRevenue:92400,clientRevenue:85000,otherIncome:7400,staffCosts:13200,saasCosts:7100},
+    monthly:{staffBurn:13200,saasBurn:3500,totalBurn:16700,mrr:48500,margin:31800},
+    clientRevenue:cr,clientLTV:cl,
+    pipeline:r.pipeline.map((p,i)=>({...p,client:pn[i]||p.client,rate:Math.round(p.rate*s),collected:Math.round(p.collected*s)})),
+    saasCategories:r.saasCategories.map(cat=>({...cat,monthly:Math.round(cat.monthly*1.3),items:cat.items.map(it=>({...it,cost:Math.round(it.cost*1.3)}))})),
+    staffCosts:r.staffCosts.map(st=>({...st,monthly:Math.round(st.monthly*1.5),allTime:Math.round(st.allTime*1.5)})),
+    otherIncome2025:r.otherIncome2025,
+    health:{totalClients:15,active:9,churned:4,oneTime:2,churnRate:22,avgMonthsBeforeChurn:8.5,avgLTV:57067,avgLTGP:48400,avgMargin:84.8,top3Concentration:42,clientVsPassive:'93/7',avgRevenuePerMonth:71333,costPerClientMonth:1756,cac:2100,ltgpCacRatio:23.0,paybackDays:4,avgRevenuePerClientMonth:11200,monthlyGPPerClient:9444},
+    activeClientProfit:[
+      {name:'TechVault Inc',monthlyRev:16800,monthlyCost:1756,monthlyGP:15044,margin:89.5,ltgp:180528,months:12,trend:'up',note:'Flagship client · highest revenue'},
+      {name:'Nexus Growth',monthlyRev:14200,monthlyCost:1756,monthlyGP:12444,margin:87.6,ltgp:124440,months:10,trend:'up',note:'Annual retainer · expanding'},
+      {name:'SkyBridge AI',monthlyRev:12500,monthlyCost:1756,monthlyGP:10744,margin:86.0,ltgp:85952,months:8,trend:'stable',note:'Steady performer'},
+      {name:'Amplitude Labs',monthlyRev:11200,monthlyCost:1756,monthlyGP:9444,margin:84.3,ltgp:66108,months:7,trend:'up',note:'Growing scope'},
+    ],
+    coaching2025:r.coaching2025,
+  };
+}
 
 // YouTube channel data (from YouTube API — Feb 6, 2026)
 const ytChannel={
@@ -2900,7 +2926,8 @@ function renderTeam(){
 
 function renderFinances(){
   const el=document.getElementById('finances-content');
-  const fd=financialData;
+  const sc=getShowcaseData();
+  const fd=sc&&sc.finances?sc.finances:financialData;
   const m=fd.monthly;
   const a25=fd.annual2025;
   const ytd=fd.ytd2026;
@@ -3590,6 +3617,7 @@ function getShowcaseData(){
     systems:demoSystems,
     kanban:demoKanban,
     northStar:demoNorthStar,
+    finances:makeShowcaseFinances(),
   };
 }
 
