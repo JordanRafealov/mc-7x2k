@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-09T19:00:00.605294+07:00",
+  "_generated": "2026-02-09T19:30:00.674957+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-09 18:45"
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Radar",
@@ -19,8 +19,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Keenan",
@@ -29,8 +29,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (487m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (517m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Forge",
@@ -39,8 +39,8 @@
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Dash",
@@ -48,9 +48,9 @@
       "role": "Speed-to-Lead",
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
-      "liveStatus": "idle",
-      "reason": "Responsive but last activity 42m ago",
-      "checkedAt": "2026-02-09 18:45"
+      "liveStatus": "online",
+      "reason": "Responsive, outside cron window (72m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Scout",
@@ -59,8 +59,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Sherlock",
@@ -69,8 +69,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Echo",
@@ -79,8 +79,8 @@
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Sentinel",
@@ -89,8 +89,8 @@
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Pulse",
@@ -99,8 +99,8 @@
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (201m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive, outside cron window (231m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Scribe",
@@ -109,8 +109,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Harbor",
@@ -119,8 +119,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Maverick",
@@ -129,8 +129,8 @@
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Viper",
@@ -139,8 +139,8 @@
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Ledger",
@@ -149,8 +149,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (487m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (517m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Relay",
@@ -159,8 +159,8 @@
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
       "liveStatus": "idle",
-      "reason": "Responsive but last activity 40m ago",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but last activity 70m ago",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Watchtower",
@@ -169,8 +169,8 @@
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Tempo",
@@ -179,8 +179,8 @@
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (434m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (464m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     },
     {
       "name": "Dispatch",
@@ -189,8 +189,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (414m since activity)",
-      "checkedAt": "2026-02-09 18:45"
+      "reason": "Responsive but stale (444m since activity)",
+      "checkedAt": "2026-02-09 19:15"
     }
   ],
   "dd_pipeline": {
@@ -1450,6 +1450,30 @@
   "fathom": {
     "recent_calls": [
       {
+        "title": "Rodney Weekly Call",
+        "date": "2026-02-09T12:13:41Z",
+        "share_url": "https://fathom.video/share/gkw9xBqoPf2A-UmFzeRHKo19S-NsAGsw",
+        "attendees": [],
+        "summary": "Inefficient Workflow: ODF's Zencaster \u2192 Riverside workflow is a major bottleneck, requiring two separate edits per video. | Compensation Misalignment: The compensation structure is misaligned with actual workload (e.g., \"15 bundles per month\" vs. \\~60 completed). | Unacceptable Thumbnails: Current AI-generated thumbnails are unprofessional (e.g., poor cutouts, no lighting) and require immediate improvement.",
+        "action_items": [
+          {
+            "description": "Update weekly 1:1 tracker for Rodney: add 'good/bad/improve' sections",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Update Rodney comp structure to weekly bundles; clarify 30-day streak w/ Angela",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Improve thumbnail quality (face/mic/lighting); post revised Daniel thumbnails in Rodney Management for Jordan",
+            "assignee": "Rodney D.",
+            "completed": false
+          }
+        ]
+      },
+      {
         "title": "Sophia Weekly Call",
         "date": "2026-02-09T08:59:00Z",
         "share_url": "https://fathom.video/share/RSsWJFnbH78uELywzHPD4tA1seFRNpzZ",
@@ -1843,40 +1867,6 @@
             "completed": false
           }
         ]
-      },
-      {
-        "title": "Rodney Weekly Call",
-        "date": "2026-02-02T12:39:21Z",
-        "share_url": "https://fathom.video/share/qjx18Uf4Zn3MeGj6zxEd49qV2PyHa_PN",
-        "attendees": [],
-        "summary": "A new performance-based compensation model will replace the fixed salary to incentivize speed and quality. | The daily workflow is now fixed: Jordan's content is the \\#1 priority, followed by client podcasts. | ClickUp is the single source of truth for all tasks; if a task isn't in ClickUp, it doesn't exist.",
-        "action_items": [
-          {
-            "description": "Edit Jordan's daily long-form; export 2K 30fps; submit 5 shorts to Philip; update ClickUp; post EOD summary",
-            "assignee": "Rodney D.",
-            "completed": false
-          },
-          {
-            "description": "Research higher-quality filming/recording tools beyond Loom",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Confirm Riverside guest-name/title overlay; share steps w/ Jordan",
-            "assignee": "Rodney D.",
-            "completed": false
-          },
-          {
-            "description": "Start Hubstaff 3 pm daily; set up AI agent to scan ClickUp",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Define per-deliverable rates; implement new compensation/bonus plan",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          }
-        ]
       }
     ],
     "total_calls_30d": 10
@@ -1900,13 +1890,13 @@
       "total_leads": 28,
       "active_leads": 0,
       "by_status": {
-        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 5,
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 6,
         "\u274c don't pursue": 6,
         "\ud83d\udcde upcoming pre-calls": 2,
         "\u23f0 revisit later": 4,
-        "\ud83d\udcc5 to reschedule": 6,
-        "\u2620\ufe0f post podcast": 2,
-        "\ud83d\udce7 nurturing leads": 3
+        "\ud83d\udcc5 to reschedule": 5,
+        "\ud83d\udce7 nurturing leads": 4,
+        "\u2620\ufe0f post podcast": 1
       },
       "list_id": "901813906092"
     },
@@ -1914,12 +1904,12 @@
       "total_leads": 38,
       "active_leads": 0,
       "by_status": {
-        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 13,
-        "\ud83d\udcc5 to reschedule": 6,
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 14,
+        "\ud83d\udcc5 to reschedule": 5,
         "\ud83d\udcde upcoming pre-calls": 1,
-        "\u274c don't pursue": 4,
-        "\u23f0 revisit later": 3,
-        "\u2620\ufe0f post podcast": 11
+        "\u274c don't pursue": 5,
+        "\u23f0 revisit later": 4,
+        "\u2620\ufe0f post podcast": 9
       },
       "list_id": "901813953534"
     },
@@ -1959,6 +1949,12 @@
   "activity": [
     {
       "type": "call_completed",
+      "text": "Call: Rodney Weekly Call",
+      "detail": "Inefficient Workflow: ODF's Zencaster \u2192 Riverside workflow is a major bottleneck, requiring two separate edits per video. | Compensation Misalignment:",
+      "timestamp": "2026-02-09T12:13:41Z"
+    },
+    {
+      "type": "call_completed",
       "text": "Call: Sophia Weekly Call",
       "detail": "Process Failure: The lead qualification process is broken. Omitting the lead's LinkedIn URL from the AI checker causes it to qualify only the company,",
       "timestamp": "2026-02-09T08:59:00Z"
@@ -1980,12 +1976,6 @@
       "text": "Call: Call Thomas",
       "detail": "MediaPlace Promotions: A 3-part promo series is planned: 1) a Valentine's Day credit pack sale with free Cloned presets, 2) a free video captioning pl",
       "timestamp": "2026-02-06T03:16:06Z"
-    },
-    {
-      "type": "call_completed",
-      "text": "Call: Rob Dootrix Call",
-      "detail": "Problem: AI-driven market uncertainty is shrinking project scope and lengthening sales cycles to \\~9 months, creating a top-of-funnel bottleneck. | Go",
-      "timestamp": "2026-02-05T10:02:11Z"
     }
   ]
 }
