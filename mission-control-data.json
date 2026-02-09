@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-09T22:00:00.439392+07:00",
+  "_generated": "2026-02-09T22:30:00.992251+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-09 21:45"
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Radar",
@@ -19,8 +19,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Keenan",
@@ -29,8 +29,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (667m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (697m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Forge",
@@ -39,8 +39,8 @@
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Dash",
@@ -48,9 +48,9 @@
       "role": "Speed-to-Lead",
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (222m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (252m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Scout",
@@ -59,8 +59,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Sherlock",
@@ -69,8 +69,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Echo",
@@ -79,8 +79,8 @@
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Sentinel",
@@ -89,8 +89,8 @@
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Pulse",
@@ -99,8 +99,8 @@
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (101m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive, outside cron window (131m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Scribe",
@@ -109,8 +109,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Harbor",
@@ -119,8 +119,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Maverick",
@@ -129,8 +129,8 @@
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Viper",
@@ -139,8 +139,8 @@
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Ledger",
@@ -149,8 +149,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (667m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (697m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Relay",
@@ -158,9 +158,9 @@
       "role": "Client Comms",
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (220m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (250m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Watchtower",
@@ -169,8 +169,8 @@
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Tempo",
@@ -179,8 +179,8 @@
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (614m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (644m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     },
     {
       "name": "Dispatch",
@@ -189,8 +189,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (594m since activity)",
-      "checkedAt": "2026-02-09 21:45"
+      "reason": "Responsive but stale (624m since activity)",
+      "checkedAt": "2026-02-09 22:15"
     }
   ],
   "dd_pipeline": {
@@ -1450,6 +1450,100 @@
   "fathom": {
     "recent_calls": [
       {
+        "title": "Weekly 1:1 Coaching Call - Angela",
+        "date": "2026-02-09T15:13:19Z",
+        "share_url": "https://fathom.video/share/nYLXBKvpFJByFzS9rvPjwW_H8ckxhq6W",
+        "attendees": [
+          {
+            "name": "ymsiadb@gmail.com",
+            "email": "ymsiadb@gmail.com"
+          }
+        ],
+        "summary": "Email Campaigns Failing: Over-sending (e.g., 510 emails from one inbox vs. the 30/day limit) caused Jamie's emails to hit spam, killing campaign results. All accounts will be replaced with new, cheaper ($5/mo) inboxes. | AI Automation Blocked: The ODF AI autoresponder is stalled by bugs, preventing its rollout to other clients. This blocks a critical upsell strategy to fund team expansion. | Team Performance Unacceptable: Sophia and Rodney are underperforming, wasting time and money. They are on a final warning; their performance will be reviewed next Monday.",
+        "action_items": [
+          {
+            "description": "Add per-client Instantly sent-count tabs to report",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Send SOP template to Angela; then Angela update/document key SOPs",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Pause Jamie email sending for 2 weeks; use HeyReach for LinkedIn outreach",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Assign Sophia to Ocon Looms; send sample; review; start next-day delivery",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Launch HeyReach for all clients; set up Jamie LinkedIn outreach; route Loom requests to Jamie",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Kill all Jamie sending inboxes; start fresh w/ Gen 2",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Block time for inbox management automation; complete ODF; duplicate to Ocon/Phelos/Jamie",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Build lead enrichment automation",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Send client-call summaries to team",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Create and administer quizzes on client-call summaries",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Monitor Sophia/Rodney performance; log issues",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Schedule team check-in call",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Inform clients we will book discovery follow-ups; instruct ClickUp booking",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Schedule 30-min call w/ Sophia re: lead qualification",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Ask Philip what he needs to do his job better",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Email Jordan Pioneer details; then Jordan send $10 test; verify receipt",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          }
+        ]
+      },
+      {
         "title": "Filip Weekly Call",
         "date": "2026-02-09T13:54:48Z",
         "share_url": "https://fathom.video/share/atcbRZndNSnB3puAsMsMgnMbLJezhoYB",
@@ -1793,100 +1887,6 @@
             "completed": false
           }
         ]
-      },
-      {
-        "title": "Weekly 1:1 Coaching Call - Angela",
-        "date": "2026-02-02T14:22:17Z",
-        "share_url": "https://fathom.video/share/yxASs7f2f7mDrjRG7VcJy748hDy2zhD6",
-        "attendees": [
-          {
-            "name": "ymsiadb@gmail.com",
-            "email": "ymsiadb@gmail.com"
-          }
-        ],
-        "summary": "KPIs are being overhauled to create a single source of truth, syncing ClickUp tasks with daily reports to identify and fix bottlenecks immediately. | A $4k \"done-with-you\" AI coaching package is under consideration to accelerate automation development and upskill the team, potentially cutting project timelines from weeks to days. | The company wiki will migrate from Notion to ClickUp to consolidate tools and eliminate redundant costs, with Jordan owning the content structure and Angela the migration.",
-        "action_items": [
-          {
-            "description": "Schedule client-overview call w/ Rodney & Sophia",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Share quiz-app repo/skills w/ Angela; then Angela build client quizzes",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Share client-facing KPI dashboard access w/ Jordan for Jamie call",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Configure Ocon inbox: ping Sophia on new lead; auto-message if >500",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Send YouTube lead-response flow to Angela for debug",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Review n8n templates; identify automations",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Add Jordan to GitHub org; push KPI tracker to shared repo",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Invite Angela to Shimmy/Mia call (Thu 1:30)",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Test Ocon personalized Loom: record generic core; personalize intros",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Enable Loom view notifications",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Open Payoneer receiving account; send details to Jordan",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Ask Philip to send Payoneer/bank details to Jordan; then Jordan send test payment",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Connect Notion API in Claude Code",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Communicate ClickUp guest-access policy to Philip",
-            "assignee": "Angela Petkovska",
-            "completed": false
-          },
-          {
-            "description": "Share Notion wiki page + Claude skills w/ Angela",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Organize Notion wiki; then Angela migrate to ClickUp Docs",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          }
-        ]
       }
     ],
     "total_calls_30d": 10
@@ -1969,6 +1969,12 @@
   "activity": [
     {
       "type": "call_completed",
+      "text": "Call: Weekly 1:1 Coaching Call - Angela",
+      "detail": "Email Campaigns Failing: Over-sending (e.g., 510 emails from one inbox vs. the 30/day limit) caused Jamie's emails to hit spam, killing campaign resul",
+      "timestamp": "2026-02-09T15:13:19Z"
+    },
+    {
+      "type": "call_completed",
       "text": "Call: Filip Weekly Call",
       "detail": "Jamie's emails are landing in spam. Instantly tests show a 31\u201342% spam rate, far below the 90\u201395% target, explaining the zero reply rate. | New email ",
       "timestamp": "2026-02-09T13:54:48Z"
@@ -1990,12 +1996,6 @@
       "text": "Call: Ripple Call",
       "detail": "New Strategy: Jordan proposed a 3-pillar plan for \u00a38,500 (3 months): a Video Sales Letter (VSL), a YouTube content engine, and AI-powered systems. | I",
       "timestamp": "2026-02-06T09:41:59Z"
-    },
-    {
-      "type": "call_completed",
-      "text": "Call: Durell Growth Plan",
-      "detail": "The Problem: Durell's business is 100% referral-dependent, lacks a scalable lead engine, and has a confusing \"wheel\" of offers that hinders cold outre",
-      "timestamp": "2026-02-06T06:15:09Z"
     }
   ]
 }
