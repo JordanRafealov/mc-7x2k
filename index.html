@@ -96,6 +96,7 @@ body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-warm);colo
 .agent-status-dot{width:6px;height:6px;border-radius:50%}
 .agent-status.live .agent-status-dot{background:var(--green)}.agent-status.live{color:var(--green)}
 .agent-status.ready .agent-status-dot{background:var(--blue)}.agent-status.ready{color:var(--blue)}
+.agent-status.error .agent-status-dot{background:var(--red)}.agent-status.error{color:var(--red)}
 
 /* BUILD PROGRESS */
 .build-section{border-top:1px solid var(--border);padding:.65rem}
@@ -2031,6 +2032,8 @@ function renderHome(){
   const _ytCh=sc&&sc.youtube?sc.youtube.channel:ytChannel;
   const liveAgents=_agents.filter(a=>a.buildStatus==='live');
   const builtAgents=_agents.filter(a=>a.buildStatus==='built');
+  const errorAgents=_agents.filter(a=>a.liveStatus==='error'||a.liveStatus==='offline');
+  const runningAgents=_agents.filter(a=>a.liveStatus==='running');
   const expiredClients=_clients.filter(c=>{const dr=daysRemaining(c.contract.start,c.contract.days);return dr!==null&&dr<=0});
   const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Bangkok'}));
   const dayNames=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -2039,6 +2042,7 @@ function renderHome(){
 
   // — Alerts —
   const alerts=[];
+  errorAgents.forEach(a=>alerts.push(`<div class="hd-alert danger"><span class="hd-alert-icon">\u26A0\uFE0F</span><strong>${a.name}</strong> agent ${a.liveStatus||'down'} \u2014 ${a.statusReason||'check Mac Mini'}</div>`));
   expiredClients.forEach(c=>alerts.push(`<div class="hd-alert danger"><span class="hd-alert-icon">\u26A0\uFE0F</span><strong>${c.shortName}</strong> contract expired \u2014 schedule renewal call immediately</div>`));
   _clients.filter(c=>{const camp=_campaigns[c.id]||{};const hasOutreach=camp.outreachType||false;const hasInstantly=camp.instantly&&camp.instantly.totals.sent>0;const hasHeyreach=camp.heyreach&&camp.heyreach.totals.messaged>0;const hasGuests=(c.guests?c.guests.length:getTotalGuests(c))>0;return!hasOutreach&&!hasInstantly&&!hasHeyreach&&!hasGuests}).forEach(c=>alerts.push(`<div class="hd-alert warn"><span class="hd-alert-icon">\u{1F4E7}</span><strong>${c.shortName}</strong> \u2014 no active outreach campaigns running</div>`));
 
@@ -2201,7 +2205,7 @@ function renderHome(){
       <div class="hd-hero-card purple">
         <div class="hd-hero-num" style="color:var(--purple)">${liveAgents.length}<span style="font-size:.9rem;color:var(--text-muted);font-weight:500">/${_agents.length}</span></div>
         <div class="hd-hero-label">Agents Online</div>
-        <div class="hd-hero-sub"><span style="width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block;animation:livePulse 2s ease-in-out infinite"></span> ${liveAgents.map(a=>a.name).join(', ')}</div>
+        <div class="hd-hero-sub">${errorAgents.length?'<span style="color:var(--red);font-weight:600">'+errorAgents.length+' down</span> \u00B7 ':'<span style="width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block;animation:livePulse 2s ease-in-out infinite"></span> '}${runningAgents.length?runningAgents.length+' active \u00B7 ':'' }${liveAgents.length} deployed</div>
       </div>
     </div>
 
@@ -2234,7 +2238,7 @@ function renderHome(){
             ${leadRows||'<div style="font-size:.62rem;color:var(--text-muted);padding:.5rem 0">No hot leads in pipeline</div>'}
           </div>
           <div class="hd-section">
-            <div class="hd-section-title" style="--dot-color:var(--purple)">AI Agent Fleet <span style="font-size:.48rem;font-weight:600;color:var(--green);background:var(--green-light);padding:1px 6px;border-radius:8px;margin-left:4px">${liveAgents.length} live</span></div>
+            <div class="hd-section-title" style="--dot-color:var(--purple)">AI Agent Fleet <span style="font-size:.48rem;font-weight:600;color:var(--green);background:var(--green-light);padding:1px 6px;border-radius:8px;margin-left:4px">${liveAgents.length} live</span>${errorAgents.length?'<span style="font-size:.48rem;font-weight:600;color:var(--red);background:var(--red-light,#fdeaea);padding:1px 6px;border-radius:8px;margin-left:4px">'+errorAgents.length+' down</span>':''}</div>
             <div class="hd-agents">${agentChips}</div>
           </div>
         </div>
@@ -2301,23 +2305,27 @@ function renderAgentList(){
         </div>
         <div class="agent-role">${a.role}</div>
       </div>
-      <div class="agent-status ${a.buildStatus}">
+      <div class="agent-status ${a.liveStatus==='error'||a.liveStatus==='offline'?'error':a.buildStatus}">
         <span class="agent-status-dot"></span>
-        ${a.buildStatus==='live'?'LIVE':'READY'}
+        ${a.liveStatus?a.liveStatus.toUpperCase():(a.buildStatus==='live'?'LIVE':'READY')}
       </div>
     </div>
-    ${a.lastActive?`<div style="font-size:.42rem;color:var(--text-muted);padding-left:2.7rem;margin-top:-4px;margin-bottom:2px">Last: ${timeAgo(a.lastActive)}</div>`:''}`).join('');
+    ${a.lastActive||a.lastChecked?`<div style="font-size:.42rem;color:var(--text-muted);padding-left:2.7rem;margin-top:-4px;margin-bottom:2px">${a.lastChecked?'Checked: '+a.lastChecked:'Last: '+timeAgo(a.lastActive)}</div>`:''}`).join('');
   el.querySelectorAll('.agent-item').forEach(item=>{
     item.addEventListener('click',()=>{
       const a=getAgent(item.dataset.agentId);
       const sc=a.buildStatus==='live'?'live':'built';
       const sl=a.buildStatus==='live'?'LIVE':'SOUL Built';
+      const liveLabel=a.liveStatus?a.liveStatus.toUpperCase():(a.buildStatus==='live'?'LIVE':'SOUL Built');
+      const liveCls=a.liveStatus==='error'||a.liveStatus==='offline'?'error':sc;
       openModal(`${a.emoji} ${a.name}`,`
         <div class="modal-row"><span class="modal-label">Role</span><span class="modal-value">${a.role}</span></div>
         <div class="modal-row"><span class="modal-label">Type</span><span class="modal-value">${a.typeFull}</span></div>
-        <div class="modal-row"><span class="modal-label">Status</span><span class="modal-badge ${sc}">${sl}</span></div>
+        <div class="modal-row"><span class="modal-label">Status</span><span class="modal-badge ${liveCls}">${liveLabel}</span></div>
+        ${a.statusReason?'<div class="modal-row"><span class="modal-label">Detail</span><span class="modal-value">'+a.statusReason+'</span></div>':''}
         <div class="modal-row"><span class="modal-label">Schedule</span><span class="modal-value">${a.schedule}</span></div>
         <div class="modal-row"><span class="modal-label">Last Active</span><span class="modal-value">${a.lastActive?new Date(a.lastActive).toLocaleString('en-US',{timeZone:'Asia/Bangkok',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' BKK':'Never run'}</span></div>
+        ${a.lastChecked?'<div class="modal-row"><span class="modal-label">Last Checked</span><span class="modal-value">'+a.lastChecked+' BKK</span></div>':''}
         <div class="modal-row"><span class="modal-label">About</span><span class="modal-value">${a.desc}</span></div>
         <div class="modal-row"><span class="modal-label">SOUL File</span><span class="modal-file">openclaw-agents/${a.file}</span></div>`);
     });
@@ -4259,8 +4267,28 @@ async function loadLiveData(){
       });
     }
 
+    // — Agent fleet health from live data —
+    if(data.agents&&data.agents.length){
+      data.agents.forEach(la=>{
+        const a=agents.find(x=>x.name===la.name);
+        if(!a)return;
+        // Map fleet monitor status → dashboard buildStatus + liveStatus
+        if(la.liveStatus){
+          a.liveStatus=la.liveStatus; // running, idle, online, error, offline
+          if(la.liveStatus==='error'||la.liveStatus==='offline'){
+            a.buildStatus='error';
+          }else{
+            a.buildStatus='live';
+          }
+        }
+        if(la.reason)a.statusReason=la.reason;
+        if(la.checkedAt)a.lastChecked=la.checkedAt;
+      });
+    }
+
     // — Re-render all tabs with live data —
     renderHome();
+    renderAgentList();
     renderBuildProgress();
     renderHealth();
     renderActivity();
