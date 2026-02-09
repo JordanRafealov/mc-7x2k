@@ -1,0 +1,1990 @@
+{
+  "_generated": "2026-02-09T16:19:57.516159+07:00",
+  "_version": "1.0",
+  "agents": [
+    {
+      "name": "Cooper",
+      "emoji": "\ud83d\udc31",
+      "role": "Squad Lead",
+      "status": "LIVE",
+      "schedule": "5:00 AM Mon-Fri",
+      "liveStatus": "offline",
+      "reason": "Cooper process not found",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Radar",
+      "emoji": "\ud83d\udce1",
+      "role": "Research & Intel",
+      "status": "LIVE",
+      "schedule": "6:00 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Keenan",
+      "emoji": "\ud83c\udfaf",
+      "role": "Sales Coach",
+      "status": "LIVE",
+      "schedule": "On-demand",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (337m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Forge",
+      "emoji": "\ud83d\udd28",
+      "role": "Agent Auditor",
+      "status": "LIVE",
+      "schedule": "4:00 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Dash",
+      "emoji": "\u26a1",
+      "role": "Speed-to-Lead",
+      "status": "LIVE",
+      "schedule": "8:00 AM Mon-Fri",
+      "liveStatus": "running",
+      "reason": "All healthy, active 10m ago",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Scout",
+      "emoji": "\ud83e\udded",
+      "role": "Lead Enrichment",
+      "status": "LIVE",
+      "schedule": "6:00 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Sherlock",
+      "emoji": "\ud83d\udd0e",
+      "role": "Deep Research",
+      "status": "LIVE",
+      "schedule": "On-demand",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Echo",
+      "emoji": "\ud83d\udce3",
+      "role": "Content Engine",
+      "status": "LIVE",
+      "schedule": "9:00 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Sentinel",
+      "emoji": "\ud83d\udee1",
+      "role": "Client Health",
+      "status": "LIVE",
+      "schedule": "7:30 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Pulse",
+      "emoji": "\ud83d\udcca",
+      "role": "Morning Briefing",
+      "status": "LIVE",
+      "schedule": "8:00 & 8:15 AM Mon-Fri",
+      "liveStatus": "idle",
+      "reason": "Responsive but last activity 51m ago",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Scribe",
+      "emoji": "\ud83d\udcdd",
+      "role": "Call Summaries",
+      "status": "LIVE",
+      "schedule": "On-demand",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Harbor",
+      "emoji": "\u2693",
+      "role": "Client Onboarding",
+      "status": "LIVE",
+      "schedule": "On-demand",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Maverick",
+      "emoji": "\ud83d\ude80",
+      "role": "Campaign Mgmt",
+      "status": "LIVE",
+      "schedule": "9:30 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Viper",
+      "emoji": "\ud83d\udc0d",
+      "role": "Pipeline Closer",
+      "status": "LIVE",
+      "schedule": "6:30 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Ledger",
+      "emoji": "\ud83d\udcb0",
+      "role": "Finance Tracker",
+      "status": "LIVE",
+      "schedule": "6:00 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (337m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Relay",
+      "emoji": "\ud83d\udce7",
+      "role": "Client Comms",
+      "status": "LIVE",
+      "schedule": "Continuous 8AM-6PM Mon-Fri",
+      "liveStatus": "running",
+      "reason": "All healthy, active 9m ago",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Watchtower",
+      "emoji": "\ud83d\udc41\ufe0f",
+      "role": "Security Monitor",
+      "status": "LIVE",
+      "schedule": "4:30 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Tempo",
+      "emoji": "\ud83d\udcc8",
+      "role": "Team Performance",
+      "status": "LIVE",
+      "schedule": "7:00 AM Mon-Fri",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (284m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    },
+    {
+      "name": "Dispatch",
+      "emoji": "\ud83d\udcec",
+      "role": "Task Router",
+      "status": "LIVE",
+      "schedule": "On-demand",
+      "liveStatus": "error",
+      "reason": "Responsive but stale (264m since activity)",
+      "checkedAt": "2026-02-09 16:15"
+    }
+  ],
+  "dd_pipeline": {
+    "stages": {
+      "jordan podcast": 11,
+      "joey podcast": 18,
+      "youtube lead": 5,
+      "growth plan": 4,
+      "warm lead": 23
+    },
+    "total": 61,
+    "leads": [
+      {
+        "id": "86ewgpwhd",
+        "name": "Haim Ozchakir \u2014 AIUC Global",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgpwhd",
+        "date_created": "1770274065965",
+        "date_updated": "1770274065965",
+        "description_preview": "HIGH PRIORITY \u2014 FUNDED\n\n\ud83d\udc64 Haim Ozchakir\n\u2b50 Co-Founder\n\ud83c\udfe2 AIUC Global \u2014 AI agent standards & insurance\n\ud83c\udf10 https://www.aiuc.global\n\nWhy Qualified:\n\n$15M seed round backed by Emergence Capital\nTeam from Anthropic and McKinsey\nAI agent standards and insurance \u2014 timely, hot market\nCo-Founder is decision maker\nWell-funded = can afford $12-15K engagement\n\nNext Action: Re-engage immediately. This was previously overlooked because the website was under construction, but the funding and team are strong signa"
+      },
+      {
+        "id": "86ewgptnp",
+        "name": "Anshuman Jaiswal \u2014 OnePint.ai",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptnp",
+        "date_created": "1770273660360",
+        "date_updated": "1770273660360",
+        "description_preview": "\ud83d\udc64 Anshuman Jaiswal\n\u2b50 Chief Business Officer\n\ud83c\udfe2 OnePint.ai \u2014 AI inventory management for retail\n\ud83c\udf10 https://www.onepint.ai/\n\nWhy Qualified:\n\nGartner Cool Vendor 2025\nNRF 2026 presence\nCBO is a strong decision maker for go-to-market\nClear ICP: mid-market retailers\n\nNext Action: Reschedule. Outbound to supply chain/operations teams at retailers.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptnc",
+        "name": "Oren Michels \u2014 Barndoor AI",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptnc",
+        "date_created": "1770273659549",
+        "date_updated": "1770273659549",
+        "description_preview": "\ud83d\udc64 Oren Michels\n\u2b50 Co-Founder & CEO\n\ud83c\udfe2 Barndoor AI \u2014 AI access control and governance platform\n\ud83c\udf10 https://barndoor.ai\n\nWhy Qualified:\n\nSOC 2 Type II, enterprise-grade\nCEO is decision maker\nAI governance is a timely, hot market\nClear ICP: IT admins, security teams at enterprises deploying AI\n\nNext Action: Reactivate conversation. Outbound to IT/security leaders.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptnb",
+        "name": "Michael Parrella \u2014 SoftSmiths",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptnb",
+        "date_created": "1770273658650",
+        "date_updated": "1770273658650",
+        "description_preview": "\ud83d\udc64 Michael Parrella\n\u2b50 Chief Executive Officer\n\ud83c\udfe2 SoftSmiths \u2014 Energy trading and risk management software\n\ud83c\udf10 http://www.softsmiths.com\n\nWhy Qualified:\n\nBased in Houston (energy hub)\nCEO is decision maker\nNiche enterprise software\nClear ICP: energy companies, trading firms, utilities\n\nNext Action: Reactivate. Outbound to energy trading firms and utilities.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptn5",
+        "name": "Vinay Nadig \u2014 SimplifyX",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptn5",
+        "date_created": "1770273657909",
+        "date_updated": "1770273657909",
+        "description_preview": "\ud83d\udc64 Vinay Nadig\n\u2b50 President\n\ud83c\udfe2 SimplifyX \u2014 AI agentic platform for enterprise applications\n\ud83c\udf10 https://www.simplifyx.ai/\n\nWhy Qualified:\n\nMulti-vertical: healthcare, banking, retail, insurance\nPresident is top decision maker\nEnterprise-grade product\n\nNext Action: Discuss during podcast. Outbound to CIOs/CTOs in healthcare, banking, insurance.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptmw",
+        "name": "Andy Schwaderer \u2014 Quantum Knight",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptmw",
+        "date_created": "1770273657139",
+        "date_updated": "1770273657139",
+        "description_preview": "\ud83d\udc64 Andy Schwaderer\n\u2b50 Co-Founder & CEO\n\ud83c\udfe2 Quantum Knight \u2014 Post-quantum cryptographic solutions\n\ud83c\udf10 https://www.quantumknight.io/\n\nWhy Qualified:\n\nNIST certified, enterprise-focused\nCEO is decision maker\nNiche product targeting regulated industries (energy, finance, government)\n\nNext Action: Discuss during podcast. Outbound to compliance/security officers.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptmp",
+        "name": "Craig Paris \u2014 Winware",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptmp",
+        "date_created": "1770273656373",
+        "date_updated": "1770273656373",
+        "description_preview": "\ud83d\udc64 Craig Paris\n\u2b50 Chief Revenue Officer\n\ud83c\udfe2 Winware \u2014 B2B research platform with verified LinkedIn audiences\n\ud83c\udf10 https://winware.ai\n\nWhy Qualified:\n\nAcquired by ProductPlan\nCRO is ideal decision maker for lead gen\nGood product-market fit\n\nNext Action: Reactivate conversation. Outbound to product managers and marketers at SaaS companies.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptme",
+        "name": "Peter Asman \u2014 Livingmap",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptme",
+        "date_created": "1770273654835",
+        "date_updated": "1770273654835",
+        "description_preview": "\ud83d\udc64 Peter Asman\n\u2b50 CRO\n\ud83c\udfe2 Livingmap \u2014 Digital mapping and wayfinding for venues\n\ud83c\udf10 https://www.livingmap.com/\n\nWhy Qualified:\n\nEnterprise clients: The Met, NHS, Canary Wharf\n200K+ monthly users\nCRO is ideal decision maker\nClear ICP: hospitals, airports, retail\n\nNext Action: Reactivate conversation. Outbound to facilities managers.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptmb",
+        "name": "Faisal Rafiq \u2014 Nextvisit AI",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptmb",
+        "date_created": "1770273654121",
+        "date_updated": "1770273654121",
+        "description_preview": "\ud83d\udc64 Faisal Rafiq\n\u2b50 Business Owner / CEO\n\ud83c\udfe2 Psychvisit / Nextvisit AI \u2014 AI medical scribe for behavioral health\n\ud83c\udf10 https://nextvisit.ai\n\nWhy Qualified:\n\n4.96/5 rating, active product\nOwner/CEO is decision maker\nClear ICP: mental health practices, therapists, primary care\nHealthcare SaaS with proven product\nAlready in pre-calls\n\nNext Action: Push to close.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptm5",
+        "name": "Rick Woyde \u2014 Pairaphrase",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptm5",
+        "date_created": "1770273653316",
+        "date_updated": "1770273653316",
+        "description_preview": "\ud83d\udc64 Rick Woyde\n\u2b50 Founder\n\ud83c\udfe2 Pairaphrase \u2014 AI translation platform\n\ud83c\udf10 https://pairaphrase.com\n\nWhy Qualified:\n\nEnterprise clients: Warner Media, Toyota\nHIPAA/GDPR/SOC 2 compliant\nFounder is decision maker\nClear ICP: regulated industries needing translation\nAlready in sales call analysis stage\n\nNext Action: Push to close. Strong fit with enterprise compliance angle.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptm1",
+        "name": "Craig Klein \u2014 SalesNexus",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptm1",
+        "date_created": "1770273652614",
+        "date_updated": "1770273652614",
+        "description_preview": "\ud83d\udc64 Craig Klein\n\u2b50 President/CEO\n\ud83c\udfe2 SalesNexus \u2014 CRM and marketing automation platform\n\ud83c\udf10 http://www.salesnexus.com\n\nWhy Qualified:\n\n100K+ users, established customer base\nCEO is top decision maker\nThey sell to sales teams \u2014 perfect ICP for outbound\nAlready in sales call analysis stage\n\nNext Action: Push to close. CEO is engaged.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptky",
+        "name": "Seema Menon \u2014 CyberMindr",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptky",
+        "date_created": "1770273651957",
+        "date_updated": "1770273651957",
+        "description_preview": "\ud83d\udc64 Seema Menon\n\u2b50 Chief Strategy Officer\n\ud83c\udfe2 CyberMindr \u2014 Continuous threat exposure management\n\ud83c\udf10 https://cybermindr.com/\n\nWhy Qualified:\n\nFeatured in Gartner report\nMonitoring 10M+ assets\nCSO is C-suite decision maker\nClear ICP: CISOs at mid-market/enterprise\n\nNext Action: Discuss during podcast. Strong product-market fit.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptkr",
+        "name": "Abhi J. \u2014 Smart Exits",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptkr",
+        "date_created": "1770273651320",
+        "date_updated": "1770273651320",
+        "description_preview": "\ud83d\udc64 Abhi J.\n\u2b50 Chief Executive Officer\n\ud83c\udfe2 Smart Exits \u2014 B2B M&A advisory firm\n\ud83c\udf10 https://smart-exits.com\n\nWhy Qualified:\n\nHandles deals from \u00a31.4M to \u00a3400M\nLondon and Pennsylvania offices\nCEO is decision maker\nICP: business owners considering exit (manufacturing, analytics, IT services)\n\nNext Action: Discuss during podcast. Outbound can target business owners.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptkg",
+        "name": "Mike Le \u2014 Conative.AI",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgptkg",
+        "date_created": "1770273650606",
+        "date_updated": "1770273650606",
+        "description_preview": "\ud83d\udc64 Mike Le\n\u2b50 Founder\n\ud83c\udfe2 Conative.AI \u2014 AI demand forecasting for ecommerce\n\ud83c\udf10 https://conative.ai/\n\nWhy Qualified:\n\nEstablished customer base: QALO, Honest Paws, etc.\nWon SaaS Awards 2024\nClear ICP, proven product\nFounder is decision maker\n\nNext Action: Discuss outbound to ecommerce inventory/marketing teams during podcast.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptk9",
+        "name": "Jeff Kirchick \u2014 Zorro",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgptk9",
+        "date_created": "1770273649868",
+        "date_updated": "1770273649868",
+        "description_preview": "HIGH PRIORITY\n\n\ud83d\udc64 Jeff Kirchick\n\u2b50 Owner\n\ud83c\udfe2 Zorro \u2014 AI-powered ICHRA health benefits platform\n\ud83c\udf10 http://www.myzorro.co\n\nWhy Qualified:\n\nRecently raised $20M Series A\nClear ICP: employers, insurance brokers\nOwner is decision maker\nStrong growth trajectory with funding\n\nNext Action: Discuss during podcast. Outbound to HR/benefits decision makers and insurance brokers.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptk0",
+        "name": "Noam Maital \u2014 Darwin AI (DarwinGov)",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgptk0",
+        "date_created": "1770273648968",
+        "date_updated": "1770273648968",
+        "description_preview": "HIGH PRIORITY \u2014 RESCHEDULE\n\n\ud83d\udc64 Noam Maital\n\u2b50 Chief Executive Officer\n\ud83c\udfe2 Darwin AI (DarwinGov) \u2014 AI governance for government\n\ud83c\udf10 https://darwingov.com\n\nWhy Qualified:\n\nGovTech 100 (2026)\nSOC 2/NIST certified\nCEO is decision maker\n15+ government clients\nClear ICP: state/local government IT teams\n\nNext Action: Reschedule. Note: government sales cycles are long but high-value.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptjw",
+        "name": "Mark Schmidt-Hagius \u2014 Digycorp",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgptjw",
+        "date_created": "1770273647953",
+        "date_updated": "1770273647953",
+        "description_preview": "HIGH PRIORITY \u2014 RESCHEDULE\n\n\ud83d\udc64 Mark Schmidt-Hagius\n\u2b50 Chief Commercial and Product Officer\n\ud83c\udfe2 Digycorp \u2014 Digital twin and AI platform for industrial systems\n\ud83c\udf10 http://www.digycorp.com\n\nWhy Qualified:\n\nClients include KAUST, NATS, National Grid\nCCPO is a strong decision maker for go-to-market\nMulti-vertical enterprise product (energy, transport, aerospace)\n\nNext Action: Reschedule urgently. Outbound to operations/digital transformation leads.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptjd",
+        "name": "Tommy Vincent \u2014 Hub Analytics",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgptjd",
+        "date_created": "1770273646775",
+        "date_updated": "1770273646775",
+        "description_preview": "HIGH PRIORITY\n\n\ud83d\udc64 Tommy Vincent\n\u2b50 Chief Revenue Officer\n\ud83c\udfe2 Hub Analytics \u2014 Financial reporting and BI software\n\ud83c\udf10 https://hub-analytics.com/\n\nWhy Qualified:\n\nFeatured in Forbes, NASDAQ\nCRO is the ideal decision maker\nClear ICP: CFOs, accounting firms, consultants\nEstablished product\n\nNext Action: Reactivate conversation. Strong fit for outbound to CFOs and accounting firms.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgptj9",
+        "name": "Amy Heng \u2014 Straiker",
+        "status": "joey podcast",
+        "tags": [
+          "joey-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgptj9",
+        "date_created": "1770273645859",
+        "date_updated": "1770273645859",
+        "description_preview": "HIGH PRIORITY\n\n\ud83d\udc64 Amy Heng\n\u2b50 Head of Marketing\n\ud83c\udfe2 Straiker \u2014 AI security platform\n\ud83c\udf10 https://straiker.ai\n\nWhy Qualified:\n\nFortune Cyber 60 company (2x)\nSOC 2 + ISO 27001 certified\nHead of Marketing IS the exact buyer persona for lead gen\nGrowth-stage with enterprise traction\nAI security is a hot market\n\nNext Action: Push discovery forward aggressively.\n\nSource: Joey Podcast Board"
+      },
+      {
+        "id": "86ewgpt55",
+        "name": "Adrian \u2014 FORTBRIDGE",
+        "status": "youtube lead",
+        "tags": [
+          "youtube-lead"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgpt55",
+        "date_created": "1770273585974",
+        "date_updated": "1770273585974",
+        "description_preview": "\ud83d\udc64 Adrian\n\ud83c\udfe2 FORTBRIDGE \u2014 CREST-accredited cybersecurity penetration testing firm\n\ud83c\udf10 https://fortbridge.co.uk\n\nWhy Qualified:\n\nCREST-accredited (industry gold standard)\nB2B services selling to tech companies\n20+ years experience, expanding to EMEA\nTargets companies with security budgets\nProfessional, established reputation\n\nNext Action: Book discovery call. Podcast lead gen could open doors to enterprise prospects.\n\nSource: YouTube TypeForm"
+      },
+      {
+        "id": "86ewgpt4v",
+        "name": "Sam Hassell \u2014 Great Minds Advising",
+        "status": "youtube lead",
+        "tags": [
+          "youtube-lead"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgpt4v",
+        "date_created": "1770273585020",
+        "date_updated": "1770273585020",
+        "description_preview": "\ud83d\udc64 Sam Hassell\n\ud83c\udfe2 Great Minds Advising \u2014 Premium college consulting\n\ud83c\udf10 https://greatmindsadvising.com\n\nWhy Qualified:\n\nRevenue: $500K-$1M\n90% Ivy League acceptance rate, 100% top-choice placement 2024-25\nBased in NYC metro, serves nationwide\nHas a podcast already ('The Game') \u2014 perfect synergy\nTargets affluent parents, proven premium offer\n\nNext Action: Book discovery call. Strong podcast synergy.\n\nSource: YouTube TypeForm"
+      },
+      {
+        "id": "86ewgpt4k",
+        "name": "Stijn \u2014 CourseLaunchr",
+        "status": "youtube lead",
+        "tags": [
+          "youtube-lead"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgpt4k",
+        "date_created": "1770273584339",
+        "date_updated": "1770273584339",
+        "description_preview": "\ud83d\udc64 Stijn\n\ud83c\udfe2 CourseLaunchr \u2014 B2B lead gen agency\n\ud83c\udf10 https://courselaunchr.com\n\nWhy Qualified:\n\nRevenue: $500K-$1M\nCharges $2K upfront + 35% rev share, generates $57K+ for clients\nClear offer, proven model\nDecision maker\nAlready doing outbound but wants to scale\n\nNext Action: Book discovery call. Podcast-led lead gen to help scale.\n\nSource: YouTube TypeForm"
+      },
+      {
+        "id": "86ewgpt49",
+        "name": "Andrew \u2014 Paramount ACQ",
+        "status": "youtube lead",
+        "tags": [
+          "youtube-lead"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgpt49",
+        "date_created": "1770273583687",
+        "date_updated": "1770273583687",
+        "description_preview": "\ud83d\udc64 Andrew\n\ud83c\udfe2 Paramount ACQ \u2014 Marketing agency for home improvement \u2192 now pivoting to outbound for software companies\n\ud83c\udf10 https://theparamountacquisition.com\n\nWhy Qualified:\n\nRevenue: $500K-$1M\nSells $5K-$10K contracts via cold outreach\nProven offer, uses cold outreach + AI + Facebook ads\nDecision maker, actively doing outbound\nGood fit for podcast-led lead gen to scale past $1M\n\nNext Action: Book discovery call.\n\nSource: YouTube TypeForm"
+      },
+      {
+        "id": "86ewgpt43",
+        "name": "Ashley \u2014 iConvert",
+        "status": "youtube lead",
+        "tags": [
+          "youtube-lead",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgpt43",
+        "date_created": "1770273582882",
+        "date_updated": "1770273582882",
+        "description_preview": "HIGH PRIORITY\n\n\ud83d\udc64 Ashley\n\ud83c\udfe2 iConvert \u2014 B2B SaaS, player acquisition software for online casinos/gambling operators\n\ud83c\udf10 https://www.iconvert.io\n\ud83d\udce7 (from TypeForm)\n\nWhy Qualified:\n\nRevenue: $1M-$5M\nPartnerships with Nasdaq-listed companies (High Roller Technologies)\nEstablished client base: BetSwapp, BlockBet, 10bet, LuckyDays, Wildz\nStruggles with consistent lead flow \u2014 exact problem DD solves\nDecision maker\n\nNext Action: Book discovery call immediately.\n\nSource: YouTube TypeForm | ClickUp ID: 86ewd.."
+      },
+      {
+        "id": "86ewgpt0x",
+        "name": "Angus Forth \u2014 Big Picture Medical",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgpt0x",
+        "date_created": "1770273571840",
+        "date_updated": "1770273571840",
+        "description_preview": "\ud83d\udc64 Angus Forth\n\u2b50 Chief Strategy and Performance Officer\n\ud83c\udfe2 Big Picture Medical \u2014 Configurable platform for clinical workflows\n\ud83c\udf10 http://www.bigpicturemedical.com\n\nWhy Qualified:\n\nUniversity Hospital Birmingham has taken an equity stake\nProven metrics: 33% cost reduction, 54% reduction in unnecessary referrals\nStrategic leadership role with authority\nHealthcare is a large addressable market for outbound\nICP: hospital systems, health networks\n\nNext Action: Organize and reach out. Pitch outbound targe"
+      },
+      {
+        "id": "86ewgpt0q",
+        "name": "Chad Janssen \u2014 WASTELINQ",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgpt0q",
+        "date_created": "1770273571038",
+        "date_updated": "1770273571038",
+        "description_preview": "\ud83d\udc64 Chad Janssen\n\u2b50 Director of Channel Partners\n\ud83c\udfe2 WASTELINQ, Inc. \u2014 Waste management compliance & workflow SaaS\n\ud83c\udf10 https://wastelinq.com\n\nWhy Qualified:\n\n~10 named enterprise customers (Specialty Waste Group, Graymar, Crystal Clean)\nProduct is mature with API docs, training platform, customer portals\nChad owns partner/distribution strategy\nNiche vertical SaaS with clear outbound targets\n\nNext Action: Re-engage. Pitch outbound to waste generators, transporters, and disposal facilities.\n\nSource: Jord"
+      },
+      {
+        "id": "86ewgpt0a",
+        "name": "Ajay Bam \u2014 Vyrill",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgpt0a",
+        "date_created": "1770273570268",
+        "date_updated": "1770273570268",
+        "description_preview": "\ud83d\udc64 Ajay Bam\n\u2b50 CEO & Co-Founder\n\ud83c\udfe2 Vyrill \u2014 AI-powered video commerce/UGC analytics\n\ud83c\udf10 https://vyrill.com\n\nWhy Qualified:\n\nSells to e-commerce brands, retailers, agencies\nNamed clients include Revlon\nMultiple product lines (Video Commerce, Discovery, Insights, API)\nCEO is the contact, product is mature with pricing model\nE-commerce brands are highly targetable via outbound\n\nNext Action: After podcast, pitch outbound targeting e-commerce/DTC brand marketing teams.\n\nSource: Jordan Podcast Board"
+      },
+      {
+        "id": "86ewgpt02",
+        "name": "Keith Tilley \u2014 Intoware",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgpt02",
+        "date_created": "1770273569586",
+        "date_updated": "1770273569586",
+        "description_preview": "\ud83d\udc64 Keith Tilley\n\u2b50 Chief Executive Officer\n\ud83c\udfe2 Intoware \u2014 WorkfloPlus digital work instructions platform\n\ud83c\udf10 http://www.intoware.com\n\nWhy Qualified:\n\nB2B SaaS targeting enterprise operations teams\nProduct category: digital work instructions (manufacturing, logistics, field services)\nCEO is the contact\n\nNext Action: After podcast, explore outbound to manufacturing/operations buyers. Research funding/size on Crunchbase.\n\nSource: Jordan Podcast Board"
+      },
+      {
+        "id": "86ewgprzr",
+        "name": "Rob Borley \u2014 Dootrix",
+        "status": "growth plan",
+        "tags": [
+          "jordan-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgprzr",
+        "date_created": "1770273568551",
+        "date_updated": "1770304542212",
+        "description_preview": "\ud83d\udc64 Rob Borley\n\u2b50 Chief Executive Officer\n\ud83c\udfe2 Dootrix \u2014 B2B software consultancy (14+ years)\n\ud83c\udf10 http://www.dootrix.com\n\nWhy Qualified:\n\nFounded 2011, two UK offices (Fareham, Manchester)\nEnterprise clients: Heathrow Airport, Ofcom, PureGym, Confused.com\nServices: Agentic AI, App Dev, Data Integration\nCrown Commercial Supplier\nCEO is the contact, likely $1M+ revenue\n\nNext Action: After podcast, pitch lead gen targeting UK enterprises needing AI/digital transformation.\n\nSource: Jordan Podcast Board"
+      },
+      {
+        "id": "86ewgprzj",
+        "name": "Johnny Maghzal \u2014 Togal.AI",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgprzj",
+        "date_created": "1770273567795",
+        "date_updated": "1770273567795",
+        "description_preview": "HIGH PRIORITY\n\n\ud83d\udc64 Johnny Maghzal\n\u2b50 Head of Growth\n\ud83c\udfe2 Togal.AI \u2014 AI-powered construction takeoff software\n\ud83c\udf10 https://togal.ai\n\nWhy Qualified:\n\nMajor clients: Clark Construction, DPR Construction, Coastal Construction\nMiami-based, multiple industry awards\nProduct is mature (98% accuracy, G2 presence)\nHead of Growth owns pipeline \u2014 excellent decision maker\nConstruction vertical is highly targetable via outbound\n\nNext Action: Organize and engage. Pitch outbound targeting GCs and construction estimators"
+      },
+      {
+        "id": "86ewgprz8",
+        "name": "Nathan Burke \u2014 7AI",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgprz8",
+        "date_created": "1770273567021",
+        "date_updated": "1770273567021",
+        "description_preview": "HIGH PRIORITY\n\n\ud83d\udc64 Nathan Burke\n\u2b50 Chief Marketing Officer\n\ud83c\udfe2 7AI \u2014 Agentic security platform for SOCs\n\ud83c\udf10 https://7ai.com\n\nWhy Qualified:\n\nB2B cybersecurity SaaS with enterprise customers (DXC Technology, BigID, Duck Creek)\n2.5M alerts processed, $18.2M in SOC productivity reclaimed\nCMO is the perfect decision maker for lead gen\nCybersecurity is a massive, targetable market\nICP: CISOs, security teams at mid-market/enterprise\n\nNext Action: Organize and engage immediately.\n\nSource: Jordan Podcast Board"
+      },
+      {
+        "id": "86ewgpryy",
+        "name": "John Deakins \u2014 DataSapien",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgpryy",
+        "date_created": "1770273566055",
+        "date_updated": "1770273566055",
+        "description_preview": "HIGH PRIORITY \u2014 RESCHEDULE ASAP\n\n\ud83d\udc64 John Deakins\n\u2b50 CEO & Co-Founder\n\ud83c\udfe2 DataSapien \u2014 On-device AI/data platform for brands\n\ud83c\udf10 http://www.datasapien.com\n\ud83d\udce7 (extract from podcast board)\n\nWhy Qualified:\n\nSells to enterprise CMOs, CTOs, CDOs\nMajor clients: Sainsbury's, Barclays, Unilever, Verizon, GSK\n500K+ active app users from predecessor platform CitizenMe\nCEO is the contact \u2014 perfect decision maker\nEnterprise clients suggest solid revenue\n\nNext Action: Reschedule ASAP. Prepare case study around B2B S"
+      },
+      {
+        "id": "86ewgpryg",
+        "name": "Jessica Robertson \u2014 Orbb (fka Intail)",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast",
+          "high-priority"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgpryg",
+        "date_created": "1770273565175",
+        "date_updated": "1770273565175",
+        "description_preview": "HIGHEST PRIORITY\n\n\ud83d\udc64 Jessica Robertson\n\u2b50 Chief Revenue Officer (CRO)\n\ud83c\udfe2 Orbb (rebranded from Intail) \u2014 AI-powered relationship intelligence for sales teams\n\ud83c\udf10 https://orbb.com/\n\ud83d\udce7 (extract from podcast board)\n\ud83d\udd17 LinkedIn: (extract from podcast board)\n\nWhy Qualified:\n\nB2B SaaS with 10,000+ sales leaders using the platform\nNamed customers: Spreetail, Cresta, Similarweb, Walnut\nCase studies mention 7-figure deals closed\nCRO is THE perfect decision maker for lead gen \u2014 she owns revenue growth\nShe deeply "
+      },
+      {
+        "id": "86ewgp784",
+        "name": "Sascha Dobbelaere",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "low",
+        "url": "https://app.clickup.com/t/86ewgp784",
+        "date_created": "1770271008557",
+        "date_updated": "1770271360081",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Warm Lead (never got on a call)\n\nHistory\n\nNov 28: Booked \u2192 CANCELED\n\nNext Action\n\nReactivation outreach."
+      },
+      {
+        "id": "86ewgp77v",
+        "name": "Minna Vaisanen",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "low",
+        "url": "https://app.clickup.com/t/86ewgp77v",
+        "date_created": "1770271007594",
+        "date_updated": "1770271358850",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Warm Lead (never got on a call)\n\nHistory\n\nNov 20: Booked \u2192 CANCELED\nDec 5: Rebooked \u2192 CANCELED again\n\nNext Action\n\n'Hey Minna, I know we tried to connect a couple times last year. Still happy to chat if the timing is better now.'"
+      },
+      {
+        "id": "86ewgp77m",
+        "name": "Danny Gold",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "low",
+        "url": "https://app.clickup.com/t/86ewgp77m",
+        "date_created": "1770271006856",
+        "date_updated": "1770271357901",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Warm Lead (never got on a call)\n\nHistory\n\nSep 26 - Oct 9, 2025: FOUR bookings/cancellations\nVery interested but kept rescheduling\n\nNext Action\n\n'Hey Danny, I know we tried to connect a few times last year. Things have changed a lot on our end \u2014 worth a quick chat?'"
+      },
+      {
+        "id": "86ewgp77b",
+        "name": "Sam Steele \u2014 SG1 Consulting",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "low",
+        "url": "https://app.clickup.com/t/86ewgp77b",
+        "date_created": "1770271006062",
+        "date_updated": "1770271356970",
+        "description_preview": "Email: sam@sg1consulting.com.au\nCompany: SG1 Consulting (Australia)\nRevenue Potential: $12-15K\nStage: Warm Lead\n\nHistory\n\nNov 18, 2025: Last contact \u2014 email about leads and LinkedIn issues\n\nNext Action\n\nReactivation outreach referencing his LinkedIn challenges."
+      },
+      {
+        "id": "86ewgp777",
+        "name": "Ronald Lainez",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "low",
+        "url": "https://app.clickup.com/t/86ewgp777",
+        "date_created": "1770271005322",
+        "date_updated": "1770272516422",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nOct 2 + Oct 21, 2025: Two Fathom recaps\nTwo sessions refining his service offer for $10K/month goal\n\nNext Action\n\n'Hey Ronald, we worked on your offer together back in October. How's it going? If you've got the offer dialed in, I can help you fill it.'"
+      },
+      {
+        "id": "86ewgp770",
+        "name": "Terry Wilson \u2014 Chat Metrics",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "low",
+        "url": "https://app.clickup.com/t/86ewgp770",
+        "date_created": "1770271004526",
+        "date_updated": "1770272515480",
+        "description_preview": "Email: terry@chatmetrics.com\nCompany: Chat Metrics\nRevenue Potential: $12-15K\nStage: Strategy Call (completed, long-shot reactivation)\n\nHistory\n\nApr-Jul 2025: Multiple rescheduled strategy sessions\nJordan gave website feedback (recommended VSL, human-first messaging)\nJun 26, 2025: Call happened\nNo post-call follow-up found\n\nNext Action\n\nLong-shot: 'Hey Terry, we connected back in June about Chat Metrics. A lot has changed on our end \u2014 curious if you ever actioned the website changes we discussed"
+      },
+      {
+        "id": "86ewgp76u",
+        "name": "Andrew Hewitt \u2014 OfficerReports.com",
+        "status": "warm lead",
+        "tags": [
+          "jordan-podcast"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp76u",
+        "date_created": "1770271003604",
+        "date_updated": "1770272514693",
+        "description_preview": "Company: OfficerReports.com\nRevenue Potential: $8,700 (3 x $2,900/mo)\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nNov 12 + Nov 17, 2025: Two Fathom recaps\nJordan pitched podcast-based lead gen at $2,900/mo for 3 months\nJan 8: Podcast call booked then CANCELED\n\nNext Action\n\n'Hey Andrew, I know the timing didn't work out in January. Things have evolved on our end \u2014 we've built some AI systems that would make the outreach even more effective. Worth a quick 15-min catch-up?'"
+      },
+      {
+        "id": "86ewgp76h",
+        "name": "Gerry Abbey",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp76h",
+        "date_created": "1770271002608",
+        "date_updated": "1770272513859",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nOct 28, 2025: Strategy Session\n\nNext Action\n\nReactivation outreach."
+      },
+      {
+        "id": "86ewgp76a",
+        "name": "Aseem Asthana",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp76a",
+        "date_created": "1770271001802",
+        "date_updated": "1770272512994",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nNov 10, 2025: Strategy Session\n\nNext Action\n\nReactivation outreach."
+      },
+      {
+        "id": "86ewgp762",
+        "name": "Andy Evans",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp762",
+        "date_created": "1770271000841",
+        "date_updated": "1770272512033",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nNov 12, 2025: Strategy Session\n\nNext Action\n\nReactivation outreach."
+      },
+      {
+        "id": "86ewgp75u",
+        "name": "Mike Verkamp",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp75u",
+        "date_created": "1770271000109",
+        "date_updated": "1770272511114",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nNov 18, 2025: Strategy Session\n\nNext Action\n\nReactivation outreach."
+      },
+      {
+        "id": "86ewgp75k",
+        "name": "Brad Banyas & Paul Sciandra",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp75k",
+        "date_created": "1770270999369",
+        "date_updated": "1770272510246",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nNov 12, 2025: Strategy Session\n\nNext Action\n\nReactivation outreach."
+      },
+      {
+        "id": "86ewgp75b",
+        "name": "Robert Owens",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp75b",
+        "date_created": "1770270998627",
+        "date_updated": "1770272509254",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nNov 17, 2025: Strategy Session \u2014 booked and presumably happened\nGrowth plan may have been sent (stalled after)\n\nNext Action\n\nReactivation outreach."
+      },
+      {
+        "id": "86ewgp751",
+        "name": "James Leavesley",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp751",
+        "date_created": "1770270997910",
+        "date_updated": "1770272508438",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nNov 18, 2025: Strategy Session \u2014 booked and presumably happened\n\nNext Action\n\nReactivation outreach."
+      },
+      {
+        "id": "86ewgp74u",
+        "name": "Cormac Repman",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp74u",
+        "date_created": "1770270997142",
+        "date_updated": "1770272507671",
+        "description_preview": "Revenue Potential: $12-15K\nStage: Strategy Call (completed, needs reactivation)\n\nHistory\n\nDec 1, 2025: Strategy Session \u2014 booked and presumably happened\nNo visible follow-up since\n\nNext Action\n\nReactivation outreach referencing the call."
+      },
+      {
+        "id": "86ewgp74j",
+        "name": "Javier Chamizo \u2014 English Connection",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgp74j",
+        "date_created": "1770270996279",
+        "date_updated": "1770272518205",
+        "description_preview": "Email: javier.chamizo@englishconnection.es\nCompany: English Connection \u2014 Language Education, Spain\nRole: CEO\nRevenue Potential: $12-15K\nStage: Growth Plan\n\nHistory\n\nNov 2025: Full proposal ready\nJavier said 'genuinely very interested in moving forward'\nWanted to postpone until end of year\nConfirmed call for Nov 7\nCOMPLETE SILENCE for 91 days since\n\nNext Action\n\nHIGH PRIORITY REACTIVATION. Perfect timing \u2014 he wanted to start end of 2025, it's now Feb 2026.\n\n'Hey Javier, hope the new year is treat"
+      },
+      {
+        "id": "86ewgp74b",
+        "name": "Ryan Foote \u2014 JobGet",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgp74b",
+        "date_created": "1770270995420",
+        "date_updated": "1770271344957",
+        "description_preview": "Email: ryan.foote@jobget.com\nCompany: JobGet (jobget.com) \u2014 hiring platform\nProduct LTV: $1M\nRevenue Potential: HIGH \u2014 premium client\nStage: Warm Lead\n\nHistory\n\nDec 15, 2025: Jordan sent qualifying questions about customer profile, LTV, deal structure\nNo reply\n\nNext Action\n\nReactivation: 'Hey Ryan, circling back on this \u2014 your LTV numbers are impressive. Worth a quick chat to see if our outbound model would work for JobGet.'"
+      },
+      {
+        "id": "86ewgp743",
+        "name": "Joe Patino \u2014 Installation Business (Houston)",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgp743",
+        "date_created": "1770270994498",
+        "date_updated": "1770271343982",
+        "description_preview": "Email: joehpatino@gmail.com\nCompany: Installation business (flooring/construction), Houston TX\nRevenue Potential: $12-15K\nStage: Warm Lead\n\nHistory\n\nJan 2-4, 2026: Email exchange\nPreferred a live call\nProposed Wed Jan 7 at 8pm\nNo confirmation visible\n\nNext Action\n\nCheck if call happened. If not, follow up."
+      },
+      {
+        "id": "86ewgp73p",
+        "name": "Evaldas Miliauskas \u2014 StackToMe",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp73p",
+        "date_created": "1770270993394",
+        "date_updated": "1770271343071",
+        "description_preview": "Email: e.miliauskas@stacktome.com\nCompany: StackToMe (stacktome.com) \u2014 review management SaaS, ~$4K MRR\nRevenue Potential: $12-15K\nStage: Warm Lead (nurturing)\n\nHistory\n\nOct-Nov 2025: Full sales cycle\nNov 11: Growth plan + Loom sent\nRaised concerns about guarantee \u2014 Jordan addressed them\nSaid 'want to try the podcast angle myself first'\nJan 16: Jordan followed up, Evaldas said 'currently busy working on new offer, will reach out once validated'\nJordan offered ACQ AI help\n\nNext Action\n\nLow priori"
+      },
+      {
+        "id": "86ewgp73f",
+        "name": "Monty Kothiwale \u2014 QASolve AI",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgp73f",
+        "date_created": "1770270992595",
+        "date_updated": "1770271342143",
+        "description_preview": "Email: monty.kothiwale@qasolve.ai\nCompany: QASolve AI\nRevenue Potential: $12-15K\nStage: Jordan Podcast\n\nHistory\n\nPodcast guest on Jordan's show\nJan 26: Podcast follow-up sent\nNo reply in 10 days\n\nNext Action\n\nSecond follow-up with specific value angle."
+      },
+      {
+        "id": "86ewgp73b",
+        "name": "Tammuz \u2014 Autonomy AI",
+        "status": "jordan podcast",
+        "tags": [
+          "jordan-podcast"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgp73b",
+        "date_created": "1770270991854",
+        "date_updated": "1770271341167",
+        "description_preview": "Email: tammuz@autonomyai.io\nCompany: Autonomy AI\nRevenue Potential: $12-15K\nStage: Jordan Podcast\n\nHistory\n\nPodcast guest on Jordan's show\nJan 26: Podcast follow-up sent ('Following up from our podcast')\nNo reply in 10 days\n\nNext Action\n\nSecond follow-up with specific value angle. Reference the podcast conversation and a concrete idea for his business."
+      },
+      {
+        "id": "86ewgp72y",
+        "name": "Joao Gabriel Lopes \u2014 Photography (Brazil)",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "normal",
+        "url": "https://app.clickup.com/t/86ewgp72y",
+        "date_created": "1770270990766",
+        "date_updated": "1770271340224",
+        "description_preview": "Email: joaogabriellopes1812@gmail.com\nCompany: Photography business, Brazil\nRevenue Potential: $12-15K\nStage: Warm Lead\n\nHistory\n\nFeb 3: Jordan bumped follow-up asking about a call\n\nNext Action\n\nWait 2-3 days, then final follow-up if no reply."
+      },
+      {
+        "id": "86ewgp72m",
+        "name": "Vedant Parvatikar \u2014 BAS Marketing",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgp72m",
+        "date_created": "1770270989787",
+        "date_updated": "1770271339421",
+        "description_preview": "Email: vedantparvatikar17@gmail.com\nCompany: BAS Marketing\nRevenue Potential: $12-15K\nStage: Warm Lead\n\nHistory\n\nFeb 3: Jordan sent Calendly link for strategy session\nNo booking confirmation visible\n\nNext Action\n\nCheck if he booked. If not: 'Hey Vedant, just wanted to make sure my calendar link worked \u2014 here it is again if needed.'"
+      },
+      {
+        "id": "86ewgp72c",
+        "name": "Tamir Morris \u2014 Morris Enterprises",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "high",
+        "url": "https://app.clickup.com/t/86ewgp72c",
+        "date_created": "1770270988996",
+        "date_updated": "1770272517308",
+        "description_preview": "Email: tamir@morris-enterprises.com\nCompany: Morris Enterprises\nRevenue Potential: $12-15K\nStage: Growth Plan\n\nHistory\n\nJan 23: Jordan sent growth plan + Loom video\nNo reply in 13 days\nPromised partner review after audit\nGrowth plan audit found in Google Drive\n\nNext Action\n\nFollow up: 'Hey Tamir, just bumping this up \u2014 did you get a chance to watch the Loom? Happy to answer any questions on a quick call.'"
+      },
+      {
+        "id": "86ewgp723",
+        "name": "Bryan Mejia \u2014 Horizon Acres Land",
+        "status": "growth plan",
+        "tags": [
+          "youtube-lead"
+        ],
+        "priority": "urgent",
+        "url": "https://app.clickup.com/t/86ewgp723",
+        "date_created": "1770270988053",
+        "date_updated": "1770271337674",
+        "description_preview": "Email: bmejia@horizonacresland.com\nCompany: Horizon Acres Land \u2014 land flipping, Florida\nRevenue: $400K current, wants $1.8M\nRevenue Potential: $12-18K\nStage: Growth Plan\n\nHistory\n\nJan 29: Discovery call completed\nJordan sent 90-day plan doc after call\nNO REPLY from Bryan since (7 days)\n\nFit Assessment\n\nNOT a standard B2B outbound fit. Land flipping = high-volume texting (300K texts/month, 0.0006% conversion). Options:\n\nConsulting/conversion optimization: $12-15K\nDisposition engine: $15-18K\nRefer"
+      },
+      {
+        "id": "86ewgp71w",
+        "name": "Hayk \u2014 Insight Genie AI",
+        "status": "warm lead",
+        "tags": [
+          "other"
+        ],
+        "priority": "urgent",
+        "url": "https://app.clickup.com/t/86ewgp71w",
+        "date_created": "1770270987213",
+        "date_updated": "1770271336706",
+        "description_preview": "Email: hayk@insightgenie.ai\nCompany: Insight Genie AI\nRevenue Potential: $12-15K\nStage: Warm Lead\n\nHistory\n\nNearly a year of follow-ups from Jordan\nHayk engaged but consistently slow to respond\nFeb 3: Jordan promised Loom demo by end of week\nLoom is now OVERDUE\n\nNext Action\n\nRECORD AND SEND THE LOOM TODAY. You're already late on this promise. AI company likely has budget. Breaking a promise here kills credibility."
+      },
+      {
+        "id": "86ewgp71m",
+        "name": "Dimitris Mougis \u2014 Three Visuals Ltd",
+        "status": "growth plan",
+        "tags": [
+          "youtube-lead"
+        ],
+        "priority": "urgent",
+        "url": "https://app.clickup.com/t/86ewgp71m",
+        "date_created": "1770270986369",
+        "date_updated": "1770271334389",
+        "description_preview": "Email: dimitris@threevisuals.co.uk\nCompany: Three Visuals Ltd \u2014 3D architectural visualization\nLocation: Limassol, Cyprus\nRevenue: $250-500K/year, wants $200K/month\nRevenue Potential: $15-20K\nStage: Growth Plan\n\nHistory\n\nJan 27: YouTube lead, personalized email sent\nConfirmed discovery call within hours\nFeb 2: Discovery call completed\nFeb 5: NO follow-up email sent yet (3 days silence)\n\nKey Details from Discovery Call\n\n$70K average LTV per client\nOwns the market in Cyprus, wants US expansion\nCol"
+      },
+      {
+        "id": "86ewgp71c",
+        "name": "Durell Patrick \u2014 how2pay4college",
+        "status": "growth plan",
+        "tags": [
+          "youtube-lead"
+        ],
+        "priority": "urgent",
+        "url": "https://app.clickup.com/t/86ewgp71c",
+        "date_created": "1770270985485",
+        "date_updated": "1770278962018",
+        "description_preview": "Email: how2pay4college@gmail.com\nCompany: Financial consulting (how2pay4college)\nRevenue Potential: $12-15K\nStage: Strategy Call\n\nHistory\n\nYouTube lead \u2192 Jordan sent growth plan\nDurell replied with detailed breakdown of his business\nJordan sent Calendly link \u2192 Durell booked within hours\nStrategy Session: TODAY Thu Feb 5, 2pm GMT\n\nNext Action\n\nPREP AND CLOSE THIS CALL. Use /growth-plan. This is the hottest lead in the pipeline \u2014 fast mover who engages deeply."
+      }
+    ],
+    "calls_today": 0,
+    "calls_this_week": 0,
+    "today_call_details": []
+  },
+  "youtube_leads": {
+    "total": 24,
+    "by_status": {
+      "\u274c not a fit": 16,
+      "\ud83d\udce5 new": 1,
+      "\u2705 qualified": 5,
+      "\ud83d\udcde discovery call booked": 1,
+      "\u2753 needs clarification": 1
+    },
+    "leads": [
+      {
+        "id": "86ewhrfnz",
+        "name": "Cyrus - psmg.com.au",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewhrfnz",
+        "email": "cyrus@outlook.com.au",
+        "website": "www.psmg.com.au",
+        "linkedin": "https://www.linkedin.com/company/pspmg/",
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Consultancy / Coaching",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "Management Services",
+        "urgency": "Next 30 days",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewhn7wj",
+        "name": "Jer Ming - https://cuura.space/rent?srsltid=AfmBOoqCDS6HdRC0Z_eOQT9ANny4gZmm3cyLZ9HKOiPE6fsCGjfK_O6s",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewhn7wj",
+        "email": "jerming1127@hotmail.com",
+        "website": "https://cuura.space/rent?srsltid=AfmBOoqCDS6HdRC0Z_eOQT9ANny4gZmm3cyLZ9HKOiPE6fsCGjfK_O6s",
+        "linkedin": "https://www.linkedin.com/in/jermingchong/",
+        "revenue": "Under $250K",
+        "business_type": "Other",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "Home makeover service, to sell package to home owner who just get their new condo and intent to rent out with rental ready unit",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Leads dont convert",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewhf7cr",
+        "name": "Antariksh - veromedia.org",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewhf7cr",
+        "email": "antarikshdongare150@gmail.com",
+        "website": "veromedia.org",
+        "linkedin": "https://www.linkedin.com/in/antariksh-dongare-309007378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "SaaS / Tech",
+        "classification": "Not a Fit",
+        "confidence": "100",
+        "core_offer": "Full Stack WebDevlopment and SaaS Product Development",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewhf1xx",
+        "name": "egz - evolution.fr",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewhf1xx",
+        "email": "acmaera@gmail.com",
+        "website": "evolution.fr",
+        "linkedin": null,
+        "revenue": "Under $250K",
+        "business_type": "SaaS / Tech",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "done fort you",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewhd7cd",
+        "name": "Yeslem - https://revlinkers.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewhd7cd",
+        "email": "revlinkrs@gmail.com",
+        "website": "https://revlinkers.com",
+        "linkedin": "https://NA",
+        "revenue": "$500K - $1M",
+        "business_type": "Agency",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "I\u2019m ready to pay you \u2014 either an upfront payment or a percentage of the business. But I have a unique demand, different from your usual calls.\u2014 and if you are open minded, we will do business.\n\nImportant: Be fully educated on our business before the call:\n\n\u2022 What is RevLinker: https://youtu.be/PYWm-4gUJW4?si=mql7NLEfSBCt-ZdU\n\n\u2022 Stripe Onboarding: https://youtu.be/l1BmOBGmfes?si=h_RHTYA-mlT7Y8T_\n\n\u2022 Contract Review: https://youtu.be/126gkBc2yNA?si=oEP7VRFx46lnAISf\n\n\nYou can message me on WhatsApp: +351924052643. As I\u2019m more reactive there.",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Leads dont convert",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewgtyed",
+        "name": "Andrew - Agent-sync.com",
+        "status": "\ud83d\udce5 new",
+        "url": "https://app.clickup.com/t/86ewgtyed",
+        "email": "andrew@startachat.co.uk",
+        "website": "Agent-sync.com",
+        "linkedin": "https://www.linkedin.com/in/andrew-struthers/",
+        "revenue": "Under $250K",
+        "business_type": "SaaS / Tech",
+        "classification": null,
+        "confidence": null,
+        "core_offer": "AgentSync is one governed, omnichannel AI front desk for your whole Business \u2014 it captures every enquiry, qualifies it, triggers the next steps automatically, and hands your team only the leads worth speaking to (with full context logged)",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewg4k4g",
+        "name": "Gonzalo - https://www.instagram.com/modocsa/",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewg4k4g",
+        "email": "gonzalopatino97@gmail.com",
+        "website": "https://www.instagram.com/modocsa/",
+        "linkedin": "https://www.linkedin.com/company/modoc-sa/?viewAsMember=true",
+        "revenue": "$250K - $500K",
+        "business_type": "Physical Products",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "Done for you Repairable plastic pallets.",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Leads dont convert",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewfvk8n",
+        "name": "Durell - https://strategicfinancialsystems.com/imo-fmo",
+        "status": "\u2705 qualified",
+        "url": "https://app.clickup.com/t/86ewfvk8n",
+        "email": "how2pay4college@gmail.com",
+        "website": "https://strategicfinancialsystems.com/imo-fmo",
+        "linkedin": "https://www.linkedin.com/in/r-durell-patrick-039689/",
+        "revenue": "$250K - $500K",
+        "business_type": "Consultancy / Coaching",
+        "classification": "Needs Clarification",
+        "confidence": "75",
+        "core_offer": "Accelerated profits, 3x-10x retirement savings, faster retirement, lower taxes, smart debt, and $1M+ in biz value without touching cash or savings.",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Referral dependent",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewfnby0",
+        "name": "josh - gmail.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewfnby0",
+        "email": "joshjamessmith15@gmail.com",
+        "website": null,
+        "linkedin": null,
+        "revenue": "Under $250K",
+        "business_type": "Agency",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "I am learning how to do shadow operating",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86eweyzt5",
+        "name": "Charles - FGEAdvancedTech",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86eweyzt5",
+        "email": "charles.ponsford@gmail.com",
+        "website": "www.fge-tech.com; www.taiwanalpinetea.com; www.youtube.com/@FGEAdvancedTech",
+        "linkedin": null,
+        "revenue": "$500K - $1M",
+        "business_type": "Physical Products",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "Proprietary affordable agricultural technology that 1) reduces farmer inputs, 2) increases agricultural yields, 3) enhances agricultural produce quality, and 4) eliminates the need for artificial fertilizers",
+        "urgency": "Next 90 days",
+        "growth_problem": "Referral dependent",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewevr45",
+        "name": "Sampras - gmail.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewevr45",
+        "email": "sampras.dsouza@gmail.com",
+        "website": null,
+        "linkedin": "https://www.linkedin.com/in/sampras-d-souza-60aa64b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Agency",
+        "classification": "Not a Fit",
+        "confidence": "100",
+        "core_offer": "Copywriting",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Scaling without burning out",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86eweqbxp",
+        "name": "Ferhan - ferhanahmed.co",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86eweqbxp",
+        "email": "ferhanahmed07@gmail.com",
+        "website": "ferhanahmed.co",
+        "linkedin": null,
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Agency",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "I do website redesign to match current AI awareness cycle of visitors so that AI recommends you when people search your service on AI + After improving website conversion rate run paid ads to grow your dental clinic",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Marketing not working",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86eweqabt",
+        "name": "nghjhj - https://form.typeform.com/to/n0a0HYkd?typeform-source=www.youtube.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86eweqabt",
+        "email": "shvadim701@gmail.com",
+        "website": "https://form.typeform.com/to/n0a0HYkd?typeform-source=www.youtube.com",
+        "linkedin": "https://form.typeform.com/to/n0a0HYkd?typeform-source=www.youtube.com",
+        "revenue": "Under $250K",
+        "business_type": "Other",
+        "classification": "Not a Fit",
+        "confidence": "100",
+        "core_offer": "not",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Marketing not working",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewem8dh",
+        "name": "Yevhenii - https://www.journeytograndmaster.com/        https://www.youtube.com/@journeytograndmaster",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewem8dh",
+        "email": "yelisieiev98@gmail.com",
+        "website": "https://www.journeytograndmaster.com/        https://www.youtube.com/@journeytograndmaster",
+        "linkedin": null,
+        "revenue": "Under $250K",
+        "business_type": "Consultancy / Coaching",
+        "classification": "Needs Clarification",
+        "confidence": "75",
+        "core_offer": "I sell online chess improvement programs for adult club players, delivered through a self-paced video course plus optional live group coaching and community.",
+        "urgency": "Next 90 days",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewehpq4",
+        "name": "khalifa - gmail.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewehpq4",
+        "email": "khalifaaaa07@gmail.com",
+        "website": null,
+        "linkedin": null,
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Other",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "shadow operating for influencers",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Leads dont convert",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewddt27",
+        "name": "Jo\u00e3o (John in english I guess) - gmail.com",
+        "status": "\u2705 qualified",
+        "url": "https://app.clickup.com/t/86ewddt27",
+        "email": "joaogabriellopes1812@gmail.com",
+        "website": null,
+        "linkedin": null,
+        "revenue": "Under $250K",
+        "business_type": "Other",
+        "classification": "Qualified",
+        "confidence": "85",
+        "core_offer": "Photography and Videography Services.",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewdc0tg",
+        "name": "Vedant - basmarketing.in",
+        "status": "\u2705 qualified",
+        "url": "https://app.clickup.com/t/86ewdc0tg",
+        "email": "VedantParvatikar17@gmail.com",
+        "website": "basmarketing.in",
+        "linkedin": "https://www.linkedin.com/in/vedant-parvatikar-1a58312a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        "revenue": "Under $250K",
+        "business_type": "Agency",
+        "classification": "Qualified",
+        "confidence": "85",
+        "core_offer": "Sales and branding growth through marketing strategies",
+        "urgency": "Next 30 days",
+        "growth_problem": "Scaling without burning out",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewd9vbg",
+        "name": "Gurpreet - digtal-d.co.uk",
+        "status": "\u2705 qualified",
+        "url": "https://app.clickup.com/t/86ewd9vbg",
+        "email": "gurpreet.dhillon@digital-d.co.uk",
+        "website": "www.digtal-d.co.uk",
+        "linkedin": "https://www.linkedin.com/in/gurpreet-dhillon/",
+        "revenue": "Under $250K",
+        "business_type": "Agency",
+        "classification": "Qualified",
+        "confidence": "85",
+        "core_offer": "Digital marketing services - mainly strategy and paid media",
+        "urgency": "Next 30 days",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewd360u",
+        "name": "Ahmed - https://acquirely.pages.dev/",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewd360u",
+        "email": "ah077792@gmail.com",
+        "website": "https://acquirely.pages.dev/",
+        "linkedin": null,
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Consultancy / Coaching",
+        "classification": "Not a Fit",
+        "confidence": "85",
+        "core_offer": "I scale fitness/business coaches from 5k-10k/mo to 20k-40k/mo+ using content and sales infrastructures",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewd0j6m",
+        "name": "Parth - gmail.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewd0j6m",
+        "email": "parthkulkarni264@gmail.com",
+        "website": null,
+        "linkedin": null,
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Agency",
+        "classification": "Not a Fit",
+        "confidence": "85",
+        "core_offer": "done-for-you paid ads for dermatologists,cosmetologists,plastic surgeons",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewcvbnt",
+        "name": "Bryan - horizonacresland.com",
+        "status": "\ud83d\udcde discovery call booked",
+        "url": "https://app.clickup.com/t/86ewcvbnt",
+        "email": "bmejia@horizonacresland.com",
+        "website": "horizonacresland.com",
+        "linkedin": null,
+        "revenue": "$250K - $500K",
+        "business_type": "Physical Products",
+        "classification": "Qualified",
+        "confidence": "85",
+        "core_offer": "Buy land, offer quick closing all cash to owners looking to sell. Sell that land to home builders",
+        "urgency": "Next 30 days",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewcqa04",
+        "name": "Dimitris - https://www.threevisuals.co.uk/",
+        "status": "\u2705 qualified",
+        "url": "https://app.clickup.com/t/86ewcqa04",
+        "email": "dimitris@threevisuals.co.uk",
+        "website": "https://www.threevisuals.co.uk/",
+        "linkedin": "https://www.linkedin.com/in/dimitrismougis/",
+        "revenue": "$250K - $500K",
+        "business_type": "Agency",
+        "classification": "Qualified",
+        "confidence": "95",
+        "core_offer": "We provide Architects & Real Estate Developers with  3D Visuals they can advertise their off plan buildings",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Referral dependent",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewcpc1t",
+        "name": "Soumyen Giri - deepqsystem.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewcpc1t",
+        "email": "sgiri4@rediffmail.com",
+        "website": "www.deepqsystem.com",
+        "linkedin": "https://www.linkedin.com/in/soumyen-giri-4138b97/",
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Agency",
+        "classification": "Not a Fit",
+        "confidence": "85",
+        "core_offer": "DFY Leadgen agency for Local business",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
+      {
+        "id": "86ewcnuej",
+        "name": "ritik - thedigitechsolutions.com",
+        "status": "\u2753 needs clarification",
+        "url": "https://app.clickup.com/t/86ewcnuej",
+        "email": "hrithikroushan320@gmail.com",
+        "website": "thedigitechsolutions.com",
+        "linkedin": null,
+        "revenue": "Under $250K",
+        "business_type": "Agency",
+        "classification": "Qualified",
+        "confidence": "85",
+        "core_offer": "I provide AI CRM to manage inbox, followups, voice AI , and whatsapp API. inshort: Leads genration service through Ads and plug and play crm infra",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      }
+    ]
+  },
+  "instantly": {
+    "campaigns": [],
+    "overview": {},
+    "accounts_healthy": 0,
+    "accounts_total": 0
+  },
+  "heyreach": {
+    "connected": false,
+    "error": "No API key"
+  },
+  "calendar": {
+    "today": [],
+    "upcoming_7d": [],
+    "calls_today": 0
+  },
+  "fathom": {
+    "recent_calls": [
+      {
+        "title": "Sophia Weekly Call",
+        "date": "2026-02-09T08:59:00Z",
+        "share_url": "https://fathom.video/share/RSsWJFnbH78uELywzHPD4tA1seFRNpzZ",
+        "attendees": [],
+        "summary": "Process Failure: The lead qualification process is broken. Omitting the lead's LinkedIn URL from the AI checker causes it to qualify only the company, not the person. | Critical Impact: This error is the root cause of Jamie's complaint about speaking to unqualified leads (non-founders/CEOs), as the AI cannot screen for the required job title. | Immediate Fix: Sophia must now include both the company website and the lead's LinkedIn URL in the AI checker to ensure proper qualification.",
+        "action_items": [
+          {
+            "description": "Install Claude desktop app; keep open in background",
+            "assignee": "Sophia Arellano",
+            "completed": false
+          },
+          {
+            "description": "Monitor Claude usage; report EOM balance to Jordan",
+            "assignee": "Sophia Arellano",
+            "completed": false
+          },
+          {
+            "description": "Update lead-qual SOP: require responder LinkedIn + company URL; retrain Sophia",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Reply to Angela in Sophia management channel re: call",
+            "assignee": "Sophia Arellano",
+            "completed": false
+          },
+          {
+            "description": "Send call recording to Angela re: lead-qual process",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Ripple Call",
+        "date": "2026-02-06T09:41:59Z",
+        "share_url": "https://fathom.video/share/eJ5BoVotxSrsA8nudWxRm69hA3NQyP8q",
+        "attendees": [
+          {
+            "name": "adrian smith",
+            "email": "adrian@useripple.io"
+          },
+          {
+            "name": "Jonny Smith",
+            "email": "jonny@useripple.io"
+          }
+        ],
+        "summary": "New Strategy: Jordan proposed a 3-pillar plan for \u00a38,500 (3 months): a Video Sales Letter (VSL), a YouTube content engine, and AI-powered systems. | Immediate Win: Ripple approved a \u00a3500 LinkedIn Live campaign to start now, leveraging Jordan's AI-driven outreach to promote an event in less than three weeks. | Outbound Re-engagement: Ripple will re-engage Dopamine Digital for outbound campaigns after their current low-cost provider contract ends in late March.",
+        "action_items": [
+          {
+            "description": "Send Instantly/email infrastructure cost to Jonny/Adrian; then invoice LinkedIn Live \u00a3500",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Review Jordan's deck w/ Adrian; then decide payment plan and confirm go/no-go to Jordan",
+            "assignee": "Jonny Smith",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Durell Growth Plan",
+        "date": "2026-02-06T06:15:09Z",
+        "share_url": "https://fathom.video/share/GR7dQpcFwe4VnQ_nEPFeD-sKx_18ye7L",
+        "attendees": [
+          {
+            "name": "Durell Patrick",
+            "email": "how2pay4college@gmail.com"
+          }
+        ],
+        "summary": "The Problem: Durell's business is 100% referral-dependent, lacks a scalable lead engine, and has a confusing \"wheel\" of offers that hinders cold outreach. | The Solution: A 90-day, 3-pillar program to build a predictable demand engine. It will focus on one \"Grand Slam\" offer (e.g., finding $300k\u2013$600k in savings for recent acquisitions) and use AI-powered outreach (LinkedIn, email) and content to build authority. | The Deal: Durell chose the $18k total investment, paid in three $6k installments. The program guarantees 25 qualified conversations and $300k in pipeline, with an option for ongoing management at a reduced rate ($3k\u2013$5k/mo).",
+        "action_items": [
+          {
+            "description": "Email Durell growth plan (password-protected), ACQAI prompt/output, case-study links, templates/wireframes",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Email Jordan new entity name for contract/invoice",
+            "assignee": "R. Durell Patrick",
+            "completed": false
+          },
+          {
+            "description": "Email Durell contract and $6k invoice (Option B)",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Attend onboarding call Feb 12 9:30 pm (Durell) / 12:30 pm (Jordan)",
+            "assignee": "R. Durell Patrick",
+            "completed": false
+          },
+          {
+            "description": "Attend onboarding call Feb 12 9:30 pm (Durell) / 12:30 pm (Jordan)",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Call Thomas",
+        "date": "2026-02-06T03:16:06Z",
+        "share_url": "https://fathom.video/share/XHTjaHwtkerJ-rdjjt6w85ZqnBudpjVx",
+        "attendees": [
+          {
+            "name": "thomas@maesto.io",
+            "email": "thomas@maesto.io"
+          }
+        ],
+        "summary": "MediaPlace Promotions: A 3-part promo series is planned: 1) a Valentine's Day credit pack sale with free Cloned presets, 2) a free video captioning plugin, and 3) a \"final chance\" sale for the AI Avatar Studio feature. | AI Coaching Opportunity: Jordan proposed Thomas join his \"school\" (paid community) as an AI coach to help members build automations, citing a competitor's success at \\~$386k/month. | Lead Gen Automation: Jordan needs an AI agent to automate his lead gen process (scraping, enrichment, verification) to reduce a 70% lead drop-off rate and save significant manual time.",
+        "action_items": [
+          {
+            "description": "Add Cloned presets to MediaPlace; prep Valentine's sale page/copy/emails/video; launch Feb 12\u201314 11:59 pm EST",
+            "assignee": "Thomas Dolso",
+            "completed": false
+          },
+          {
+            "description": "Add Cloned presets to MediaPlace; prep Valentine's sale page/copy/emails/video; launch Feb 12\u201314 11:59 pm EST",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Check ActiveCampaign tags for AI Avatar buyers; segment list for final-chance promo",
+            "assignee": "Thomas Dolso",
+            "completed": false
+          },
+          {
+            "description": "Decide on school live sessions; inform Jordan",
+            "assignee": "Thomas Dolso",
+            "completed": false
+          },
+          {
+            "description": "Build n8n lead-gen automation (Crunchbase\u2192LinkedIn\u2192email\u2192verify); share templates w/ Jordan",
+            "assignee": "Thomas Dolso",
+            "completed": false
+          },
+          {
+            "description": "Integrate captions plugin in MediaPlace; prep landing/copy/emails/video; launch next week",
+            "assignee": "Thomas Dolso",
+            "completed": false
+          },
+          {
+            "description": "Integrate captions plugin in MediaPlace; prep landing/copy/emails/video; launch next week",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Rob Dootrix Call",
+        "date": "2026-02-05T10:02:11Z",
+        "share_url": "https://fathom.video/share/-tUKk3GDPszEYEQfDxvutzT_iLJ3uyxt",
+        "attendees": [
+          {
+            "name": "Rob Borley",
+            "email": "rob.borley@dootrix.com"
+          }
+        ],
+        "summary": "Problem: AI-driven market uncertainty is shrinking project scope and lengthening sales cycles to \\~9 months, creating a top-of-funnel bottleneck. | Goal: Fill the funnel to create a lead-overload \"problem\" for Dootrix's founders, who currently have capacity for more calls. | Proposed Solution: Use cold outreach to book free, customized workshops for leadership teams, bypassing the current webinar step to accelerate the sales cycle.",
+        "action_items": [
+          {
+            "description": "Draft 90-day trial proposal for Rob (Mar\u2013May): outreach/lead-gen plan, budget, follow-up, AI automation",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Evaluate productized first-step offers for ICP; prep notes for next call w/ Jordan",
+            "assignee": "Rob Borley",
+            "completed": false
+          },
+          {
+            "description": "Send calendar invite to Rob for Feb 10 9:00 (1h)",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Durell Patrick",
+        "date": "2026-02-05T07:44:04Z",
+        "share_url": "https://fathom.video/share/33Ha_uRR7xpySEdyyCRzstjzC-uHatmU",
+        "attendees": [
+          {
+            "name": "Durell Patrick",
+            "email": "how2pay4college@gmail.com"
+          }
+        ],
+        "summary": "Goal: Scale revenue from \\~$180k to $2M/year by building a reliable client acquisition system. | Problem: Growth is stalled by a referral-only model (2\u20133 clients/mo) and past negative experiences with marketing agencies. | Solution: Jordan proposed a 90-day, done-for-you (DFY) engagement to build and manage an AI-powered outbound engine for a $15k\u2013$20k fee.",
+        "action_items": [
+          {
+            "description": "Draft ACQ.ai Lite doc for Durell; send post-call",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Build custom demand-engine plan for Durell; present on follow-up call",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Attend follow-up call w/ Jordan",
+            "assignee": "Durell Patrick",
+            "completed": false
+          },
+          {
+            "description": "Watch Jordan's cold-outreach videos",
+            "assignee": "Durell Patrick",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Jamie Call",
+        "date": "2026-02-03T03:14:33Z",
+        "share_url": "https://fathom.video/share/Ddk8gzAQ7SUprLqZ_fNHyYpFF5DcPVhn",
+        "attendees": [
+          {
+            "name": "Jamie Schneiderman",
+            "email": "jamie@unstuckyourbusiness.com"
+          }
+        ],
+        "summary": "ICP Refinement: The target is B2B SaaS founders ($1\u201310M ARR) who are \"stuck\" despite active efforts, not those stuck due to inaction (e.g., lack of investment). | New Outreach Channel: Automated LinkedIn outreach will be launched to target founders directly, complementing the podcast. | Value-First Nurture: A new AI-powered nurture sequence will provide free website/LinkedIn audits to booked guests, boosting show-up rates and establishing authority.",
+        "action_items": [
+          {
+            "description": "Draft discovery script re: 'stuck' Qs for podcast leads",
+            "assignee": "Jamie Schneiderman",
+            "completed": false
+          },
+          {
+            "description": "Build AI audit agent; integrate into nurture; add Slack alerts; share w/ Jamie",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Launch LinkedIn outreach (podcast + audit); test audit-as-lead-magnet; share results w/ Jamie",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Email Mike this week re: podcast + audit",
+            "assignee": "Jamie Schneiderman",
+            "completed": false
+          },
+          {
+            "description": "Audit Akshay's site; record Loom; send pre-call notes + podcast to Akshay",
+            "assignee": "Jamie Schneiderman",
+            "completed": false
+          },
+          {
+            "description": "Propose free AI workshop to Greg's leadership team (incl. CEO)",
+            "assignee": "Jamie Schneiderman",
+            "completed": false
+          },
+          {
+            "description": "Send LinkedIn promotion SOP to Jamie; then Jamie posts Akshay clip w/ YouTube link",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Schedule weekly 15\u201330 min check-in w/ Angela starting next month",
+            "assignee": "Jamie Schneiderman",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Weekly 1:1 Coaching Call - Angela",
+        "date": "2026-02-02T14:22:17Z",
+        "share_url": "https://fathom.video/share/yxASs7f2f7mDrjRG7VcJy748hDy2zhD6",
+        "attendees": [
+          {
+            "name": "ymsiadb@gmail.com",
+            "email": "ymsiadb@gmail.com"
+          }
+        ],
+        "summary": "KPIs are being overhauled to create a single source of truth, syncing ClickUp tasks with daily reports to identify and fix bottlenecks immediately. | A $4k \"done-with-you\" AI coaching package is under consideration to accelerate automation development and upskill the team, potentially cutting project timelines from weeks to days. | The company wiki will migrate from Notion to ClickUp to consolidate tools and eliminate redundant costs, with Jordan owning the content structure and Angela the migration.",
+        "action_items": [
+          {
+            "description": "Schedule client-overview call w/ Rodney & Sophia",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Share quiz-app repo/skills w/ Angela; then Angela build client quizzes",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Share client-facing KPI dashboard access w/ Jordan for Jamie call",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Configure Ocon inbox: ping Sophia on new lead; auto-message if >500",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Send YouTube lead-response flow to Angela for debug",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Review n8n templates; identify automations",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Add Jordan to GitHub org; push KPI tracker to shared repo",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Invite Angela to Shimmy/Mia call (Thu 1:30)",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Test Ocon personalized Loom: record generic core; personalize intros",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Enable Loom view notifications",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Open Payoneer receiving account; send details to Jordan",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Ask Philip to send Payoneer/bank details to Jordan; then Jordan send test payment",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Connect Notion API in Claude Code",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Communicate ClickUp guest-access policy to Philip",
+            "assignee": "Angela Petkovska",
+            "completed": false
+          },
+          {
+            "description": "Share Notion wiki page + Claude skills w/ Angela",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Organize Notion wiki; then Angela migrate to ClickUp Docs",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Filip Weekly Call",
+        "date": "2026-02-02T12:57:29Z",
+        "share_url": "https://fathom.video/share/Gcn7GPomp8JkGRsmNkuCtvh_xhpQEJ2K",
+        "attendees": [],
+        "summary": "Launch a new Instantly campaign today, targeting 1k\u20132.5k UK consultants with a basic, unpersonalized email sequence. | Overhaul Rodney's workflow: Create a daily-focused ClickUp board and assign one Jordan video per day for short-form editing. | Master Claude AI (Code & Cowork): Dedicate 1 hour today to learning the tools, which Jordan called \"infinitely\" high-ROI.",
+        "action_items": [
+          {
+            "description": "Send TikTok/Instagram logins to Team Support",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Create/launch UK-only cold outreach in Instantly: 1\u20132.5k UK leads via Sales Nav\u2192Expandee; unpersonalized; 250/day; 13m; UK hours; new accounts",
+            "assignee": "Team Support",
+            "completed": false
+          },
+          {
+            "description": "Restructure Rodney's ClickUp: move non-today to backlog; add 'Today' color; set Slack pings; add daily Jordan short; prep tracker w/ Angela",
+            "assignee": "Team Support",
+            "completed": false
+          },
+          {
+            "description": "Fix posting reminder cron to send only 1 reminder",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Install Claude Code/Cowork; watch tutorials; practice 1h; share output w/ Jordan",
+            "assignee": "Team Support",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Rodney Weekly Call",
+        "date": "2026-02-02T12:39:21Z",
+        "share_url": "https://fathom.video/share/qjx18Uf4Zn3MeGj6zxEd49qV2PyHa_PN",
+        "attendees": [],
+        "summary": "A new performance-based compensation model will replace the fixed salary to incentivize speed and quality. | The daily workflow is now fixed: Jordan's content is the \\#1 priority, followed by client podcasts. | ClickUp is the single source of truth for all tasks; if a task isn't in ClickUp, it doesn't exist.",
+        "action_items": [
+          {
+            "description": "Edit Jordan's daily long-form; export 2K 30fps; submit 5 shorts to Philip; update ClickUp; post EOD summary",
+            "assignee": "Rodney D.",
+            "completed": false
+          },
+          {
+            "description": "Research higher-quality filming/recording tools beyond Loom",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Confirm Riverside guest-name/title overlay; share steps w/ Jordan",
+            "assignee": "Rodney D.",
+            "completed": false
+          },
+          {
+            "description": "Start Hubstaff 3 pm daily; set up AI agent to scan ClickUp",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Define per-deliverable rates; implement new compensation/bonus plan",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      }
+    ],
+    "total_calls_30d": 10
+  },
+  "clients": {
+    "Jamie": {
+      "total_leads": 14,
+      "active_leads": 0,
+      "by_status": {
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 3,
+        "\u2620\ufe0f post podcast": 2,
+        "\u23f0 revisit later": 3,
+        "\ud83d\udcc5 to reschedule": 3,
+        "\u274c don't pursue": 1,
+        "\ud83d\udc4b linkedin reach outs": 1,
+        "\ud83d\udd0d discovery": 1
+      },
+      "list_id": "901813911117"
+    },
+    "Phellos": {
+      "total_leads": 27,
+      "active_leads": 0,
+      "by_status": {
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 4,
+        "\u274c don't pursue": 6,
+        "\ud83d\udcde upcoming pre-calls": 2,
+        "\u23f0 revisit later": 4,
+        "\ud83d\udcc5 to reschedule": 6,
+        "\u2620\ufe0f post podcast": 2,
+        "\ud83d\udce7 nurturing leads": 3
+      },
+      "list_id": "901813906092"
+    },
+    "ODF": {
+      "total_leads": 38,
+      "active_leads": 0,
+      "by_status": {
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 13,
+        "\ud83d\udcc5 to reschedule": 6,
+        "\ud83d\udcde upcoming pre-calls": 1,
+        "\u274c don't pursue": 4,
+        "\u23f0 revisit later": 3,
+        "\u2620\ufe0f post podcast": 11
+      },
+      "list_id": "901813953534"
+    },
+    "Ocon": {
+      "total_leads": 30,
+      "active_leads": 0,
+      "by_status": {
+        "video sent": 27,
+        "\u274c don't pursue": 2,
+        "\ud83d\udcb0 signed deal": 1
+      },
+      "list_id": "901813954836"
+    },
+    "Ripple": {
+      "total_leads": 100,
+      "active_leads": 0,
+      "by_status": {
+        "\ud83d\udd0d discovery": 11,
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb podcasts today": 2,
+        "\ud83d\udcde upcoming pre-calls": 1,
+        "\ud83d\udcc5 to reschedule": 17,
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 6,
+        "\ud83d\udce7 nurturing leads": 14,
+        "\u260e\ufe0f call requests": 1,
+        "\u23f0 revisit later": 12,
+        "\u274c don't pursue": 17,
+        "\u2620\ufe0f post podcast": 7,
+        "\ud83e\udd1d in negotiation": 9,
+        "\ud83d\udccc unorganised": 1,
+        "\ud83d\udcb0 signed deal": 2
+      },
+      "list_id": "901808543769"
+    }
+  },
+  "auto_moves": [],
+  "activity": [
+    {
+      "type": "call_completed",
+      "text": "Call: Sophia Weekly Call",
+      "detail": "Process Failure: The lead qualification process is broken. Omitting the lead's LinkedIn URL from the AI checker causes it to qualify only the company,",
+      "timestamp": "2026-02-09T08:59:00Z"
+    },
+    {
+      "type": "call_completed",
+      "text": "Call: Ripple Call",
+      "detail": "New Strategy: Jordan proposed a 3-pillar plan for \u00a38,500 (3 months): a Video Sales Letter (VSL), a YouTube content engine, and AI-powered systems. | I",
+      "timestamp": "2026-02-06T09:41:59Z"
+    },
+    {
+      "type": "call_completed",
+      "text": "Call: Durell Growth Plan",
+      "detail": "The Problem: Durell's business is 100% referral-dependent, lacks a scalable lead engine, and has a confusing \"wheel\" of offers that hinders cold outre",
+      "timestamp": "2026-02-06T06:15:09Z"
+    },
+    {
+      "type": "call_completed",
+      "text": "Call: Call Thomas",
+      "detail": "MediaPlace Promotions: A 3-part promo series is planned: 1) a Valentine's Day credit pack sale with free Cloned presets, 2) a free video captioning pl",
+      "timestamp": "2026-02-06T03:16:06Z"
+    },
+    {
+      "type": "call_completed",
+      "text": "Call: Rob Dootrix Call",
+      "detail": "Problem: AI-driven market uncertainty is shrinking project scope and lengthening sales cycles to \\~9 months, creating a top-of-funnel bottleneck. | Go",
+      "timestamp": "2026-02-05T10:02:11Z"
+    }
+  ]
+}
