@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-10T15:30:00.974328+07:00",
+  "_generated": "2026-02-10T16:00:00.478379+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Radar",
@@ -20,7 +20,7 @@
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Keenan",
@@ -30,7 +30,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Forge",
@@ -38,9 +38,9 @@
       "role": "Agent Auditor",
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 15:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Dash",
@@ -50,7 +50,7 @@
       "schedule": "8:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Scout",
@@ -60,7 +60,7 @@
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Sherlock",
@@ -70,7 +70,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Echo",
@@ -80,7 +80,7 @@
       "schedule": "9:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Sentinel",
@@ -90,7 +90,7 @@
       "schedule": "7:30 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Pulse",
@@ -100,7 +100,7 @@
       "schedule": "8:00 & 8:15 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Scribe",
@@ -108,9 +108,9 @@
       "role": "Call Summaries",
       "status": "LIVE",
       "schedule": "On-demand",
-      "liveStatus": "error",
-      "reason": "Service loaded but gateway not responding",
-      "checkedAt": "2026-02-10 15:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Harbor",
@@ -118,9 +118,9 @@
       "role": "Client Onboarding",
       "status": "LIVE",
       "schedule": "On-demand",
-      "liveStatus": "error",
-      "reason": "Service loaded but gateway not responding",
-      "checkedAt": "2026-02-10 15:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Maverick",
@@ -128,9 +128,9 @@
       "role": "Campaign Mgmt",
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 15:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Viper",
@@ -138,9 +138,9 @@
       "role": "Pipeline Closer",
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 15:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Ledger",
@@ -150,7 +150,7 @@
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Relay",
@@ -158,9 +158,9 @@
       "role": "Client Comms",
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
-      "liveStatus": "error",
-      "reason": "Service loaded but gateway not responding",
-      "checkedAt": "2026-02-10 15:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Watchtower",
@@ -170,7 +170,7 @@
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 15:15"
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Tempo",
@@ -178,9 +178,9 @@
       "role": "Team Performance",
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 15:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 15:45"
     },
     {
       "name": "Dispatch",
@@ -188,9 +188,9 @@
       "role": "Task Router",
       "status": "LIVE",
       "schedule": "On-demand",
-      "liveStatus": "error",
-      "reason": "Service loaded but gateway not responding",
-      "checkedAt": "2026-02-10 15:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 15:45"
     }
   ],
   "dd_pipeline": {
