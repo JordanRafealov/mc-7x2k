@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-10T22:00:01.159615+07:00",
+  "_generated": "2026-02-10T22:30:00.852164+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Radar",
@@ -18,9 +18,9 @@
       "role": "Research & Intel",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 447m",
-      "checkedAt": "2026-02-10 21:45"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Keenan",
@@ -30,7 +30,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Forge",
@@ -40,7 +40,7 @@
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Dash",
@@ -48,9 +48,9 @@
       "role": "Speed-to-Lead",
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 447m",
-      "checkedAt": "2026-02-10 21:45"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Scout",
@@ -60,7 +60,7 @@
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Sherlock",
@@ -70,7 +70,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Echo",
@@ -80,7 +80,7 @@
       "schedule": "9:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Sentinel",
@@ -88,9 +88,9 @@
       "role": "Client Health",
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 447m",
-      "checkedAt": "2026-02-10 21:45"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Pulse",
@@ -98,9 +98,9 @@
       "role": "Morning Briefing",
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 617m",
-      "checkedAt": "2026-02-10 21:45"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Scribe",
@@ -108,9 +108,9 @@
       "role": "Call Summaries",
       "status": "LIVE",
       "schedule": "On-demand",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 447m",
-      "checkedAt": "2026-02-10 21:45"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Harbor",
@@ -118,9 +118,9 @@
       "role": "Client Onboarding",
       "status": "LIVE",
       "schedule": "On-demand",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 618m",
-      "checkedAt": "2026-02-10 21:45"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Maverick",
@@ -130,7 +130,7 @@
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Viper",
@@ -138,9 +138,9 @@
       "role": "Pipeline Closer",
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 448m",
-      "checkedAt": "2026-02-10 21:45"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Ledger",
@@ -150,7 +150,7 @@
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Relay",
@@ -160,7 +160,7 @@
       "schedule": "Continuous 8AM-6PM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Watchtower",
@@ -170,7 +170,7 @@
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Tempo",
@@ -178,9 +178,9 @@
       "role": "Team Performance",
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 451m",
-      "checkedAt": "2026-02-10 21:45"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 22:15"
     },
     {
       "name": "Dispatch",
@@ -190,7 +190,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 21:45"
+      "checkedAt": "2026-02-10 22:15"
     }
   ],
   "dd_pipeline": {
@@ -1013,15 +1013,32 @@
     "today_call_details": []
   },
   "youtube_leads": {
-    "total": 24,
+    "total": 25,
     "by_status": {
-      "\u274c not a fit": 16,
+      "\u274c not a fit": 17,
       "\ud83d\udce5 new": 1,
       "\u2705 qualified": 5,
       "\ud83d\udcde discovery call booked": 1,
       "\u2753 needs clarification": 1
     },
     "leads": [
+      {
+        "id": "86ewjkc28",
+        "name": "Pierino - https://www.linkedin.com/in/branella/",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewjkc28",
+        "email": "pierinobranella@gmail.com",
+        "website": "https://www.linkedin.com/in/branella/",
+        "linkedin": "https://www.linkedin.com/in/branella/",
+        "revenue": "Under $250K",
+        "business_type": "Consultancy / Coaching",
+        "classification": "Not a Fit",
+        "confidence": "85",
+        "core_offer": "Fractional finance services",
+        "urgency": "Next 30 days",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
       {
         "id": "86ewhrfnz",
         "name": "Cyrus - psmg.com.au",
