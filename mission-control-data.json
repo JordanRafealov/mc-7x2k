@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-10T16:30:00.606269+07:00",
+  "_generated": "2026-02-10T17:00:01.156545+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Radar",
@@ -18,9 +18,9 @@
       "role": "Research & Intel",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 16:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Keenan",
@@ -30,7 +30,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Forge",
@@ -40,7 +40,7 @@
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Dash",
@@ -48,9 +48,9 @@
       "role": "Speed-to-Lead",
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 16:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Scout",
@@ -58,9 +58,9 @@
       "role": "Lead Enrichment",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 16:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Sherlock",
@@ -68,9 +68,9 @@
       "role": "Deep Research",
       "status": "LIVE",
       "schedule": "On-demand",
-      "liveStatus": "error",
-      "reason": "Port timeout + stale 288m",
-      "checkedAt": "2026-02-10 16:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Echo",
@@ -78,9 +78,9 @@
       "role": "Content Engine",
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 16:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Sentinel",
@@ -88,9 +88,9 @@
       "role": "Client Health",
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 16:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Pulse",
@@ -100,7 +100,7 @@
       "schedule": "8:00 & 8:15 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Scribe",
@@ -110,7 +110,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Harbor",
@@ -120,7 +120,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Maverick",
@@ -130,7 +130,7 @@
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Viper",
@@ -140,7 +140,7 @@
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Ledger",
@@ -148,9 +148,9 @@
       "role": "Finance Tracker",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 16:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Relay",
@@ -160,7 +160,7 @@
       "schedule": "Continuous 8AM-6PM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Watchtower",
@@ -168,9 +168,9 @@
       "role": "Security Monitor",
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Service loaded, port timeout (outside cron window)",
-      "checkedAt": "2026-02-10 16:15"
+      "liveStatus": "offline",
+      "reason": "Service not loaded in launchctl",
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Tempo",
@@ -180,7 +180,7 @@
       "schedule": "7:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     },
     {
       "name": "Dispatch",
@@ -190,7 +190,7 @@
       "schedule": "On-demand",
       "liveStatus": "offline",
       "reason": "Service not loaded in launchctl",
-      "checkedAt": "2026-02-10 16:15"
+      "checkedAt": "2026-02-10 16:45"
     }
   ],
   "dd_pipeline": {
@@ -1450,6 +1450,35 @@
   "fathom": {
     "recent_calls": [
       {
+        "title": "Rob Growth Plan",
+        "date": "2026-02-10T09:57:53Z",
+        "share_url": "https://fathom.video/share/FxdisTywdAXfdZxRxsayRGZNAfoxPFAw",
+        "attendees": [
+          {
+            "name": "Rob Borley",
+            "email": "rob.borley@dootrix.com"
+          }
+        ],
+        "summary": "The Problem: Dootrix's primary bottleneck is a lack of new leads for its proven sales funnel. The current founder-led outreach is effective but unscalable, and the 9-month sales cycle makes forecasting impossible. | The Solution: A 90-day engagement to build a \"dual outbound engine\" using value-first outreach (podcast invites, targeted workshops) to educate prospects and accelerate the sales cycle. | The Offer: \u00a312,000 paid in full, guaranteed to deliver 15 qualified conversations and \u00a3100k in pipeline, or Dopamine Digital continues working at no extra cost.",
+        "action_items": [
+          {
+            "description": "Email Rob proposal deck + case studies",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Send Rob onboarding invite Tue 11:30 UK; then book strategy workshop",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Email Rob contract + pay-in-full invoice; then collect payment",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
         "title": "Weekly 1:1 Coaching Call - Angela",
         "date": "2026-02-09T15:13:19Z",
         "share_url": "https://fathom.video/share/nYLXBKvpFJByFzS9rvPjwW_H8ckxhq6W",
@@ -1833,60 +1862,6 @@
             "completed": false
           }
         ]
-      },
-      {
-        "title": "Jamie Call",
-        "date": "2026-02-03T03:14:33Z",
-        "share_url": "https://fathom.video/share/Ddk8gzAQ7SUprLqZ_fNHyYpFF5DcPVhn",
-        "attendees": [
-          {
-            "name": "Jamie Schneiderman",
-            "email": "jamie@unstuckyourbusiness.com"
-          }
-        ],
-        "summary": "ICP Refinement: The target is B2B SaaS founders ($1\u201310M ARR) who are \"stuck\" despite active efforts, not those stuck due to inaction (e.g., lack of investment). | New Outreach Channel: Automated LinkedIn outreach will be launched to target founders directly, complementing the podcast. | Value-First Nurture: A new AI-powered nurture sequence will provide free website/LinkedIn audits to booked guests, boosting show-up rates and establishing authority.",
-        "action_items": [
-          {
-            "description": "Draft discovery script re: 'stuck' Qs for podcast leads",
-            "assignee": "Jamie Schneiderman",
-            "completed": false
-          },
-          {
-            "description": "Build AI audit agent; integrate into nurture; add Slack alerts; share w/ Jamie",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Launch LinkedIn outreach (podcast + audit); test audit-as-lead-magnet; share results w/ Jamie",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Email Mike this week re: podcast + audit",
-            "assignee": "Jamie Schneiderman",
-            "completed": false
-          },
-          {
-            "description": "Audit Akshay's site; record Loom; send pre-call notes + podcast to Akshay",
-            "assignee": "Jamie Schneiderman",
-            "completed": false
-          },
-          {
-            "description": "Propose free AI workshop to Greg's leadership team (incl. CEO)",
-            "assignee": "Jamie Schneiderman",
-            "completed": false
-          },
-          {
-            "description": "Send LinkedIn promotion SOP to Jamie; then Jamie posts Akshay clip w/ YouTube link",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Schedule weekly 15\u201330 min check-in w/ Angela starting next month",
-            "assignee": "Jamie Schneiderman",
-            "completed": false
-          }
-        ]
       }
     ],
     "total_calls_30d": 10
@@ -1971,6 +1946,12 @@
   "activity": [
     {
       "type": "call_completed",
+      "text": "Call: Rob Growth Plan",
+      "detail": "The Problem: Dootrix's primary bottleneck is a lack of new leads for its proven sales funnel. The current founder-led outreach is effective but unscal",
+      "timestamp": "2026-02-10T09:57:53Z"
+    },
+    {
+      "type": "call_completed",
       "text": "Call: Weekly 1:1 Coaching Call - Angela",
       "detail": "Email Campaigns Failing: Over-sending (e.g., 510 emails from one inbox vs. the 30/day limit) caused Jamie's emails to hit spam, killing campaign resul",
       "timestamp": "2026-02-09T15:13:19Z"
@@ -1992,12 +1973,6 @@
       "text": "Call: Sophia Weekly Call",
       "detail": "Process Failure: The lead qualification process is broken. Omitting the lead's LinkedIn URL from the AI checker causes it to qualify only the company,",
       "timestamp": "2026-02-09T08:59:00Z"
-    },
-    {
-      "type": "call_completed",
-      "text": "Call: Ripple Call",
-      "detail": "New Strategy: Jordan proposed a 3-pillar plan for \u00a38,500 (3 months): a Video Sales Letter (VSL), a YouTube content engine, and AI-powered systems. | I",
-      "timestamp": "2026-02-06T09:41:59Z"
     }
   ]
 }
