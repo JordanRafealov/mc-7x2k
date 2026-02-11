@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-11T20:30:00.894028+07:00",
+  "_generated": "2026-02-11T21:00:00.527808+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-11 20:15"
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Radar",
@@ -18,9 +18,9 @@
       "role": "Research & Intel",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (221m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (251m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Keenan",
@@ -29,8 +29,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1967m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (1997m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Forge",
@@ -39,8 +39,8 @@
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (253m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (283m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Dash",
@@ -49,8 +49,8 @@
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (132m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive, outside cron window (162m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Scout",
@@ -58,9 +58,9 @@
       "role": "Lead Enrichment",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (221m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (251m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Sherlock",
@@ -69,8 +69,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1968m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (1998m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Echo",
@@ -78,9 +78,9 @@
       "role": "Content Engine",
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
-      "liveStatus": "running",
-      "reason": "All healthy, active 9m ago",
-      "checkedAt": "2026-02-11 20:15"
+      "liveStatus": "idle",
+      "reason": "Responsive but last activity 39m ago",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Sentinel",
@@ -88,9 +88,9 @@
       "role": "Client Health",
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (221m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (251m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Pulse",
@@ -98,9 +98,9 @@
       "role": "Morning Briefing",
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (221m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (251m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Scribe",
@@ -109,8 +109,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1797m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (1827m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Harbor",
@@ -119,8 +119,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1968m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (1998m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Maverick",
@@ -128,9 +128,9 @@
       "role": "Campaign Mgmt",
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (221m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (251m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Viper",
@@ -139,8 +139,8 @@
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (822m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (852m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Ledger",
@@ -149,8 +149,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1806m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (1836m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Relay",
@@ -159,8 +159,8 @@
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (133m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive, outside cron window (163m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Watchtower",
@@ -169,8 +169,8 @@
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (943m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (973m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Tempo",
@@ -178,9 +178,9 @@
       "role": "Team Performance",
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (221m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (251m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     },
     {
       "name": "Dispatch",
@@ -189,8 +189,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1797m since activity)",
-      "checkedAt": "2026-02-11 20:15"
+      "reason": "Responsive but stale (1827m since activity)",
+      "checkedAt": "2026-02-11 20:45"
     }
   ],
   "dd_pipeline": {
@@ -1013,15 +1013,32 @@
     "today_call_details": []
   },
   "youtube_leads": {
-    "total": 27,
+    "total": 28,
     "by_status": {
-      "\u274c not a fit": 19,
+      "\u274c not a fit": 20,
       "\ud83d\udce5 new": 1,
       "\u2705 qualified": 5,
       "\ud83d\udcde discovery call booked": 1,
       "\u2753 needs clarification": 1
     },
     "leads": [
+      {
+        "id": "86ewk09tp",
+        "name": "Abishek - gmail.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewk09tp",
+        "email": "abisheksrini22@gmail.com",
+        "website": null,
+        "linkedin": null,
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Agency",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "DFY Low Ticket Acquisition System for Coaches",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
       {
         "id": "86ewjnz46",
         "name": "Abhishek - gmail.com",
@@ -1993,8 +2010,7 @@
       "total_leads": 32,
       "active_leads": 0,
       "by_status": {
-        "video request": 1,
-        "video sent": 20,
+        "video sent": 21,
         "\u23f0 revisit later": 4,
         "\u274c don't pursue": 3,
         "interested": 3,
