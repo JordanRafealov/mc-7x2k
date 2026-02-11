@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-11T10:00:00.906627+07:00",
+  "_generated": "2026-02-11T10:30:00.771861+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-11 09:45"
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Radar",
@@ -18,9 +18,9 @@
       "role": "Research & Intel",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (222m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (252m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Keenan",
@@ -29,8 +29,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1337m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but stale (1367m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Forge",
@@ -39,8 +39,8 @@
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (342m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but stale (372m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Dash",
@@ -48,9 +48,9 @@
       "role": "Speed-to-Lead",
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
-      "liveStatus": "idle",
-      "reason": "Responsive but last activity 103m ago",
-      "checkedAt": "2026-02-11 09:45"
+      "liveStatus": "online",
+      "reason": "Responsive, outside cron window (133m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Scout",
@@ -58,9 +58,9 @@
       "role": "Lead Enrichment",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (220m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (250m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Sherlock",
@@ -69,8 +69,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1338m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but stale (1368m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Echo",
@@ -79,8 +79,8 @@
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
       "liveStatus": "idle",
-      "reason": "Responsive but last activity 161m ago",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but last activity 191m ago",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Sentinel",
@@ -89,8 +89,8 @@
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (132m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive, outside cron window (162m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Pulse",
@@ -98,9 +98,9 @@
       "role": "Morning Briefing",
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
-      "liveStatus": "idle",
-      "reason": "Responsive but last activity 87m ago",
-      "checkedAt": "2026-02-11 09:45"
+      "liveStatus": "online",
+      "reason": "Responsive, outside cron window (117m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Scribe",
@@ -109,8 +109,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1167m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but stale (1197m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Harbor",
@@ -119,8 +119,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1338m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but stale (1368m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Maverick",
@@ -129,8 +129,8 @@
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "idle",
-      "reason": "Responsive but last activity 161m ago",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but last activity 191m ago",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Viper",
@@ -139,8 +139,8 @@
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (192m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive, outside cron window (222m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Ledger",
@@ -149,8 +149,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1176m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but stale (1206m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Relay",
@@ -159,8 +159,8 @@
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
       "liveStatus": "idle",
-      "reason": "Responsive but last activity 104m ago",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but last activity 134m ago",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Watchtower",
@@ -169,8 +169,8 @@
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (313m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but stale (343m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Tempo",
@@ -179,8 +179,8 @@
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (163m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive, outside cron window (193m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     },
     {
       "name": "Dispatch",
@@ -189,8 +189,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1167m since activity)",
-      "checkedAt": "2026-02-11 09:45"
+      "reason": "Responsive but stale (1197m since activity)",
+      "checkedAt": "2026-02-11 10:15"
     }
   ],
   "dd_pipeline": {
@@ -1501,6 +1501,69 @@
   "fathom": {
     "recent_calls": [
       {
+        "title": "Daniel Call",
+        "date": "2026-02-11T03:07:26Z",
+        "share_url": "https://fathom.video/share/zyR_86bupU4UQyWB4zioHuh9JVg_zfEN",
+        "attendees": [
+          {
+            "name": "Spencer Livingston",
+            "email": "spencer.livingston@ondemandfulfillment.com"
+          },
+          {
+            "name": "Daniel Lindsey",
+            "email": "daniel@ondemandfulfillment.com"
+          }
+        ],
+        "summary": "Podcast Strategy Pivot: The podcast is attracting the wrong audience (specialized agencies vs. brand owners), making sales transitions difficult. The new strategy is to target affiliate partners (e.g., course creators, coaches) and use case studies to drive follow-up calls. | ICP Refinement: Analysis of top clients (e.g., Luca, Wayne) revealed two high-value avatars: (1) young, TikTok-native entrepreneurs from masterminds, and (2) experienced Amazon sellers. This insight will guide all future outreach. | New Tech & Process: Dopamine Digital is deploying AI-powered tools for 60-second lead response and automated post-podcast follow-up. This will eliminate communication bottlenecks and provide full pipeline visibility.",
+        "action_items": [
+          {
+            "description": "Update podcast tracker: 15 Zencastr, 3 Meet; add Google Meet links",
+            "assignee": "Daniel Lindsey",
+            "completed": false
+          },
+          {
+            "description": "Test Riverside on Windows; send clip to Jordan",
+            "assignee": "Daniel Lindsey",
+            "completed": false
+          },
+          {
+            "description": "Draft podcast interview questions to surface opportunities",
+            "assignee": "Daniel Lindsey",
+            "completed": false
+          },
+          {
+            "description": "Email Jordan: Pranav webinar link + notes; Wayne case study questions; top-client ICP",
+            "assignee": "Spencer Livingston",
+            "completed": false
+          },
+          {
+            "description": "Onboard Spencer to HeyReach; launch LinkedIn outreach (podcast invites + affiliate)",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Implement post-podcast follow-up: Daniel tag Jordan in ClickUp; Jordan book follow-ups",
+            "assignee": "Daniel Lindsey",
+            "completed": false
+          },
+          {
+            "description": "Implement post-podcast follow-up: Daniel tag Jordan in ClickUp; Jordan book follow-ups",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Schedule weekly US-hours check-ins w/ Jordan\u2019s ops manager",
+            "assignee": "Spencer Livingston",
+            "completed": false
+          },
+          {
+            "description": "Email Daniel: meeting summary + 30-day guarantee extension proposal",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
         "title": "Rob Growth Plan",
         "date": "2026-02-10T09:57:53Z",
         "share_url": "https://fathom.video/share/FxdisTywdAXfdZxRxsayRGZNAfoxPFAw",
@@ -1879,40 +1942,6 @@
             "completed": false
           }
         ]
-      },
-      {
-        "title": "Durell Patrick",
-        "date": "2026-02-05T07:44:04Z",
-        "share_url": "https://fathom.video/share/33Ha_uRR7xpySEdyyCRzstjzC-uHatmU",
-        "attendees": [
-          {
-            "name": "Durell Patrick",
-            "email": "how2pay4college@gmail.com"
-          }
-        ],
-        "summary": "Goal: Scale revenue from \\~$180k to $2M/year by building a reliable client acquisition system. | Problem: Growth is stalled by a referral-only model (2\u20133 clients/mo) and past negative experiences with marketing agencies. | Solution: Jordan proposed a 90-day, done-for-you (DFY) engagement to build and manage an AI-powered outbound engine for a $15k\u2013$20k fee.",
-        "action_items": [
-          {
-            "description": "Draft ACQ.ai Lite doc for Durell; send post-call",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Build custom demand-engine plan for Durell; present on follow-up call",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Attend follow-up call w/ Jordan",
-            "assignee": "Durell Patrick",
-            "completed": false
-          },
-          {
-            "description": "Watch Jordan's cold-outreach videos",
-            "assignee": "Durell Patrick",
-            "completed": false
-          }
-        ]
       }
     ],
     "total_calls_30d": 10
@@ -1936,11 +1965,11 @@
       "total_leads": 28,
       "active_leads": 0,
       "by_status": {
-        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 6,
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 7,
         "\u23f0 revisit later": 5,
         "\u274c don't pursue": 6,
         "\ud83d\udcde upcoming pre-calls": 2,
-        "\ud83d\udcc5 to reschedule": 4,
+        "\ud83d\udcc5 to reschedule": 3,
         "\ud83d\udce7 nurturing leads": 4,
         "\u2620\ufe0f post podcast": 1
       },
@@ -1998,6 +2027,12 @@
   "activity": [
     {
       "type": "call_completed",
+      "text": "Call: Daniel Call",
+      "detail": "Podcast Strategy Pivot: The podcast is attracting the wrong audience (specialized agencies vs. brand owners), making sales transitions difficult. The ",
+      "timestamp": "2026-02-11T03:07:26Z"
+    },
+    {
+      "type": "call_completed",
       "text": "Call: Rob Growth Plan",
       "detail": "The Problem: Dootrix's primary bottleneck is a lack of new leads for its proven sales funnel. The current founder-led outreach is effective but unscal",
       "timestamp": "2026-02-10T09:57:53Z"
@@ -2019,12 +2054,6 @@
       "text": "Call: Rodney Weekly Call",
       "detail": "Inefficient Workflow: ODF's Zencaster \u2192 Riverside workflow is a major bottleneck, requiring two separate edits per video. | Compensation Misalignment:",
       "timestamp": "2026-02-09T12:13:41Z"
-    },
-    {
-      "type": "call_completed",
-      "text": "Call: Sophia Weekly Call",
-      "detail": "Process Failure: The lead qualification process is broken. Omitting the lead's LinkedIn URL from the AI checker causes it to qualify only the company,",
-      "timestamp": "2026-02-09T08:59:00Z"
     }
   ]
 }
