@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-11T23:30:01.181211+07:00",
+  "_generated": "2026-02-12T06:00:00.952581+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-11 23:15"
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Radar",
@@ -19,8 +19,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (401m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (791m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Keenan",
@@ -29,8 +29,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2147m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (2537m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Forge",
@@ -38,9 +38,9 @@
       "role": "Agent Auditor",
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
-      "liveStatus": "error",
-      "reason": "Responsive but stale (433m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "liveStatus": "idle",
+      "reason": "Responsive but last activity 102m ago",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Dash",
@@ -49,8 +49,8 @@
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (312m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (702m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Scout",
@@ -59,8 +59,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (401m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (791m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Sherlock",
@@ -69,8 +69,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2148m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (2538m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Echo",
@@ -78,9 +78,9 @@
       "role": "Content Engine",
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (189m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (579m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Sentinel",
@@ -89,8 +89,8 @@
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (401m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (791m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Pulse",
@@ -99,8 +99,8 @@
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (401m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (791m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Scribe",
@@ -109,8 +109,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1977m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (2367m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Harbor",
@@ -119,8 +119,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2148m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (2538m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Maverick",
@@ -129,8 +129,8 @@
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (401m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (791m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Viper",
@@ -139,8 +139,8 @@
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1002m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (1392m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Ledger",
@@ -149,8 +149,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1986m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (2376m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Relay",
@@ -159,8 +159,8 @@
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (313m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (703m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Watchtower",
@@ -169,8 +169,8 @@
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1123m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (1513m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Tempo",
@@ -179,8 +179,8 @@
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (401m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "reason": "Responsive but stale (791m since activity)",
+      "checkedAt": "2026-02-12 05:45"
     },
     {
       "name": "Dispatch",
@@ -188,9 +188,9 @@
       "role": "Task Router",
       "status": "LIVE",
       "schedule": "On-demand",
-      "liveStatus": "error",
-      "reason": "Responsive but stale (1977m since activity)",
-      "checkedAt": "2026-02-11 23:15"
+      "liveStatus": "idle",
+      "reason": "Responsive but last activity 239m ago",
+      "checkedAt": "2026-02-12 05:45"
     }
   ],
   "dd_pipeline": {
@@ -1013,15 +1013,32 @@
     "today_call_details": []
   },
   "youtube_leads": {
-    "total": 28,
+    "total": 29,
     "by_status": {
-      "\u274c not a fit": 20,
+      "\u274c not a fit": 21,
       "\ud83d\udce5 new": 1,
       "\u2705 qualified": 5,
       "\ud83d\udcde discovery call booked": 1,
       "\u2753 needs clarification": 1
     },
     "leads": [
+      {
+        "id": "86ewk2ezr",
+        "name": "Yama - quicklinkdispatching.com",
+        "status": "\u274c not a fit",
+        "url": "https://app.clickup.com/t/86ewk2ezr",
+        "email": "m.yamaazimi@gmail.com",
+        "website": "www.quicklinkdispatching.com",
+        "linkedin": "https://NA",
+        "revenue": "Pre-revenue / Just starting",
+        "business_type": "Other",
+        "classification": "Not a Fit",
+        "confidence": "95",
+        "core_offer": "Truck Dispatching",
+        "urgency": "Right now - urgent",
+        "growth_problem": "Not enough leads",
+        "source": "YouTube TypeForm"
+      },
       {
         "id": "86ewk09tp",
         "name": "Abishek - gmail.com",
@@ -1968,8 +1985,8 @@
       "total_leads": 14,
       "active_leads": 0,
       "by_status": {
-        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 4,
-        "\u2620\ufe0f post podcast": 2,
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 3,
+        "\u2620\ufe0f post podcast": 3,
         "\u23f0 revisit later": 3,
         "\ud83d\udcc5 to reschedule": 2,
         "\u274c don't pursue": 1,
@@ -1996,10 +2013,10 @@
       "total_leads": 46,
       "active_leads": 0,
       "by_status": {
-        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 20,
-        "\ud83d\udcc5 to reschedule": 6,
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 18,
+        "\u274c don't pursue": 8,
+        "\ud83d\udcc5 to reschedule": 7,
         "\ud83d\udcde upcoming pre-calls": 1,
-        "\u274c don't pursue": 7,
         "\u23f0 revisit later": 4,
         "\u2620\ufe0f post podcast": 7,
         "\ud83d\udce7 nurturing leads": 1
