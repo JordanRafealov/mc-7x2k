@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-12T10:00:01.235958+07:00",
+  "_generated": "2026-02-12T10:30:00.770729+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-12 09:45"
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Radar",
@@ -19,8 +19,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1031m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (1061m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Keenan",
@@ -29,8 +29,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2777m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (2807m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Forge",
@@ -39,8 +39,8 @@
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (342m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (372m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Dash",
@@ -48,9 +48,9 @@
       "role": "Speed-to-Lead",
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
-      "liveStatus": "idle",
-      "reason": "Responsive but last activity 102m ago",
-      "checkedAt": "2026-02-12 09:45"
+      "liveStatus": "online",
+      "reason": "Responsive, outside cron window (132m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Scout",
@@ -58,9 +58,9 @@
       "role": "Lead Enrichment",
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
-      "liveStatus": "online",
-      "reason": "Responsive, outside cron window (221m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "liveStatus": "error",
+      "reason": "Responsive but stale (251m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Sherlock",
@@ -69,8 +69,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2778m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (2808m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Echo",
@@ -79,8 +79,8 @@
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
       "liveStatus": "idle",
-      "reason": "Responsive but last activity 161m ago",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but last activity 191m ago",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Sentinel",
@@ -89,8 +89,8 @@
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (131m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive, outside cron window (161m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Pulse",
@@ -98,9 +98,9 @@
       "role": "Morning Briefing",
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
-      "liveStatus": "idle",
-      "reason": "Responsive but last activity 86m ago",
-      "checkedAt": "2026-02-12 09:45"
+      "liveStatus": "online",
+      "reason": "Responsive, outside cron window (116m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Scribe",
@@ -109,8 +109,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2607m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (2637m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Harbor",
@@ -119,8 +119,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2778m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (2808m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Maverick",
@@ -129,8 +129,8 @@
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "idle",
-      "reason": "Responsive but last activity 162m ago",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but last activity 192m ago",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Viper",
@@ -139,8 +139,8 @@
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (191m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive, outside cron window (221m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Ledger",
@@ -149,8 +149,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2616m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (2646m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Relay",
@@ -159,8 +159,8 @@
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
       "liveStatus": "idle",
-      "reason": "Responsive but last activity 103m ago",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but last activity 133m ago",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Watchtower",
@@ -169,8 +169,8 @@
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1753m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (1783m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Tempo",
@@ -179,8 +179,8 @@
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (162m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive, outside cron window (192m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     },
     {
       "name": "Dispatch",
@@ -189,8 +189,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (479m since activity)",
-      "checkedAt": "2026-02-12 09:45"
+      "reason": "Responsive but stale (509m since activity)",
+      "checkedAt": "2026-02-12 10:15"
     }
   ],
   "dd_pipeline": {
@@ -2027,10 +2027,10 @@
       "list_id": "901813906092"
     },
     "ODF": {
-      "total_leads": 46,
+      "total_leads": 47,
       "active_leads": 0,
       "by_status": {
-        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 18,
+        "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb upcoming podcasts": 19,
         "\u274c don't pursue": 8,
         "\ud83d\udcc5 to reschedule": 7,
         "\ud83d\udcde upcoming pre-calls": 1,
