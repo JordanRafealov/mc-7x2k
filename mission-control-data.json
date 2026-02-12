@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-12T15:30:00.637300+07:00",
+  "_generated": "2026-02-12T16:00:01.131345+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-12 15:15"
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Radar",
@@ -19,8 +19,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1361m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (1391m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Keenan",
@@ -29,8 +29,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (3107m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (3137m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Forge",
@@ -39,8 +39,8 @@
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (672m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (702m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Dash",
@@ -49,8 +49,8 @@
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (133m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive, outside cron window (163m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Scout",
@@ -59,8 +59,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (195m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive, outside cron window (225m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Sherlock",
@@ -69,8 +69,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (3108m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (3138m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Echo",
@@ -79,8 +79,8 @@
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (199m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive, outside cron window (229m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Sentinel",
@@ -89,8 +89,8 @@
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (198m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive, outside cron window (228m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Pulse",
@@ -99,8 +99,8 @@
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (199m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive, outside cron window (230m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Scribe",
@@ -109,8 +109,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2937m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (2967m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Harbor",
@@ -119,8 +119,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (3108m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (3138m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Maverick",
@@ -129,8 +129,8 @@
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (492m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (522m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Viper",
@@ -139,8 +139,8 @@
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (521m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (551m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Ledger",
@@ -149,8 +149,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (2946m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (2976m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Relay",
@@ -158,9 +158,9 @@
       "role": "Client Comms",
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
-      "liveStatus": "running",
-      "reason": "All healthy, active 13m ago",
-      "checkedAt": "2026-02-12 15:15"
+      "liveStatus": "idle",
+      "reason": "Responsive but last activity 43m ago",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Watchtower",
@@ -169,8 +169,8 @@
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (196m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive, outside cron window (226m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Tempo",
@@ -179,8 +179,8 @@
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
       "liveStatus": "online",
-      "reason": "Responsive, outside cron window (198m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive, outside cron window (228m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     },
     {
       "name": "Dispatch",
@@ -189,8 +189,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (809m since activity)",
-      "checkedAt": "2026-02-12 15:15"
+      "reason": "Responsive but stale (839m since activity)",
+      "checkedAt": "2026-02-12 15:45"
     }
   ],
   "dd_pipeline": {
@@ -1552,6 +1552,25 @@
   "fathom": {
     "recent_calls": [
       {
+        "title": "Jordan Rafealov Catch up",
+        "date": "2026-02-12T08:45:53Z",
+        "share_url": "https://fathom.video/share/4W8VJYtsnsmrMs26qbZrBKPyqeyqZijS",
+        "attendees": [
+          {
+            "name": "igor@blacklock.io",
+            "email": "igor@blacklock.io"
+          }
+        ],
+        "summary": "Deal Deadlock: The partnership is blocked by a financial impasse; Dopamine Digital requires a setup fee, while Blacklock will only consider a small one (\\~$100s) and prefers a pure pay-per-lead model. | Past Proposal Rejected: Blacklock previously rejected a $50k upfront fee, viewing it as a misaligned risk profile. | Blacklock's Growth: Blacklock is growing steadily via conferences and a new Australian distributor, but seeks faster growth.",
+        "action_items": [
+          {
+            "description": "Set calendar reminder to follow up w/ Igor Portugal in ~12 months re: Blacklock lead gen",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
         "title": "Daniel Call",
         "date": "2026-02-11T03:07:26Z",
         "share_url": "https://fathom.video/share/zyR_86bupU4UQyWB4zioHuh9JVg_zfEN",
@@ -1964,35 +1983,6 @@
             "completed": false
           }
         ]
-      },
-      {
-        "title": "Rob Dootrix Call",
-        "date": "2026-02-05T10:02:11Z",
-        "share_url": "https://fathom.video/share/-tUKk3GDPszEYEQfDxvutzT_iLJ3uyxt",
-        "attendees": [
-          {
-            "name": "Rob Borley",
-            "email": "rob.borley@dootrix.com"
-          }
-        ],
-        "summary": "Problem: AI-driven market uncertainty is shrinking project scope and lengthening sales cycles to \\~9 months, creating a top-of-funnel bottleneck. | Goal: Fill the funnel to create a lead-overload \"problem\" for Dootrix's founders, who currently have capacity for more calls. | Proposed Solution: Use cold outreach to book free, customized workshops for leadership teams, bypassing the current webinar step to accelerate the sales cycle.",
-        "action_items": [
-          {
-            "description": "Draft 90-day trial proposal for Rob (Mar\u2013May): outreach/lead-gen plan, budget, follow-up, AI automation",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Evaluate productized first-step offers for ICP; prep notes for next call w/ Jordan",
-            "assignee": "Rob Borley",
-            "completed": false
-          },
-          {
-            "description": "Send calendar invite to Rob for Feb 10 9:00 (1h)",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          }
-        ]
       }
     ],
     "total_calls_30d": 10
@@ -2077,6 +2067,12 @@
   "activity": [
     {
       "type": "call_completed",
+      "text": "Call: Jordan Rafealov Catch up",
+      "detail": "Deal Deadlock: The partnership is blocked by a financial impasse; Dopamine Digital requires a setup fee, while Blacklock will only consider a small on",
+      "timestamp": "2026-02-12T08:45:53Z"
+    },
+    {
+      "type": "call_completed",
       "text": "Call: Daniel Call",
       "detail": "Podcast Strategy Pivot: The podcast is attracting the wrong audience (specialized agencies vs. brand owners), making sales transitions difficult. The ",
       "timestamp": "2026-02-11T03:07:26Z"
@@ -2098,12 +2094,6 @@
       "text": "Call: Filip Weekly Call",
       "detail": "Jamie's emails are landing in spam. Instantly tests show a 31\u201342% spam rate, far below the 90\u201395% target, explaining the zero reply rate. | New email ",
       "timestamp": "2026-02-09T13:54:48Z"
-    },
-    {
-      "type": "call_completed",
-      "text": "Call: Rodney Weekly Call",
-      "detail": "Inefficient Workflow: ODF's Zencaster \u2192 Riverside workflow is a major bottleneck, requiring two separate edits per video. | Compensation Misalignment:",
-      "timestamp": "2026-02-09T12:13:41Z"
     }
   ]
 }
