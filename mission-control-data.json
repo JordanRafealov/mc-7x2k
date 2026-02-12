@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-02-12T19:00:01.097578+07:00",
+  "_generated": "2026-02-12T19:30:00.291278+07:00",
   "_version": "1.0",
   "agents": [
     {
@@ -10,7 +10,7 @@
       "schedule": "5:00 AM Mon-Fri",
       "liveStatus": "offline",
       "reason": "Cooper process not found",
-      "checkedAt": "2026-02-12 18:45"
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Radar",
@@ -19,8 +19,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1571m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (1601m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Keenan",
@@ -29,8 +29,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (3317m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (3347m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Forge",
@@ -39,8 +39,8 @@
       "status": "LIVE",
       "schedule": "4:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (882m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (912m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Dash",
@@ -48,9 +48,9 @@
       "role": "Speed-to-Lead",
       "status": "LIVE",
       "schedule": "8:00 AM Mon-Fri",
-      "liveStatus": "idle",
-      "reason": "Responsive but last activity 43m ago",
-      "checkedAt": "2026-02-12 18:45"
+      "liveStatus": "online",
+      "reason": "Responsive, outside cron window (73m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Scout",
@@ -59,8 +59,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (405m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (435m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Sherlock",
@@ -69,8 +69,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (3318m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (3348m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Echo",
@@ -79,8 +79,8 @@
       "status": "LIVE",
       "schedule": "9:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (409m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (439m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Sentinel",
@@ -89,8 +89,8 @@
       "status": "LIVE",
       "schedule": "7:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (408m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (438m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Pulse",
@@ -99,8 +99,8 @@
       "status": "LIVE",
       "schedule": "8:00 & 8:15 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (409m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (439m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Scribe",
@@ -109,8 +109,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (3147m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (3177m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Harbor",
@@ -119,8 +119,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (3318m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (3348m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Maverick",
@@ -129,8 +129,8 @@
       "status": "LIVE",
       "schedule": "9:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (702m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (732m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Viper",
@@ -139,8 +139,8 @@
       "status": "LIVE",
       "schedule": "6:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (731m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (761m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Ledger",
@@ -149,8 +149,8 @@
       "status": "LIVE",
       "schedule": "6:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (3156m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (3186m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Relay",
@@ -159,8 +159,8 @@
       "status": "LIVE",
       "schedule": "Continuous 8AM-6PM Mon-Fri",
       "liveStatus": "idle",
-      "reason": "Responsive but last activity 44m ago",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but last activity 74m ago",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Watchtower",
@@ -169,8 +169,8 @@
       "status": "LIVE",
       "schedule": "4:30 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (406m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (436m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Tempo",
@@ -179,8 +179,8 @@
       "status": "LIVE",
       "schedule": "7:00 AM Mon-Fri",
       "liveStatus": "error",
-      "reason": "Responsive but stale (408m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (438m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     },
     {
       "name": "Dispatch",
@@ -189,8 +189,8 @@
       "status": "LIVE",
       "schedule": "On-demand",
       "liveStatus": "error",
-      "reason": "Responsive but stale (1019m since activity)",
-      "checkedAt": "2026-02-12 18:45"
+      "reason": "Responsive but stale (1049m since activity)",
+      "checkedAt": "2026-02-12 19:15"
     }
   ],
   "dd_pipeline": {
@@ -1552,6 +1552,30 @@
   "fathom": {
     "recent_calls": [
       {
+        "title": "Leo Call",
+        "date": "2026-02-12T12:03:42Z",
+        "share_url": "https://fathom.video/share/g5wkVCGyC4Zxmyu6TLsDHMZ7yyhRudAx",
+        "attendees": [
+          {
+            "name": "Leo Kuyumciyan",
+            "email": "leo@phellosconsultancy.co.uk"
+          }
+        ],
+        "summary": "New Channel: Pivot outreach to small VCs (\u00a310M\u2013\u00a3100M fund size) as channel partners. They need help with portfolio company financials, creating a strong referral loop. | New Process: Adopt a two-step \"pre-call \u2192 podcast\" strategy. The pre-call builds rapport and shifts the conversation from marketing to operational challenges, setting up the sales ask. | Tech Overhaul: Dopamine Digital is implementing AI tools to automate lead management (speed, enrichment), remove booking bottlenecks, and provide real-time sales coaching.",
+        "action_items": [
+          {
+            "description": "Build VC outreach list (UK/US, 5\u201310 staff, $10\u2013100M); pivot outreach; launch HeyReach; schedule pre-calls; book follow-ups via ClickUp",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          },
+          {
+            "description": "Send HeyReach access details to Leo; then Leo grant access",
+            "assignee": "Jordan Rafealov",
+            "completed": false
+          }
+        ]
+      },
+      {
         "title": "Jordan Rafealov Catch up",
         "date": "2026-02-12T08:45:53Z",
         "share_url": "https://fathom.video/share/4W8VJYtsnsmrMs26qbZrBKPyqeyqZijS",
@@ -1934,55 +1958,6 @@
             "completed": false
           }
         ]
-      },
-      {
-        "title": "Call Thomas",
-        "date": "2026-02-06T03:16:06Z",
-        "share_url": "https://fathom.video/share/XHTjaHwtkerJ-rdjjt6w85ZqnBudpjVx",
-        "attendees": [
-          {
-            "name": "thomas@maesto.io",
-            "email": "thomas@maesto.io"
-          }
-        ],
-        "summary": "MediaPlace Promotions: A 3-part promo series is planned: 1) a Valentine's Day credit pack sale with free Cloned presets, 2) a free video captioning plugin, and 3) a \"final chance\" sale for the AI Avatar Studio feature. | AI Coaching Opportunity: Jordan proposed Thomas join his \"school\" (paid community) as an AI coach to help members build automations, citing a competitor's success at \\~$386k/month. | Lead Gen Automation: Jordan needs an AI agent to automate his lead gen process (scraping, enrichment, verification) to reduce a 70% lead drop-off rate and save significant manual time.",
-        "action_items": [
-          {
-            "description": "Add Cloned presets to MediaPlace; prep Valentine's sale page/copy/emails/video; launch Feb 12\u201314 11:59 pm EST",
-            "assignee": "Thomas Dolso",
-            "completed": false
-          },
-          {
-            "description": "Add Cloned presets to MediaPlace; prep Valentine's sale page/copy/emails/video; launch Feb 12\u201314 11:59 pm EST",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          },
-          {
-            "description": "Check ActiveCampaign tags for AI Avatar buyers; segment list for final-chance promo",
-            "assignee": "Thomas Dolso",
-            "completed": false
-          },
-          {
-            "description": "Decide on school live sessions; inform Jordan",
-            "assignee": "Thomas Dolso",
-            "completed": false
-          },
-          {
-            "description": "Build n8n lead-gen automation (Crunchbase\u2192LinkedIn\u2192email\u2192verify); share templates w/ Jordan",
-            "assignee": "Thomas Dolso",
-            "completed": false
-          },
-          {
-            "description": "Integrate captions plugin in MediaPlace; prep landing/copy/emails/video; launch next week",
-            "assignee": "Thomas Dolso",
-            "completed": false
-          },
-          {
-            "description": "Integrate captions plugin in MediaPlace; prep landing/copy/emails/video; launch next week",
-            "assignee": "Jordan Rafealov",
-            "completed": false
-          }
-        ]
       }
     ],
     "total_calls_30d": 10
@@ -2067,6 +2042,12 @@
   "activity": [
     {
       "type": "call_completed",
+      "text": "Call: Leo Call",
+      "detail": "New Channel: Pivot outreach to small VCs (\u00a310M\u2013\u00a3100M fund size) as channel partners. They need help with portfolio company financials, creating a stro",
+      "timestamp": "2026-02-12T12:03:42Z"
+    },
+    {
+      "type": "call_completed",
       "text": "Call: Jordan Rafealov Catch up",
       "detail": "Deal Deadlock: The partnership is blocked by a financial impasse; Dopamine Digital requires a setup fee, while Blacklock will only consider a small on",
       "timestamp": "2026-02-12T08:45:53Z"
@@ -2088,12 +2069,6 @@
       "text": "Call: Weekly 1:1 Coaching Call - Angela",
       "detail": "Email Campaigns Failing: Over-sending (e.g., 510 emails from one inbox vs. the 30/day limit) caused Jamie's emails to hit spam, killing campaign resul",
       "timestamp": "2026-02-09T15:13:19Z"
-    },
-    {
-      "type": "call_completed",
-      "text": "Call: Filip Weekly Call",
-      "detail": "Jamie's emails are landing in spam. Instantly tests show a 31\u201342% spam rate, far below the 90\u201395% target, explaining the zero reply rate. | New email ",
-      "timestamp": "2026-02-09T13:54:48Z"
     }
   ]
 }
